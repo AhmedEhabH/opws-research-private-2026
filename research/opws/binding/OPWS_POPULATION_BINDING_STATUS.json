@@ -1,0 +1,169 @@
+{
+  "artifact": "opws_population_binding_status",
+  "schema_version": "opws-population-binding-status/1.0-additive",
+  "binding_status": "DRAFT_PARTIAL_PHASE1_HOLD",
+  "binding_self_sha256": "d4e1a4aad4b4055641f99d9ce4aa97727c4eea5251aebebf7ef21ded749601b6",
+  "binding_self_sha256_recipe": "sha256(compact_json(binding_13_fields, sorted keys))",
+  "created_at": "2026-10-20T09:00:19Z",
+  "unresolved_binding_fields": [
+    "n_opws_eligible",
+    "n_primary_paired"
+  ],
+  "unresolved_binding_reasons": {
+    "n_opws_eligible": "STAGE_5 behavior-contract-executable preflight requires OPWS worktree execution",
+    "n_primary_paired": "STAGE_7 requires RM_CSS/AGENT scope artifacts + GOLD validity control"
+  },
+  "population": {
+    "n_units": 144,
+    "n_tasks": 219,
+    "n_f2p_positive": 83,
+    "n_primary_behavioral_f2p_eligible": 71,
+    "ordered_task_ids_sha256": "5972b20d6b08095a555e4c49b9f03703ccd24cfeeabd27c42bcd748cf7cd1364",
+    "not_equal_to_unit_hash": "8eb4a7242e12bb03715adac5fffdea2e4340585843fc137ececd38952ad6a19e"
+  },
+  "environment_id_proposal": {
+    "status": "PROPOSED_PENDING_OWNER_CONFIRMATION",
+    "n_tasks": 219,
+    "n_distinct_environment_ids": 131
+  },
+  "behavior_contract": {
+    "manifest_sha256": "d6363dd1d3f51b300ba33363fa078cf164d5aacc48f7e54bcc5c8b2c9115665f",
+    "n_contract_resolved": 219,
+    "n_f2p_positive": 83
+  },
+  "funnel_stage_counts": {
+    "stage1_in_universe": {
+      "true": 219,
+      "false": 0,
+      "unresolved": 0
+    },
+    "stage2_test_evidence": {
+      "true": 83,
+      "false": 136,
+      "unresolved": 0
+    },
+    "stage3_behavior_contract": {
+      "true": 219,
+      "false": 0,
+      "unresolved": 0
+    },
+    "stage4_env_ready": {
+      "true": 219,
+      "false": 0,
+      "unresolved": 0
+    },
+    "stage5_behavior_executable": {
+      "true": 0,
+      "false": 0,
+      "unresolved": 219
+    },
+    "stage6_opws_eligible": {
+      "true": 0,
+      "false": 136,
+      "unresolved": 83
+    },
+    "stage7_primary_paired_eligible": {
+      "true": 0,
+      "false": 136,
+      "unresolved": 83
+    }
+  },
+  "protocol": {
+    "protocol_tag": "m17-opws-protocol-r1-frozen-2026-10-12",
+    "protocol_tag_object": "63ff392b92cacf5d274cfe1823275ff3bba90af7",
+    "protocol_commit": "9038df3ea80d7d478c2f949b2d3fae75754bb6e1",
+    "protocol_sha256": "44f18bcad2a80f160646ddd676bca2eb80bd3fc06a1a4925a82e301f025cd767",
+    "n_protocol_files": 16
+  },
+  "input_files": [
+    {
+      "path": "research/env-canon-r4/R4_FULL144_READINESS_MANIFEST.json",
+      "role": "full_d7_ready_population",
+      "bytes": 155123,
+      "sha256": "3381788cad3f1f2dc45ec269ce3a4ac7219d69714995a53948f0fa9a0d64b4e2"
+    },
+    {
+      "path": "research/env-canon-r4/R4_I6_CORRECTED_ZERO_CONTAINER_CENSUS_144.json",
+      "role": "frozen_census_and_unit_order",
+      "bytes": 805345,
+      "sha256": "f60668f88b42d8f7aebb6671dba97d705dc8d2bfbed4046ff7e4332361ec9240"
+    },
+    {
+      "path": "research/env-canon-r4/R4_EXECUTION_IMAGE_BINDING_RUNTIME_CLEAN.json",
+      "role": "runtime_image_binding",
+      "bytes": 11190,
+      "sha256": "fa4776d850cbc6b4aafcaaeea51b711cfe1081689803e5c69427386f246d7ce7"
+    },
+    {
+      "path": "research/env-canon-r4/R4_SCIENTIFIC_FULL144_SUCCESSOR_RESULT_2026-10-17.json",
+      "role": "scientific_full144_result",
+      "bytes": 4566,
+      "sha256": "22a30f94b11e7b864d2efcf356738e65c3da5d1a792f4030b3c18f6d4d58977d"
+    },
+    {
+      "path": "research/wp2/oracle_confirmation_linux_v2_2026-09-23/per_task_v2.jsonl",
+      "role": "per_task_f2p_counts_and_environment_fingerprint",
+      "bytes": 469852,
+      "sha256": "7fdeeb936ea84e7ef47a461e940671ee628114d9a1d960f29a0be008eddce021"
+    },
+    {
+      "path": "research/wp2/wp2_saleor_main297_census_2026-09-22.json",
+      "role": "test_command_and_parent_target_commits",
+      "bytes": 586068,
+      "sha256": "6146237d353376632d729e159761470b46fc5eb300fa9def971d5faf7b1f60c0"
+    },
+    {
+      "path": "research/wp2/m17_v1/adapter/adapter_report.json",
+      "role": "adapter_resolution",
+      "bytes": 17283,
+      "sha256": "2b0eeddd9ebdbc7ba6768f47ceafdf7578e313a4cfb483d4a471da258652a0f8"
+    },
+    {
+      "path": "research/wp1b/wp1b_main_297_manifest.json",
+      "role": "stage1_frozen_task_universe",
+      "bytes": 9327,
+      "sha256": "d858316667c4a3e28f7bf759001dc1fd8746b93c710592ff646f3f91584811eb"
+    },
+    {
+      "path": "scripts/wp2_m14a_evalcore_e1.py",
+      "role": "e1_evaluator_boundary",
+      "bytes": 14380,
+      "sha256": "c0f7dc7deaa5af187d6828b53a7fef95253ba97a9fa5602c0d4e42e34ef3f093"
+    }
+  ],
+  "input_invariants": {
+    "population_identity": "ce51d2ec0eb28f6b720fbab13a852618e2de0f0a1111a3cc19dc64b1d19defac",
+    "unit_order_membership_hash_reproduced": true,
+    "runtime_binding_hash": "5169c69d45f0761c85792ec182c9e949f58d8c9f5a29355d5a371944293d2ef2",
+    "adapter_main_resolved": 219,
+    "per_task_v2_records": 220,
+    "per_task_v2_extra_ids": [
+      "saleor-rc-f76d0093b450"
+    ]
+  },
+  "blockers": [
+    {
+      "id": "P1_STAGE5_PREFLIGHT_NOT_EXECUTED",
+      "class": "MISSING_EXECUTION",
+      "detail": "STAGE_5 requires an OPWS worktree dry preflight; Phase 0/1 is record-only."
+    },
+    {
+      "id": "P2_ENVIRONMENT_ID_SERIALIZATION_UNCONFIRMED",
+      "class": "OWNER_DECISION",
+      "detail": "The frozen protocol names ENVIRONMENT_ID as a physical-identity field but does not define its serialization. This proposal fixes the composition and byte recipe; owner confirmation is required before the value may be treated as frozen binding semantics."
+    },
+    {
+      "id": "P3_F2P_NODE_IDENTITY_BINDING_MODE",
+      "class": "OWNER_CONFIRMATION",
+      "detail": "Node identities are bound as an evaluation-time rule (frozen evaluator, bounded by frozen count), not as stored binding-time node IDs. The quantitative claim '9/219 tasks have stored node_records; 78 F2P-positive tasks lack them' is UNVERIFIED_SOURCE_COUNT: per_task_v2.jsonl has no top-level node_records; harness_v3 covers a disjoint task set. The evaluation-time rule mirrors scripts/wp2_m17_contract.py::f2p_node_set_from_frozen (fail-closed on missing nodes)."
+    }
+  ],
+  "prohibitions_respected": {
+    "no_opws_execution": true,
+    "no_model_api_calls": true,
+    "no_frozen_artifact_mutation": true,
+    "no_selector_outcome_or_gold_analysis": true,
+    "no_retraining_or_rethresholding": true,
+    "no_commit_push_tag": true
+  }
+}

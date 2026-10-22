@@ -1,0 +1,48 @@
+{
+ "name_prefix": "project-light",
+ "max_file_bytes": 8388608,
+ "max_total_bytes": 47185920,
+ "plan_id": "M17_OPWS_R1_INSTRUMENT_CONSTRUCTION",
+ "phase": "PHASE_2_SCOPE_DEDUP_PLAN_COMPLETE",
+ "source_run_identifiers": [
+  "HEAD=315612639020c8a5d3102fb86d33230422bd66f5",
+  "FULL_D7_TAG=m17-d7-r4-scientific-full144-successor-pass-2026-10-17",
+  "PROTOCOL_TAG=m17-opws-protocol-r1-frozen-2026-10-12",
+  "BINDING_STATUS=DRAFT_PARTIAL_PHASE1_HOLD",
+  "PHASE2_PLAN=OPWS_PHYSICAL_DEDUP_PLAN_R1.json"
+ ],
+ "include": [
+  "scripts/opws_build.py",
+  "scripts/opws_phase2_plan.py",
+  "tests/unit/opws/**/*.py",
+  "research/opws/**/*",
+  "docs/LIGHT_EXPORT_CONVENTION.md",
+  "docs/EXECUTION_AND_VALIDATION_PROTOCOL_V2.md",
+  "docs/LIVE_STATUS.json",
+  "AGENTS.md",
+  "README.md",
+  "PROGRESS.md",
+  "00_CURRENT_RESEARCH_STATE.md",
+  "pyproject.toml",
+  "controller/light_profile_opws_phase1.json",
+  "controller/light_profile_opws_phase2.json",
+  "research/env-canon-r4/**/*",
+  "research/wp2/oracle_confirmation_linux_v2_2026-09-23/per_task_v2.jsonl",
+  "research/wp2/wp2_saleor_main297_census_2026-09-22.json",
+  "research/wp2/m17_v1/adapter/adapter_report.json",
+  "research/wp2/m17_v1/m17_design_freeze_v1.json",
+  "research/wp2/m17_v1/m17_resource_contract.json",
+  "research/wp1b/wp1b_main_297_manifest.json",
+  "research/wp1a/sip_rmcss_per_task_predictions.json",
+  "research/wp1b/main-297-2026-09-22/wp1b_agent_predictions.json",
+  "research/saleor-reserve-300-rmcss/saleor_reserve_300_proxies.json",
+  "scripts/wp2_m14a_evalcore_e1.py",
+  "scripts/wp2_m17_contract.py",
+  "src/benchmark/wp2/full144/population.py"
+ ],
+ "exclude": [
+  "*/__pycache__/*",
+  "*.pyc",
+  "*.zip"
+ ]
+}

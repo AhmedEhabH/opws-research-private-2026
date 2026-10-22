@@ -1,0 +1,20 @@
+{
+  "artifact": "opws_phase2_determinism",
+  "schema_version": "opws-phase2-determinism/1.0-additive",
+  "n_artifacts": 2,
+  "all_identical": true,
+  "artifacts": [
+    {
+      "artifact": "OPWS_SCOPE_VALIDATION_R1.json",
+      "run1_sha256": "cfba1cc6e69de92e76d09417eb4dd53124df3d589dce7fc4966356ab216b8341",
+      "run2_sha256": "cfba1cc6e69de92e76d09417eb4dd53124df3d589dce7fc4966356ab216b8341",
+      "identical": true
+    },
+    {
+      "artifact": "OPWS_PHYSICAL_DEDUP_PLAN_R1.json",
+      "run1_sha256": "74a2a1012a800087b0199604871bb7bea6ebb93e04dcd372c3f06ef8222c5f91",
+      "run2_sha256": "74a2a1012a800087b0199604871bb7bea6ebb93e04dcd372c3f06ef8222c5f91",
+      "identical": true
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "artifact": "opws_scope_validation_r1",
+  "schema_version": "opws-scope-validation-r1/1.0-additive",
+  "mission": "M17_OPWS_R1_PHASE2_SCOPE_DEDUP",
+  "zero_outcome": {
+    "no_arm_execution": true,
+    "no_model_api": true,
+    "no_selector_output_generated": true,
+    "no_patch_materialization": true,
+    "no_gold_inspection_beyond_frozen_path_lists": true
+  },
+  "registry": {
+    "protocol_commit": "9038df3ea80d7d478c2f949b2d3fae75754bb6e1",
+    "protocol_tag": "m17-opws-protocol-r1-frozen-2026-10-12",
+    "registry_start_hash": "83399ff875c7793286d66311afb6c62071ea04b3",
+    "random_seed": 20261012,
+    "n_arms": 12,
+    "arm_order": [
+      "RM_CSS",
+      "AGENT",
+      "AGENTLESS_STYLE_ADAPTATION",
+      "SIP",
+      "DENSE_K3",
+      "DENSE_K10",
+      "BM25_K3",
+      "BM25_K10",
+      "BM25_TO_CIA_1HOP",
+      "SELECT_ALL",
+      "RANDOM_SIZE_MATCHED_RM_CSS",
+      "GOLD"
+    ],
+    "dedup_five_fields": [
+      "TASK_ID",
+      "SCOPE_HASH",
+      "REFERENCE_PATCH_HASH",
+      "TEST_CONTRACT_HASH",
+      "ENVIRONMENT_ID"
+    ]
+  },
+  "population": {
+    "n_tasks": 219,
+    "ordered_task_ids_sha256": "5972b20d6b08095a555e4c49b9f03703ccd24cfeeabd27c42bcd748cf7cd1364"
+  },
+  "per_arm": [
+    {
+      "arm_id": "RM_CSS",
+      "scope_source": "research/wp1a/sip_rmcss_per_task_predictions.json",
+      "stored_artifact": true,
+      "resolve_mode": "FROZEN_ARTIFACT",
+      "source_sha256": "76f16217f11043338ebfeb2c402bc4eaef8e6673394d93232fc41ddb21123e8f",
+      "coverage": {
+        "n": 219,
+        "of": 219,
+        "missing": []
+      },
+      "n_distinct_scope_hashes": 191,
+      "n_empty_scopes": 14
+    },
+    {
+      "arm_id": "AGENT",
+      "scope_source": "research/wp1b/main-297-2026-09-22/wp1b_agent_predictions.json",
+      "stored_artifact": true,
+      "resolve_mode": "FROZEN_ARTIFACT",
+      "source_sha256": "c0b85dc7170327f283c977116e46d0deec0a2907d172137349b9b3dac3abc743",
+      "coverage": {
+        "n": 219,
+        "of": 219,
+        "missing": []
+      },
+      "n_distinct_scope_hashes": 209,
+      "n_empty_scopes": 2
+    },
+    {
+      "arm_id": "AGENTLESS_STYLE_ADAPTATION",
+      "scope_source": "D:/wp2_agentless_main297/research/competitor-agentless-r1/agentless_r1_prediction_freeze.json",
+      "stored_artifact": true,
+      "resolve_mode": "FROZEN_ARTIFACT",
+      "source_sha256": "90495bbb2c8d66a2c9a079cb2dfcd6e1cbf929c01972f1331df4242cdabd9815",
+      "coverage": {
+        "n": 219,
+        "of": 219,
+        "missing": []
+      },
+      "n_distinct_scope_hashes": 209,
+      "n_empty_scopes": 0
+    },
+    {
+      "arm_id": "SIP",
+      "scope_source": "research/wp1a/sip_rmcss_per_task_predictions.json",
+      "stored_artifact": true,
+      "resolve_mode": "FROZEN_ARTIFACT",
+      "source_sha256": "76f16217f11043338ebfeb2c402bc4eaef8e6673394d93232fc41ddb21123e8f",
+      "coverage": {
+        "n": 219,
+        "of": 219,
+        "missing": []
+      },
+      "n_distinct_scope_hashes": 166,
+      "n_empty_scopes": 45
+    },
+    {
+      "arm_id": "DENSE_K3",
+      "scope_source": "D:/wp2_comp_baselines/research/competitor-baselines-r2/per_task_predictions_r2.json",
+      "stored_artifact": true,
+      "resolve_mode": "FROZEN_ARTIFACT",
+      "source_sha256": "601e9c192aaee7748f33996d55712ad4cb5a3c04c98125feac6ebf345d59c6ed",
+      "coverage": {
+        "n": 219,
+        "of": 219,
+        "missing": []
+      },
+      "n_distinct_scope_hashes": 217,
+      "n_empty_scopes": 0
+    },
+    {
+      "arm_id": "DENSE_K10",
+      "scope_source": "D:/wp2_comp_baselines/research/competitor-baselines-r2/per_task_predictions_r2.json",
+      "stored_artifact": true,
+      "resolve_mode": "FROZEN_ARTIFACT",
+      "source_sha256": "601e9c192aaee7748f33996d55712ad4cb5a3c04c98125feac6ebf345d59c6ed",
+      "coverage": {
+        "n": 219,
+        "of": 219,
+        "missing": []
+      },
+      "n_distinct_scope_hashes": 219,
+      "n_empty_scopes": 0
+    },
+    {
+      "arm_id": "BM25_K3",
+      "scope_source": "D:/wp2_comp_baselines/research/competitor-baselines-r2/per_task_predictions_r2.json",
+      "stored_artifact": true,
+      "resolve_mode": "FROZEN_ARTIFACT",
+      "source_sha256": "601e9c192aaee7748f33996d55712ad4cb5a3c04c98125feac6ebf345d59c6ed",
+      "coverage": {
+        "n": 219,
+        "of": 219,
+        "missing": []
+      },
+      "n_distinct_scope_hashes": 217,
+      "n_empty_scopes": 0
+    },
+    {
+      "arm_id": "BM25_K10",
+      "scope_source": "D:/wp2_comp_baselines/research/competitor-baselines-r2/per_task_predictions_r2.json",
+      "stored_artifact": true,
+      "resolve_mode": "FROZEN_ARTIFACT",
+      "source_sha256": "601e9c192aaee7748f33996d55712ad4cb5a3c04c98125feac6ebf345d59c6ed",
+      "coverage": {
+        "n": 219,
+        "of": 219,
+        "missing": []
+      },
+      "n_distinct_scope_hashes": 218,
+      "n_empty_scopes": 0
+    },
+    {
+      "arm_id": "BM25_TO_CIA_1HOP",
+      "scope_source": "D:/wp2_comp_baselines/research/competitor-baselines-r2/per_task_predictions_r2.json",
+      "stored_artifact": true,
+      "resolve_mode": "FROZEN_ARTIFACT",
+      "source_sha256": "601e9c192aaee7748f33996d55712ad4cb5a3c04c98125feac6ebf345d59c6ed",
+      "coverage": {
+        "n": 219,
+        "of": 219,
+        "missing": []
+      },
+      "n_distinct_scope_hashes": 202,
+      "n_empty_scopes": 0
+    },
+    {
+      "arm_id": "SELECT_ALL",
+      "scope_source": "benchmark_data/real_commit_impact_saleor/scientific/<task_id>/public/candidate_universe.json",
+      "stored_artifact": true,
+      "resolve_mode": "FROZEN_ARTIFACT",
+      "coverage": {
+        "n": 219,
+        "of": 219,
+        "missing": []
+      },
+      "source_sha256": "per-task candidate_universe files; hashed per task in plan",
+      "n_distinct_scope_hashes": null
+    },
+    {
+      "arm_id": "RANDOM_SIZE_MATCHED_RM_CSS",
+      "scope_source": null,
+      "stored_artifact": false,
+      "resolve_mode": "DERIVED_PENDING_PHASE4",
+      "never_generated_in_phase2": true,
+      "coverage": {
+        "n": 0,
+        "of": 219,
+        "missing": []
+      }
+    },
+    {
+      "arm_id": "GOLD",
+      "scope_source": "research/saleor-reserve-300-rmcss/saleor_reserve_300_proxies.json",
+      "stored_artifact": true,
+      "resolve_mode": "FROZEN_ARTIFACT",
+      "source_sha256": "d4ecdb7de555e0943c726a5e9ec0bfc7854515aba4406883f164697e39056e43",
+      "coverage": {
+        "n": 219,
+        "of": 219,
+        "missing": []
+      },
+      "n_distinct_scope_hashes": 219,
+      "n_empty_scopes": 0
+    }
+  ]
+}

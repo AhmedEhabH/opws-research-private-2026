@@ -1,0 +1,12 @@
+{
+  "toy_only": true,
+  "allowed_scope": ["saleor/core/jwt.py", "saleor/graphql/page/resolvers.py"],
+  "snapshot": {
+    "saleor/core/jwt.py": ["def encode(payload):", "    return payload", "def decode(tok):", "    return tok"],
+    "saleor/graphql/page/resolvers.py": ["def resolve_page(info, id):", "    return None"]
+  },
+  "patches": [
+    {"op": "edit", "path": "saleor/core/jwt.py",
+     "old_lines": ["    return payload"], "new_lines": ["    return payload.upper()"]}
+  ]
+}

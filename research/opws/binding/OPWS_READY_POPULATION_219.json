@@ -1,0 +1,4593 @@
+{
+  "artifact": "opws_ready_population_tasks_219",
+  "schema_version": "opws-ready-population/1.0-additive",
+  "n_units": 144,
+  "n_tasks": 219,
+  "population_identity_sha256": "ce51d2ec0eb28f6b720fbab13a852618e2de0f0a1111a3cc19dc64b1d19defac",
+  "unit_order_membership_hash": "8eb4a7242e12bb03715adac5fffdea2e4340585843fc137ececd38952ad6a19e",
+  "aggregation_rule": "unit-major expansion: census/readiness unit order (144), member_task_ids order within unit",
+  "units": [
+    {
+      "validation_unit_id": "vu-e4998719ee01",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-34c1a3756742",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "LOCK_FRAGMENT_MAIN_PLUS_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-438595033c60",
+        "saleor-rc-fa1ed1794a8a"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-b68ee1b3ad18",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-34c1a3756742",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "LOCK_FRAGMENT_MAIN_PLUS_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-f5d2c47e47c3"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-262f45bffe92",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-34c1a3756742",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "LOCK_FRAGMENT_MAIN_PLUS_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-5f8b1cc4db2d"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-db74b3640c98",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-a39687f3d19c",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "LOCK_FRAGMENT_MAIN_PLUS_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-80a33b28b80d"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-e878163db06a",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-a39687f3d19c",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "LOCK_FRAGMENT_MAIN_PLUS_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-697cbdc85b4a",
+        "saleor-rc-8a03c74411d7",
+        "saleor-rc-8eb11da07f09"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-422bca69f329",
+      "immutable_image_id": "sha256:acad85904c7011374316d5b44ecb8967628eb3fd6da9ddd2744c0be396728be6",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-cc2f641e9e04",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "LOCK_FRAGMENT_MAIN_PLUS_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-954887b39f13"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-117d7bd068d5",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-34c1a3756742",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "V2_EDITABLE_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-99f9e28f8b6f",
+        "saleor-rc-dea5ffb730ac"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-5321e03160a1",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-a39687f3d19c",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "LOCK_FRAGMENT_MAIN_PLUS_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-d7b03a3eeec0"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-0d8ddec94417",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-a39687f3d19c",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "LOCK_FRAGMENT_MAIN_PLUS_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-36a9a14e8d12"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-561a1a172143",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-a39687f3d19c",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "LOCK_FRAGMENT_MAIN_PLUS_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-7b1e8cee95d5",
+        "saleor-rc-b97d1d9c7064"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-e40f7e955c05",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-34c1a3756742",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "LOCK_FRAGMENT_MAIN_PLUS_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-3d304a30a5bc",
+        "saleor-rc-aea05da547c8"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-b9808f19ace4",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-34c1a3756742",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "V2_EDITABLE_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-e6198146186d"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-148c254cdec8",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-a39687f3d19c",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "LOCK_FRAGMENT_MAIN_PLUS_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-07f02e2c40ae",
+        "saleor-rc-663543eaf563",
+        "saleor-rc-a9e79dac40a2",
+        "saleor-rc-bd11af3ea0a4",
+        "saleor-rc-ccd3960acd1d",
+        "saleor-rc-f623ab428821"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-8228f26085f6",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-a39687f3d19c",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "LOCK_FRAGMENT_MAIN_PLUS_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-5477b7dd3867"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-33422e2343f1",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-34c1a3756742",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "V2_EDITABLE_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-dacded922b1f",
+        "saleor-rc-eb61406cecc5",
+        "saleor-rc-fe6e46266e81"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-a1f3d1a5d841",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-34c1a3756742",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "V2_EDITABLE_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-9c032845e29b"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-692af9112c6d",
+      "immutable_image_id": "sha256:1be41dd22a934cc56ed10fa1046234a450f6d2946f8099d7bcb501f696f1d759",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "V2_EDITABLE_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-19bb9b070965"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-021cfd4955e7",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-a39687f3d19c",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "LOCK_FRAGMENT_MAIN_PLUS_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-f74a5394c7f1"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-3a7ebc8e23c7",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-a39687f3d19c",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "LOCK_FRAGMENT_MAIN_PLUS_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-659af1b19239"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-f4038beff05f",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-a39687f3d19c",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "LOCK_FRAGMENT_MAIN_PLUS_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-1a8b592913a0",
+        "saleor-rc-d4fcbd22a853"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-dcd39990cb98",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-34c1a3756742",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "LOCK_FRAGMENT_MAIN_PLUS_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-78c9081e2731"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-0a27b4b8eb0a",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-34c1a3756742",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "LOCK_FRAGMENT_MAIN_PLUS_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-4800fa0beb60"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-dade0b4b5b60",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-34c1a3756742",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "V2_EDITABLE_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-aa814bd5f355"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-c94437ca6633",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-a39687f3d19c",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "LOCK_FRAGMENT_MAIN_PLUS_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-0e895847d8ae",
+        "saleor-rc-b79cf8f91f04",
+        "saleor-rc-f6a3751a8bc2"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-4b390d4acaf6",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-a39687f3d19c",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "LOCK_FRAGMENT_MAIN_PLUS_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-5144ee6bd55f",
+        "saleor-rc-a1e1e2554327"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-13c1de1de71e",
+      "immutable_image_id": "sha256:465462307d07236a5424b146f3e19f9462970121a21e17f331db849c8008d2ac",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-02b9bb45ba01",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "UV_EXPORT",
+      "lock_type": "uv",
+      "member_task_ids": [
+        "saleor-rc-e0f2933d58b9"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-b78ebcf3e530",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-591718dce38a",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "UV_EXPORT",
+      "lock_type": "uv",
+      "member_task_ids": [
+        "saleor-rc-3bf31ab2fefc",
+        "saleor-rc-95dbffbc523a",
+        "saleor-rc-b356a525ba2a",
+        "saleor-rc-ce3b63edecef",
+        "saleor-rc-ffe3a3ece0fb"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-9d7a49485c23",
+      "immutable_image_id": "sha256:465462307d07236a5424b146f3e19f9462970121a21e17f331db849c8008d2ac",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-02b9bb45ba01",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "UV_EXPORT",
+      "lock_type": "uv",
+      "member_task_ids": [
+        "saleor-rc-11756ee6b65a"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-5d6c9a0e0c10",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-591718dce38a",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "UV_EXPORT",
+      "lock_type": "uv",
+      "member_task_ids": [
+        "saleor-rc-032b98afff20"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-70bfccaf270a",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-591718dce38a",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "UV_EXPORT",
+      "lock_type": "uv",
+      "member_task_ids": [
+        "saleor-rc-0ad61b3f0096"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-a213391f6471",
+      "immutable_image_id": "sha256:465462307d07236a5424b146f3e19f9462970121a21e17f331db849c8008d2ac",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-02b9bb45ba01",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "UV_EXPORT",
+      "lock_type": "uv",
+      "member_task_ids": [
+        "saleor-rc-3cac33590b90"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-1b6e1e44d2b8",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-591718dce38a",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "UV_EXPORT",
+      "lock_type": "uv",
+      "member_task_ids": [
+        "saleor-rc-30b4edece5aa",
+        "saleor-rc-e0890780bf56"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-a75c2a6f15c3",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-591718dce38a",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "UV_EXPORT",
+      "lock_type": "uv",
+      "member_task_ids": [
+        "saleor-rc-22a30bf2e4cc",
+        "saleor-rc-333febd35223",
+        "saleor-rc-fd463c8aae38"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-167dda0843d5",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-591718dce38a",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "UV_EXPORT",
+      "lock_type": "uv",
+      "member_task_ids": [
+        "saleor-rc-46456e7317ca"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-c25b088a37f7",
+      "immutable_image_id": "sha256:465462307d07236a5424b146f3e19f9462970121a21e17f331db849c8008d2ac",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-02b9bb45ba01",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "UV_EXPORT",
+      "lock_type": "uv",
+      "member_task_ids": [
+        "saleor-rc-d6656e0f2a1d"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-b01a5665c996",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-591718dce38a",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "UV_EXPORT",
+      "lock_type": "uv",
+      "member_task_ids": [
+        "saleor-rc-d361479ab7da"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-fddb2fe50625",
+      "immutable_image_id": "sha256:465462307d07236a5424b146f3e19f9462970121a21e17f331db849c8008d2ac",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-02b9bb45ba01",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "UV_EXPORT",
+      "lock_type": "uv",
+      "member_task_ids": [
+        "saleor-rc-07c8859c0ac3",
+        "saleor-rc-481c2d367c6f"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-bfe987de6e53",
+      "immutable_image_id": "sha256:a8687d9c7c5c8502ad019c1877e4c632ddc005f8c3b56a33a46bb3373c2ffb3a",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-0728db662cde",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "UV_EXPORT",
+      "lock_type": "uv",
+      "member_task_ids": [
+        "saleor-rc-0179b331be38"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-b772fe8ae517",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-591718dce38a",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "UV_EXPORT",
+      "lock_type": "uv",
+      "member_task_ids": [
+        "saleor-rc-138ee68c3818",
+        "saleor-rc-2c770c685a57",
+        "saleor-rc-c31fb4cfd08f"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-766af1c5d395",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-591718dce38a",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "UV_EXPORT",
+      "lock_type": "uv",
+      "member_task_ids": [
+        "saleor-rc-7e42fc67ce72",
+        "saleor-rc-e7175003a542"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-c1cf6680490b",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-591718dce38a",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "UV_EXPORT",
+      "lock_type": "uv",
+      "member_task_ids": [
+        "saleor-rc-796f4a0fd969"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-7aa21cafb78c",
+      "immutable_image_id": "sha256:465462307d07236a5424b146f3e19f9462970121a21e17f331db849c8008d2ac",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-02b9bb45ba01",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "UV_EXPORT",
+      "lock_type": "uv",
+      "member_task_ids": [
+        "saleor-rc-224bf29fb39f",
+        "saleor-rc-8e6164e3d123"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-2964dfd4c127",
+      "immutable_image_id": "sha256:465462307d07236a5424b146f3e19f9462970121a21e17f331db849c8008d2ac",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-02b9bb45ba01",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "UV_EXPORT",
+      "lock_type": "uv",
+      "member_task_ids": [
+        "saleor-rc-db5440f7994f"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-1418395d176d",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-591718dce38a",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "UV_EXPORT",
+      "lock_type": "uv",
+      "member_task_ids": [
+        "saleor-rc-b35783838e51"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-fa3b1afc1fc7",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-591718dce38a",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "UV_EXPORT",
+      "lock_type": "uv",
+      "member_task_ids": [
+        "saleor-rc-d498167dcd30",
+        "saleor-rc-e8733aee630a"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-69dc51c7f829",
+      "immutable_image_id": "sha256:a8687d9c7c5c8502ad019c1877e4c632ddc005f8c3b56a33a46bb3373c2ffb3a",
+      "docker_profile_id": "dk-py312-bookworm",
+      "native_profile_id": "nat-0728db662cde",
+      "python_version": "3.12",
+      "wheelhouse_era": "py312",
+      "install_route": "UV_EXPORT",
+      "lock_type": "uv",
+      "member_task_ids": [
+        "saleor-rc-0f16ed78b02b",
+        "saleor-rc-940b8d83ec5c"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-eda4e9f82401",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "docker_profile_id": "dk-py38-bullseye",
+      "native_profile_id": "nat-62bc3631c27d",
+      "python_version": "3.8",
+      "wheelhouse_era": "py38",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-208833e2fa53",
+        "saleor-rc-63a31dd3c8ca"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-895115c0587f",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "docker_profile_id": "dk-py38-bullseye",
+      "native_profile_id": "nat-62bc3631c27d",
+      "python_version": "3.8",
+      "wheelhouse_era": "py38",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-85d416c024e1"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-be8f8b160f49",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "docker_profile_id": "dk-py38-bullseye",
+      "native_profile_id": "nat-62bc3631c27d",
+      "python_version": "3.8",
+      "wheelhouse_era": "py38",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-367b8038f6b9"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-e087af14cbdc",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "docker_profile_id": "dk-py38-bullseye",
+      "native_profile_id": "nat-62bc3631c27d",
+      "python_version": "3.8",
+      "wheelhouse_era": "py38",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-99041211cf9e"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-9148a5fac7f7",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "docker_profile_id": "dk-py38-bullseye",
+      "native_profile_id": "nat-62bc3631c27d",
+      "python_version": "3.8",
+      "wheelhouse_era": "py38",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-05bdc7feb9ac",
+        "saleor-rc-30fe250747ae",
+        "saleor-rc-9057e82cea23"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-2a340620f37b",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "docker_profile_id": "dk-py38-bullseye",
+      "native_profile_id": "nat-62bc3631c27d",
+      "python_version": "3.8",
+      "wheelhouse_era": "py38",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-1fa6a637c7fc"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-6657777e194c",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "docker_profile_id": "dk-py38-bullseye",
+      "native_profile_id": "nat-62bc3631c27d",
+      "python_version": "3.8",
+      "wheelhouse_era": "py38",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-1f6fbe2ebf9b"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-c17ac95f2f69",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "docker_profile_id": "dk-py38-bullseye",
+      "native_profile_id": "nat-62bc3631c27d",
+      "python_version": "3.8",
+      "wheelhouse_era": "py38",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-03be7057c1f1"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-93d83a7dfa9a",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "docker_profile_id": "dk-py38-bullseye",
+      "native_profile_id": "nat-62bc3631c27d",
+      "python_version": "3.8",
+      "wheelhouse_era": "py38",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-2c218aadc9b7",
+        "saleor-rc-37a3a7bbec31",
+        "saleor-rc-6370f4a6b8a5"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-cdcf3222cbb5",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "docker_profile_id": "dk-py38-bullseye",
+      "native_profile_id": "nat-62bc3631c27d",
+      "python_version": "3.8",
+      "wheelhouse_era": "py38",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-8220a53473bb"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-56c3822062f3",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "docker_profile_id": "dk-py38-bullseye",
+      "native_profile_id": "nat-62bc3631c27d",
+      "python_version": "3.8",
+      "wheelhouse_era": "py38",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-5c50110d46a2"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-31452711b5ad",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "docker_profile_id": "dk-py38-bullseye",
+      "native_profile_id": "nat-62bc3631c27d",
+      "python_version": "3.8",
+      "wheelhouse_era": "py38",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-32f73ff32b2b",
+        "saleor-rc-f3a1ec65571f"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-ebc9a2321b77",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "docker_profile_id": "dk-py38-bullseye",
+      "native_profile_id": "nat-62bc3631c27d",
+      "python_version": "3.8",
+      "wheelhouse_era": "py38",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-12007c00e480",
+        "saleor-rc-305415e0f8b7"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-d70446795f77",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "docker_profile_id": "dk-py38-bullseye",
+      "native_profile_id": "nat-62bc3631c27d",
+      "python_version": "3.8",
+      "wheelhouse_era": "py38",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-cd076fed6118"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-75b210e72939",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "docker_profile_id": "dk-py38-bullseye",
+      "native_profile_id": "nat-62bc3631c27d",
+      "python_version": "3.8",
+      "wheelhouse_era": "py38",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-ab6c29ba265d"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-457f26c93ff1",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-10889526d151"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-2483fd026a5e",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-2a59d31fc839"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-34976fcfcdb9",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-7b3fbb77c331",
+        "saleor-rc-eaf1577585a2",
+        "saleor-rc-f953990d221b"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-ffe68ddec229",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "V2_EDITABLE_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-f4eeba7fab16"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-0e0ef31c7634",
+      "immutable_image_id": "sha256:8c90d36aca1393a619f4448e1adfd6c307f27518c44df7baa6320d1ebaaec3ae",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d7d5ae76a87f",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-add4064d238e"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-431fd44d4e16",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-54bbb04b8954",
+        "saleor-rc-a17f11cf7e87"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-fe57def0dadc",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-55ff6b5b2b65"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-fe7a88128f65",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-7691de1ea22e"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-9a5ec59e6d06",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-884327b653cc",
+        "saleor-rc-bd0c56fc787e",
+        "saleor-rc-c87441bb1464",
+        "saleor-rc-c9c1cc0968d3",
+        "saleor-rc-d3ab58054844"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-cd262bbb641d",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-484ce8815cf4"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-37c7da0c0820",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-a7a2bf4146ba"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-c5caaf2a1d6f",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "V2_EDITABLE_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-0df62b3144b0"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-04c71da705ac",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-d8a4cd122bf0"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-cf9b71629fb0",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-1b4da5a88d08"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-cfed8240ddbc",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "V2_EDITABLE_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-67cd71a9e0b7"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-eba04e0cfe0e",
+      "immutable_image_id": "sha256:8c90d36aca1393a619f4448e1adfd6c307f27518c44df7baa6320d1ebaaec3ae",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d7d5ae76a87f",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-52a797b00af3"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-3cc575189c53",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-45301d74fb45"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-930970ddfe91",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "V2_EDITABLE_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-5d2721a36364",
+        "saleor-rc-c4dac9df4baf",
+        "saleor-rc-ddb8921a6744",
+        "saleor-rc-e429b8be07fd"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-9218196782bc",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-6c928b72daa4"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-c3065f6a2b55",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-03c5a9916858"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-b634339e1f8a",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-18430f2a7a16"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-f98d47987c04",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "V2_EDITABLE_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-e28ca6ad6442"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-894cec50f546",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "V2_EDITABLE_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-e129a4d6f9b1"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-2dc07b65457d",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-95db464ad4ea"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-7fc2380ce441",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "V2_EDITABLE_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-74fbba6d0734",
+        "saleor-rc-f605058a13e8"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-f65903cda35f",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-df7c7d4e8466"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-6e164d4710fa",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-28799575c518",
+        "saleor-rc-29c2d1abdce0",
+        "saleor-rc-ba4ff17faab4",
+        "saleor-rc-ef4d31a09e7c"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-ef2b9ed85c06",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-3513064157fa",
+        "saleor-rc-a9121e630814"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-449f84e63781",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-349d88efcfec",
+        "saleor-rc-bcd9f60d2aef"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-1bc025c648a9",
+      "immutable_image_id": "sha256:8c90d36aca1393a619f4448e1adfd6c307f27518c44df7baa6320d1ebaaec3ae",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d7d5ae76a87f",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-693eb302968c"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-211923a4bbb9",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-9b96c1602b1f",
+        "saleor-rc-b8786c1bf4d3"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-c80b536f2407",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-2c44b8eccc2c"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-1322f72e5363",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-bf938e731bd8"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-25266c00d332",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-1f47b503f69e"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-18938eea2931",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-b60266933f7a"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-69576eeb06f2",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-0fd3a4d986a0"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-bedcd6ce97ff",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-17c8d807b3d1"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-d0ceadc7a5d0",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-571a3b145aea",
+        "saleor-rc-8b0cbe2fb72f"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-a199ad1732dc",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-c38263743e9e"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-ff51c2dbdaf7",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-66907b149076"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-27136572a530",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-b0245506e69b",
+        "saleor-rc-d299e27e5f04"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-648e07c887c6",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-349fe0c194a1"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-d391fc5c988e",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-c428b47bddc5"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-bd505dbe0e91",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "V2_EDITABLE_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-0c1062eb0da6",
+        "saleor-rc-4386f322f659",
+        "saleor-rc-65dfc61ec9fc",
+        "saleor-rc-b41168d9077d",
+        "saleor-rc-ba0f225cc7d3"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-9af2f5398149",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-24f9b244d6bc",
+        "saleor-rc-5821309aed09",
+        "saleor-rc-6a1f884168d2",
+        "saleor-rc-fd5b7971c5d2"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-c4f8d5ea7e5a",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-1af1c3a368ec",
+        "saleor-rc-dd8ead382526",
+        "saleor-rc-ea98ffa79753"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-0925adc62ab4",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-45cfb26218c8"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-b38ed89dc9a4",
+      "immutable_image_id": "sha256:8c90d36aca1393a619f4448e1adfd6c307f27518c44df7baa6320d1ebaaec3ae",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d7d5ae76a87f",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-50eff94aa37c",
+        "saleor-rc-fbfc66e3a46b"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-b0971c77cd3b",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "V2_EDITABLE_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-63a25a0c46d5",
+        "saleor-rc-f3a0bc28797b"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-2bcc39756c5a",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-b2622810adf1"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-e009f3a36367",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-f1d4e82c1dea"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-3975af462f4e",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-8c8d9db54d63"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-a49265fc9017",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "V2_EDITABLE_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-02dfdad9985b",
+        "saleor-rc-14a682044ca4"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-27e8f29e8efc",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-506cd1157e9c"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-60d3684b344f",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-4e45b83e7475",
+        "saleor-rc-65643ec7c37f"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-25c83915bd75",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-1f9b5c53a63a",
+        "saleor-rc-bd64d6fdbe4b"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-481aef932595",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-4931e989d82d"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-bbb37661a274",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-b0672eea0422"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-afe5a5c0e422",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-843a2c1905ad"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-0f0447cc3e76",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-a5e831779345"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-f36465a05af1",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-1abda1e0d36e"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-87c9ec56b2bc",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-a650f8f05c02",
+        "saleor-rc-c0d4785abd74"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-b6f3aa535043",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "V2_EDITABLE_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-255d39da978a",
+        "saleor-rc-c12e83aac8f6"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-3f1261723b37",
+      "immutable_image_id": "sha256:8c90d36aca1393a619f4448e1adfd6c307f27518c44df7baa6320d1ebaaec3ae",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d7d5ae76a87f",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-5f78ba7b1647"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-92d8208bc063",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-373efa067922"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-5985a7f5c711",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-4adf36dfdbe7"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-c9fbfeece4f3",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "V2_EDITABLE_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-cae629dc4166",
+        "saleor-rc-cbd7310268c6"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-38186b1280dd",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-b2e3652af826"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-9ed193747002",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-81d02e76b22e",
+        "saleor-rc-c6220233ccb1"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-6a7d0c94de02",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-094b1ec0f610"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-27ae8fa10bfc",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-27b65eae2a9a"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-2864e8ec8e21",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-c7207e71e0d3"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-28c3ab8a0637",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-33010c0d5f7f"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-5cf74906951d",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-9b88221ba8c2"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-a677a0561630",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-a93a877388ae"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-d5a8e4885ae5",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-0b46c89dfd9e"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-f393f956c6ee",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-585562cf1cec"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-048cdcee7907",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-14f2176b5d8c"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-cff7c5fc6d8e",
+      "immutable_image_id": "sha256:8c90d36aca1393a619f4448e1adfd6c307f27518c44df7baa6320d1ebaaec3ae",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d7d5ae76a87f",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-e089e93419bf"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-6fa34a604db4",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "V2_EDITABLE_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-a36d8a8d0c0c"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-101c124a89c7",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "docker_profile_id": "dk-py39-bookworm",
+      "native_profile_id": "nat-f65b9bf250fd",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-a576e993bab7"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-00c65e6f8459",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-5c458f26276d"
+      ]
+    },
+    {
+      "validation_unit_id": "vu-ef6a56039231",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "docker_profile_id": "dk-py39-bullseye",
+      "native_profile_id": "nat-d35546f097f4",
+      "python_version": "3.9",
+      "wheelhouse_era": "py39",
+      "install_route": "REQ_MAIN_PLUS_LOCK_DEV",
+      "lock_type": "poetry",
+      "member_task_ids": [
+        "saleor-rc-aa2bcdd0c218"
+      ]
+    }
+  ],
+  "per_task": [
+    {
+      "task_id": "saleor-rc-438595033c60",
+      "validation_unit_id": "vu-e4998719ee01",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "era_key": "py312",
+      "target_commit": "438595033c608219a88583ae91d50f2e2415e558",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "061fd394d8be251e058f6ba17b0bf67de295abca8b5a655ae1cba7b894cac6d5"
+    },
+    {
+      "task_id": "saleor-rc-fa1ed1794a8a",
+      "validation_unit_id": "vu-e4998719ee01",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "era_key": "py312",
+      "target_commit": "fa1ed1794a8a84bcebee8c3b8dbe47128fa44833",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "061fd394d8be251e058f6ba17b0bf67de295abca8b5a655ae1cba7b894cac6d5"
+    },
+    {
+      "task_id": "saleor-rc-f5d2c47e47c3",
+      "validation_unit_id": "vu-b68ee1b3ad18",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "era_key": "py312",
+      "target_commit": "f5d2c47e47c3dd5a13a9084188467ec6f875f6fc",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "31209f372a13ebc46c404146d27d5d3cfc0b791bb9fc07737ff8ad82a8d2fa42"
+    },
+    {
+      "task_id": "saleor-rc-5f8b1cc4db2d",
+      "validation_unit_id": "vu-262f45bffe92",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "era_key": "py312",
+      "target_commit": "5f8b1cc4db2d54295193eb92d7b862164ce197ce",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "b41d32c04f90f5c764945ce1bcb9f9ec6fe22f563e0daae518045de0d09be1cb"
+    },
+    {
+      "task_id": "saleor-rc-80a33b28b80d",
+      "validation_unit_id": "vu-db74b3640c98",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "80a33b28b80d7010adad6637bc1b954a243727aa",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "446ae682b9513bf04238b7b633c5197760173dac2b2a36016aec3b61bcc98974"
+    },
+    {
+      "task_id": "saleor-rc-697cbdc85b4a",
+      "validation_unit_id": "vu-e878163db06a",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "697cbdc85b4a184c1b07c91303e47506d30b0b1e",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "f2f71bd92b47906e86810f3d0458060fe9928e4a314742cb0e5f1d931b535842"
+    },
+    {
+      "task_id": "saleor-rc-8a03c74411d7",
+      "validation_unit_id": "vu-e878163db06a",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "8a03c74411d770143828db11ea553842c8809b4b",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "f2f71bd92b47906e86810f3d0458060fe9928e4a314742cb0e5f1d931b535842"
+    },
+    {
+      "task_id": "saleor-rc-8eb11da07f09",
+      "validation_unit_id": "vu-e878163db06a",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "8eb11da07f09437374cb82daa6f10a80a11a1c90",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "f2f71bd92b47906e86810f3d0458060fe9928e4a314742cb0e5f1d931b535842"
+    },
+    {
+      "task_id": "saleor-rc-954887b39f13",
+      "validation_unit_id": "vu-422bca69f329",
+      "immutable_image_id": "sha256:acad85904c7011374316d5b44ecb8967628eb3fd6da9ddd2744c0be396728be6",
+      "era_key": "py312",
+      "target_commit": "954887b39f13ab0beabb11a604bd3bf9de1b4c0e",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "f2f71bd92b47906e86810f3d0458060fe9928e4a314742cb0e5f1d931b535842"
+    },
+    {
+      "task_id": "saleor-rc-99f9e28f8b6f",
+      "validation_unit_id": "vu-117d7bd068d5",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "era_key": "py312",
+      "target_commit": "99f9e28f8b6f9dc5029a6b3082a66ab546e07f01",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "80fe4d059f8c8b5169f8d6aea89c4702b6d4fe789cdd90f51c0a94b4b3037820"
+    },
+    {
+      "task_id": "saleor-rc-dea5ffb730ac",
+      "validation_unit_id": "vu-117d7bd068d5",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "era_key": "py312",
+      "target_commit": "dea5ffb730acea34e4f6a5f15cc17036149c9cce",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "022a54bddb5bff3e2620035b14cef96c7127cb9e55d9778df30d40e065c3e88d"
+    },
+    {
+      "task_id": "saleor-rc-d7b03a3eeec0",
+      "validation_unit_id": "vu-5321e03160a1",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "d7b03a3eeec016efdcc6119ae4cd77726df9b282",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "0da33303ac97d49a2c7ed770835196e21955994ce2d9fa814d37344c4b4b1735"
+    },
+    {
+      "task_id": "saleor-rc-36a9a14e8d12",
+      "validation_unit_id": "vu-0d8ddec94417",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "36a9a14e8d12aad4479ff86e53ac73febd68d782",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "806d6bcffda25a6f9a95dfc118f84be9e74db6144652615d7c08eb3f971db99d"
+    },
+    {
+      "task_id": "saleor-rc-7b1e8cee95d5",
+      "validation_unit_id": "vu-561a1a172143",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "7b1e8cee95d53c6662953ff86a63d8b1761055a7",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "5b7f60a8abebccf5c7d57729996f67eac6175c0d16447d5c14107e362375ebd5"
+    },
+    {
+      "task_id": "saleor-rc-b97d1d9c7064",
+      "validation_unit_id": "vu-561a1a172143",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "b97d1d9c70647376e0950a945c20d1cfd2dc3617",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "5b7f60a8abebccf5c7d57729996f67eac6175c0d16447d5c14107e362375ebd5"
+    },
+    {
+      "task_id": "saleor-rc-3d304a30a5bc",
+      "validation_unit_id": "vu-e40f7e955c05",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "era_key": "py312",
+      "target_commit": "3d304a30a5bcc96b8abb6ac35fc6c75f20cbad45",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "4b3f2102101e27bcfa604fdeecf4e1b44d25cb9f0d8bd9df0bd26cd5097ed57e"
+    },
+    {
+      "task_id": "saleor-rc-aea05da547c8",
+      "validation_unit_id": "vu-e40f7e955c05",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "era_key": "py312",
+      "target_commit": "aea05da547c8df078082d2a59e12a9cd54192f3c",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "4b3f2102101e27bcfa604fdeecf4e1b44d25cb9f0d8bd9df0bd26cd5097ed57e"
+    },
+    {
+      "task_id": "saleor-rc-e6198146186d",
+      "validation_unit_id": "vu-b9808f19ace4",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "era_key": "py312",
+      "target_commit": "e6198146186d1c782bf46f6c9439fa05b1049b2f",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "8eb57cfa6bceaf522caa8ae41508f5d5b1ed714e1e9e93965a391be4eed854a4"
+    },
+    {
+      "task_id": "saleor-rc-07f02e2c40ae",
+      "validation_unit_id": "vu-148c254cdec8",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "07f02e2c40ae9357db33f6e24068ccd3095eace4",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "886cc323f25540a1c8e8ef6c22be882effd4c0ee1cee80432052ea6318093934"
+    },
+    {
+      "task_id": "saleor-rc-663543eaf563",
+      "validation_unit_id": "vu-148c254cdec8",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "663543eaf563e773983e2482b667c45bc540d54b",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "886cc323f25540a1c8e8ef6c22be882effd4c0ee1cee80432052ea6318093934"
+    },
+    {
+      "task_id": "saleor-rc-a9e79dac40a2",
+      "validation_unit_id": "vu-148c254cdec8",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "a9e79dac40a2f203417a5e822c26d62359f6645c",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "886cc323f25540a1c8e8ef6c22be882effd4c0ee1cee80432052ea6318093934"
+    },
+    {
+      "task_id": "saleor-rc-bd11af3ea0a4",
+      "validation_unit_id": "vu-148c254cdec8",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "bd11af3ea0a496febb937759cbe59bb9cb7b90f4",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "886cc323f25540a1c8e8ef6c22be882effd4c0ee1cee80432052ea6318093934"
+    },
+    {
+      "task_id": "saleor-rc-ccd3960acd1d",
+      "validation_unit_id": "vu-148c254cdec8",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "ccd3960acd1d058528d9796c2b9ff096f28d848e",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "886cc323f25540a1c8e8ef6c22be882effd4c0ee1cee80432052ea6318093934"
+    },
+    {
+      "task_id": "saleor-rc-f623ab428821",
+      "validation_unit_id": "vu-148c254cdec8",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "f623ab428821155d90063021fc2b643d4601819a",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "886cc323f25540a1c8e8ef6c22be882effd4c0ee1cee80432052ea6318093934"
+    },
+    {
+      "task_id": "saleor-rc-5477b7dd3867",
+      "validation_unit_id": "vu-8228f26085f6",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "5477b7dd3867bc4be1257bd38a63cd9545d4a52e",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "a112476c078a458ccf68e0b51e6e66c7acf3bfa266d90a4350a93c13f86bbcda"
+    },
+    {
+      "task_id": "saleor-rc-dacded922b1f",
+      "validation_unit_id": "vu-33422e2343f1",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "era_key": "py312",
+      "target_commit": "dacded922b1f6482c90e12baa27fbc9109c89a29",
+      "f2p_total": 8,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 8,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "491b6d5f83d248fdd4fe9802bb1b13f008972d86f5b6071d6d8efcf7c95e8933"
+    },
+    {
+      "task_id": "saleor-rc-eb61406cecc5",
+      "validation_unit_id": "vu-33422e2343f1",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "era_key": "py312",
+      "target_commit": "eb61406cecc519cea6b2cbd7f042d1d4975e7075",
+      "f2p_total": 1,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 1,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "491b6d5f83d248fdd4fe9802bb1b13f008972d86f5b6071d6d8efcf7c95e8933"
+    },
+    {
+      "task_id": "saleor-rc-fe6e46266e81",
+      "validation_unit_id": "vu-33422e2343f1",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "era_key": "py312",
+      "target_commit": "fe6e46266e81980fad8675334613625e8880b1fd",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "491b6d5f83d248fdd4fe9802bb1b13f008972d86f5b6071d6d8efcf7c95e8933"
+    },
+    {
+      "task_id": "saleor-rc-9c032845e29b",
+      "validation_unit_id": "vu-a1f3d1a5d841",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "era_key": "py312",
+      "target_commit": "9c032845e29b8d5dc1d40ee812fc2111b6bb2f42",
+      "f2p_total": 12,
+      "behavioral_f2p": 12,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "76707d5b57f6dff158ed11d28060694db1351b80253621d5b1e50d0d7bec56d2"
+    },
+    {
+      "task_id": "saleor-rc-19bb9b070965",
+      "validation_unit_id": "vu-692af9112c6d",
+      "immutable_image_id": "sha256:1be41dd22a934cc56ed10fa1046234a450f6d2946f8099d7bcb501f696f1d759",
+      "era_key": "py312",
+      "target_commit": "19bb9b0709654010d1b4e4e9049af119d3b28815",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "910679a79d1d9b951fe366aa612ac3611d1a4a49a25adf464ca3614c36883773"
+    },
+    {
+      "task_id": "saleor-rc-f74a5394c7f1",
+      "validation_unit_id": "vu-021cfd4955e7",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "f74a5394c7f15392450bd9074d406c292abbb2fd",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "3e4ab7d3e890480b5477293201bad1781166912f8037f8bb2acf8279109a8e06"
+    },
+    {
+      "task_id": "saleor-rc-659af1b19239",
+      "validation_unit_id": "vu-3a7ebc8e23c7",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "659af1b19239efec168ffd752bb908f9e93ea65e",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "0097a276403dcbcb20e2913e31aaa18981d159b6bb1189704f0eab6484477252"
+    },
+    {
+      "task_id": "saleor-rc-1a8b592913a0",
+      "validation_unit_id": "vu-f4038beff05f",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "1a8b592913a0cadca6d0b171e9afb2f8e4b823f6",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "0faf096b51b45e34bddb9562a32a41de5eb6394da8eb2b909c219b50975e2149"
+    },
+    {
+      "task_id": "saleor-rc-d4fcbd22a853",
+      "validation_unit_id": "vu-f4038beff05f",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "d4fcbd22a8536be6a5ba4c0254eac89b67799b8e",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "0faf096b51b45e34bddb9562a32a41de5eb6394da8eb2b909c219b50975e2149"
+    },
+    {
+      "task_id": "saleor-rc-78c9081e2731",
+      "validation_unit_id": "vu-dcd39990cb98",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "era_key": "py312",
+      "target_commit": "78c9081e273173907d50b255310be2b4cbfe0658",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "57b6ff970aac04e882b554d08b6e9eae7fbf32b7f91dfea4d55903f89fd77219"
+    },
+    {
+      "task_id": "saleor-rc-4800fa0beb60",
+      "validation_unit_id": "vu-0a27b4b8eb0a",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "era_key": "py312",
+      "target_commit": "4800fa0beb6063e2d4b0fdbdef142259bed717fd",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "d2d315718c4dd4dab366a8df829fcd9a707da44afdda07af22627a8059ad29a7"
+    },
+    {
+      "task_id": "saleor-rc-aa814bd5f355",
+      "validation_unit_id": "vu-dade0b4b5b60",
+      "immutable_image_id": "sha256:24b7945d2f6c62c90a71efa0e6433d32147f1632aca7fce5add2566d62f5bc4b",
+      "era_key": "py312",
+      "target_commit": "aa814bd5f35544df10e5ac258913d14e59343e4e",
+      "f2p_total": 4,
+      "behavioral_f2p": 4,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "76707d5b57f6dff158ed11d28060694db1351b80253621d5b1e50d0d7bec56d2"
+    },
+    {
+      "task_id": "saleor-rc-0e895847d8ae",
+      "validation_unit_id": "vu-c94437ca6633",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "0e895847d8aee6399aedb00420cf602a31eb9094",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "09b032428b8d26afab3a4c6210ae188dcbbb99c1544814a7487c2089a98527fa"
+    },
+    {
+      "task_id": "saleor-rc-b79cf8f91f04",
+      "validation_unit_id": "vu-c94437ca6633",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "b79cf8f91f04a919b16912bdb6ec1aae0ec85cad",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "09b032428b8d26afab3a4c6210ae188dcbbb99c1544814a7487c2089a98527fa"
+    },
+    {
+      "task_id": "saleor-rc-f6a3751a8bc2",
+      "validation_unit_id": "vu-c94437ca6633",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "f6a3751a8bc2bba473ac7e716a13d330c7ad0cfc",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "09b032428b8d26afab3a4c6210ae188dcbbb99c1544814a7487c2089a98527fa"
+    },
+    {
+      "task_id": "saleor-rc-5144ee6bd55f",
+      "validation_unit_id": "vu-4b390d4acaf6",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "5144ee6bd55fd1e31d205fa50659a5db07c27bbb",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "84696f48edbd9352afa58a3e6e280d2e2364968f298c32a4e56106fcc6756782"
+    },
+    {
+      "task_id": "saleor-rc-a1e1e2554327",
+      "validation_unit_id": "vu-4b390d4acaf6",
+      "immutable_image_id": "sha256:998e20c52603c7915c42b525fc1cd3d524df91cabbea89082d5abc5db60b8893",
+      "era_key": "py312",
+      "target_commit": "a1e1e2554327d91038149233c46ff05d5169ccad",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "84696f48edbd9352afa58a3e6e280d2e2364968f298c32a4e56106fcc6756782"
+    },
+    {
+      "task_id": "saleor-rc-e0f2933d58b9",
+      "validation_unit_id": "vu-13c1de1de71e",
+      "immutable_image_id": "sha256:465462307d07236a5424b146f3e19f9462970121a21e17f331db849c8008d2ac",
+      "era_key": "py312",
+      "target_commit": "e0f2933d58b973ae61ca26b22a89da026aaaa7ad",
+      "f2p_total": 6,
+      "behavioral_f2p": 6,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "a54525a68e382dce105587a96532f099f3940eb472d3d6f734ef072a6fd77d18"
+    },
+    {
+      "task_id": "saleor-rc-3bf31ab2fefc",
+      "validation_unit_id": "vu-b78ebcf3e530",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "3bf31ab2fefca154d841803c9fc71057938ce5f9",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "7d811b3178667d71aef19c96078448a47dd6c36488421a3bccf2020b0bc61895"
+    },
+    {
+      "task_id": "saleor-rc-95dbffbc523a",
+      "validation_unit_id": "vu-b78ebcf3e530",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "95dbffbc523a5a8865ead2a2649913491ac8e89c",
+      "f2p_total": 5,
+      "behavioral_f2p": 5,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "7d811b3178667d71aef19c96078448a47dd6c36488421a3bccf2020b0bc61895"
+    },
+    {
+      "task_id": "saleor-rc-b356a525ba2a",
+      "validation_unit_id": "vu-b78ebcf3e530",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "b356a525ba2ab918b85b6b617ac4df499e70e247",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "7d811b3178667d71aef19c96078448a47dd6c36488421a3bccf2020b0bc61895"
+    },
+    {
+      "task_id": "saleor-rc-ce3b63edecef",
+      "validation_unit_id": "vu-b78ebcf3e530",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "ce3b63edecef7c942ac88888a4bc77149086bbd3",
+      "f2p_total": 24,
+      "behavioral_f2p": 22,
+      "symbol_absence_f2p": 2,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "7d811b3178667d71aef19c96078448a47dd6c36488421a3bccf2020b0bc61895"
+    },
+    {
+      "task_id": "saleor-rc-ffe3a3ece0fb",
+      "validation_unit_id": "vu-b78ebcf3e530",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "ffe3a3ece0fb29cfbb7c02a032c86da31d17e8b3",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "7d811b3178667d71aef19c96078448a47dd6c36488421a3bccf2020b0bc61895"
+    },
+    {
+      "task_id": "saleor-rc-11756ee6b65a",
+      "validation_unit_id": "vu-9d7a49485c23",
+      "immutable_image_id": "sha256:465462307d07236a5424b146f3e19f9462970121a21e17f331db849c8008d2ac",
+      "era_key": "py312",
+      "target_commit": "11756ee6b65a255869f551e838edec1742b1c2ce",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "c3e845bb8cf44914e3d1c4d8c2afd8dfbc7f090f1d6236c5e39d6ef9e7771a01"
+    },
+    {
+      "task_id": "saleor-rc-032b98afff20",
+      "validation_unit_id": "vu-5d6c9a0e0c10",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "032b98afff2026468336882ffc04f235243fc4fc",
+      "f2p_total": 169,
+      "behavioral_f2p": 169,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "aa89320e681681c860a170a58e34438149bf508bcf123c399af90b527f9edbf3"
+    },
+    {
+      "task_id": "saleor-rc-0ad61b3f0096",
+      "validation_unit_id": "vu-70bfccaf270a",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "0ad61b3f0096a50a0ec8e80b2c1905b06e11aa7d",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "08d0829b73f18c8fbb5e85fbd5ca0d43f5437cf7111966e307ebcb6c9fce34c6"
+    },
+    {
+      "task_id": "saleor-rc-3cac33590b90",
+      "validation_unit_id": "vu-a213391f6471",
+      "immutable_image_id": "sha256:465462307d07236a5424b146f3e19f9462970121a21e17f331db849c8008d2ac",
+      "era_key": "py312",
+      "target_commit": "3cac33590b90fd34e33ac593180c67f014d9a372",
+      "f2p_total": 4,
+      "behavioral_f2p": 4,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "17864b34ab45c2bf0bf14d59b30b32c22aa8c6c5f2837e6c0513758ae3fb430b"
+    },
+    {
+      "task_id": "saleor-rc-30b4edece5aa",
+      "validation_unit_id": "vu-1b6e1e44d2b8",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "30b4edece5aa284f5a1e344e70350a680e43d9cd",
+      "f2p_total": 8,
+      "behavioral_f2p": 8,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "e98187f91677a1ce9e24a1746b93bdc10a9e552e69778e06763200869581855c"
+    },
+    {
+      "task_id": "saleor-rc-e0890780bf56",
+      "validation_unit_id": "vu-1b6e1e44d2b8",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "e0890780bf56856d2b20ac14b1786749309450ae",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "e98187f91677a1ce9e24a1746b93bdc10a9e552e69778e06763200869581855c"
+    },
+    {
+      "task_id": "saleor-rc-22a30bf2e4cc",
+      "validation_unit_id": "vu-a75c2a6f15c3",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "22a30bf2e4ccda91e1e43673d77e25d439f61746",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "6eda025d76462e1078c1730f1dd1e99285ce225d177ca878851514519e38bea6"
+    },
+    {
+      "task_id": "saleor-rc-333febd35223",
+      "validation_unit_id": "vu-a75c2a6f15c3",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "333febd3522379220788fabac4c716f426ccd76d",
+      "f2p_total": 17,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 17,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "6eda025d76462e1078c1730f1dd1e99285ce225d177ca878851514519e38bea6"
+    },
+    {
+      "task_id": "saleor-rc-fd463c8aae38",
+      "validation_unit_id": "vu-a75c2a6f15c3",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "fd463c8aae38b120f3d984fa881c1c7c61817591",
+      "f2p_total": 2,
+      "behavioral_f2p": 2,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "6eda025d76462e1078c1730f1dd1e99285ce225d177ca878851514519e38bea6"
+    },
+    {
+      "task_id": "saleor-rc-46456e7317ca",
+      "validation_unit_id": "vu-167dda0843d5",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "46456e7317ca5729241a9f62ff7250e3cf0b00a1",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "70faae8a09a4af5750551a24f17f674dab56e01951ae5963303d7653ff1031c3"
+    },
+    {
+      "task_id": "saleor-rc-d6656e0f2a1d",
+      "validation_unit_id": "vu-c25b088a37f7",
+      "immutable_image_id": "sha256:465462307d07236a5424b146f3e19f9462970121a21e17f331db849c8008d2ac",
+      "era_key": "py312",
+      "target_commit": "d6656e0f2a1d955b64a48fe21a7fd733203a8cd8",
+      "f2p_total": 2,
+      "behavioral_f2p": 2,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "1a5baa6ead40275b5a36bcb60e9f30523548b8bccdfac01e0ef9d535532a35df"
+    },
+    {
+      "task_id": "saleor-rc-d361479ab7da",
+      "validation_unit_id": "vu-b01a5665c996",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "d361479ab7da3060cf26e8dbb52c9aab89fab0c0",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "f894855a3d3990b26e04a8f8de707cae8cdda1b62c8b3b98ac3097e4c52b9120"
+    },
+    {
+      "task_id": "saleor-rc-07c8859c0ac3",
+      "validation_unit_id": "vu-fddb2fe50625",
+      "immutable_image_id": "sha256:465462307d07236a5424b146f3e19f9462970121a21e17f331db849c8008d2ac",
+      "era_key": "py312",
+      "target_commit": "07c8859c0ac3031174d6946371341c93175d176a",
+      "f2p_total": 2,
+      "behavioral_f2p": 2,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "c92d268f434f27d031329ce663dc3cd8ae8c66cc850ebb1db550788e1cf774f7"
+    },
+    {
+      "task_id": "saleor-rc-481c2d367c6f",
+      "validation_unit_id": "vu-fddb2fe50625",
+      "immutable_image_id": "sha256:465462307d07236a5424b146f3e19f9462970121a21e17f331db849c8008d2ac",
+      "era_key": "py312",
+      "target_commit": "481c2d367c6ffe14a5dff85aa983adbea911285c",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "220029cb18585b1c1ede5f24fd451018780a035c528931761e2c5ebedd3f721e"
+    },
+    {
+      "task_id": "saleor-rc-0179b331be38",
+      "validation_unit_id": "vu-bfe987de6e53",
+      "immutable_image_id": "sha256:a8687d9c7c5c8502ad019c1877e4c632ddc005f8c3b56a33a46bb3373c2ffb3a",
+      "era_key": "py312",
+      "target_commit": "0179b331be386e5075b69b868a8a16005a563b56",
+      "f2p_total": 4,
+      "behavioral_f2p": 4,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "4562748f38ecc2d12fce3e4e79b2900eecd8a1af0ace0de9e33c50649571dd85"
+    },
+    {
+      "task_id": "saleor-rc-138ee68c3818",
+      "validation_unit_id": "vu-b772fe8ae517",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "138ee68c3818affda0de12010f561fbf4d2caf9e",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "90bfa96c679c93febe209379f2827d5063843a5b4e884c03d918b60914fd2698"
+    },
+    {
+      "task_id": "saleor-rc-2c770c685a57",
+      "validation_unit_id": "vu-b772fe8ae517",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "2c770c685a57466c11d3cc9a0e9e12ed10243408",
+      "f2p_total": 49,
+      "behavioral_f2p": 49,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "90bfa96c679c93febe209379f2827d5063843a5b4e884c03d918b60914fd2698"
+    },
+    {
+      "task_id": "saleor-rc-c31fb4cfd08f",
+      "validation_unit_id": "vu-b772fe8ae517",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "c31fb4cfd08f5578c90b9109f98f662b119e208a",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "90bfa96c679c93febe209379f2827d5063843a5b4e884c03d918b60914fd2698"
+    },
+    {
+      "task_id": "saleor-rc-7e42fc67ce72",
+      "validation_unit_id": "vu-766af1c5d395",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "7e42fc67ce72770720440781fc83685a48bd91b8",
+      "f2p_total": 3,
+      "behavioral_f2p": 3,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "b626b3aebdf0489577bf0be4727ab1547332f00fa8779523aabb50fa9a41c2db"
+    },
+    {
+      "task_id": "saleor-rc-e7175003a542",
+      "validation_unit_id": "vu-766af1c5d395",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "e7175003a542258f15e341a90a305f6c4cc61df2",
+      "f2p_total": 15,
+      "behavioral_f2p": 15,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "b626b3aebdf0489577bf0be4727ab1547332f00fa8779523aabb50fa9a41c2db"
+    },
+    {
+      "task_id": "saleor-rc-796f4a0fd969",
+      "validation_unit_id": "vu-c1cf6680490b",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "796f4a0fd9690c374195135488c36e8641833f24",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "e3e88faa78a5475e9d004d4dd321f017f3c53216548d20d1ba2f1d67b5491041"
+    },
+    {
+      "task_id": "saleor-rc-224bf29fb39f",
+      "validation_unit_id": "vu-7aa21cafb78c",
+      "immutable_image_id": "sha256:465462307d07236a5424b146f3e19f9462970121a21e17f331db849c8008d2ac",
+      "era_key": "py312",
+      "target_commit": "224bf29fb39fd14645a5adfda42008ea5fb8d799",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "1687af13221ff4d2afcbd482ea8c4a2dc41e29d96f87d689eeb656fcf95ed10e"
+    },
+    {
+      "task_id": "saleor-rc-8e6164e3d123",
+      "validation_unit_id": "vu-7aa21cafb78c",
+      "immutable_image_id": "sha256:465462307d07236a5424b146f3e19f9462970121a21e17f331db849c8008d2ac",
+      "era_key": "py312",
+      "target_commit": "8e6164e3d12327496660f91f836d5c3222d8d2b6",
+      "f2p_total": 4,
+      "behavioral_f2p": 4,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "1687af13221ff4d2afcbd482ea8c4a2dc41e29d96f87d689eeb656fcf95ed10e"
+    },
+    {
+      "task_id": "saleor-rc-db5440f7994f",
+      "validation_unit_id": "vu-2964dfd4c127",
+      "immutable_image_id": "sha256:465462307d07236a5424b146f3e19f9462970121a21e17f331db849c8008d2ac",
+      "era_key": "py312",
+      "target_commit": "db5440f7994f02f85c621a604d9813329db43e56",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "6ef4a243a6ab07212b51f68e52c5394da2964f51bc96aed4bfc7ff4cdce6612c"
+    },
+    {
+      "task_id": "saleor-rc-b35783838e51",
+      "validation_unit_id": "vu-1418395d176d",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "b35783838e51cfc118e07d632f64b01bc3a2c4bb",
+      "f2p_total": 7,
+      "behavioral_f2p": 7,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "df6157e88d19aafcdfe303c5d9df7bb9b9f81fe2aa98af0e5804e8b45708b7ab"
+    },
+    {
+      "task_id": "saleor-rc-d498167dcd30",
+      "validation_unit_id": "vu-fa3b1afc1fc7",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "d498167dcd3037b15682c8ec8278d38ab1a465dd",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "63a66919ef68dc6b05624763ca950241f72b62c135ea62b54812f4e316da46f4"
+    },
+    {
+      "task_id": "saleor-rc-e8733aee630a",
+      "validation_unit_id": "vu-fa3b1afc1fc7",
+      "immutable_image_id": "sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+      "era_key": "py312",
+      "target_commit": "e8733aee630a007e0ec031e772ed517ce6c20e9d",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "63a66919ef68dc6b05624763ca950241f72b62c135ea62b54812f4e316da46f4"
+    },
+    {
+      "task_id": "saleor-rc-0f16ed78b02b",
+      "validation_unit_id": "vu-69dc51c7f829",
+      "immutable_image_id": "sha256:a8687d9c7c5c8502ad019c1877e4c632ddc005f8c3b56a33a46bb3373c2ffb3a",
+      "era_key": "py312",
+      "target_commit": "0f16ed78b02b579fb2ba90e5647319a9c5a3f9da",
+      "f2p_total": 3,
+      "behavioral_f2p": 3,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "4562748f38ecc2d12fce3e4e79b2900eecd8a1af0ace0de9e33c50649571dd85"
+    },
+    {
+      "task_id": "saleor-rc-940b8d83ec5c",
+      "validation_unit_id": "vu-69dc51c7f829",
+      "immutable_image_id": "sha256:a8687d9c7c5c8502ad019c1877e4c632ddc005f8c3b56a33a46bb3373c2ffb3a",
+      "era_key": "py312",
+      "target_commit": "940b8d83ec5c09aa19416c8bcf38d5c28696a991",
+      "f2p_total": 63,
+      "behavioral_f2p": 63,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "4562748f38ecc2d12fce3e4e79b2900eecd8a1af0ace0de9e33c50649571dd85"
+    },
+    {
+      "task_id": "saleor-rc-208833e2fa53",
+      "validation_unit_id": "vu-eda4e9f82401",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "era_key": "py38",
+      "target_commit": "208833e2fa53e41a0ef8767961edafe09240a3f5",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "babad1a386ae84bc5fb9a857662482fc30dda0ddee952b78991d17650d531e27"
+    },
+    {
+      "task_id": "saleor-rc-63a31dd3c8ca",
+      "validation_unit_id": "vu-eda4e9f82401",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "era_key": "py38",
+      "target_commit": "63a31dd3c8ca9f366b53756fc75c6679fd9768e5",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "babad1a386ae84bc5fb9a857662482fc30dda0ddee952b78991d17650d531e27"
+    },
+    {
+      "task_id": "saleor-rc-85d416c024e1",
+      "validation_unit_id": "vu-895115c0587f",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "era_key": "py38",
+      "target_commit": "85d416c024e17cc1be0821aef7653de2e5260da8",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "c0d66e9535dd04d97476d8c00a6e5d68f0b93ea04b337e4d304c0507886ab756"
+    },
+    {
+      "task_id": "saleor-rc-367b8038f6b9",
+      "validation_unit_id": "vu-be8f8b160f49",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "era_key": "py38",
+      "target_commit": "367b8038f6b9d260ef862d78c345f4ac98a321e1",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "530b5012c4de00f1938e7e674470c36f5de448629c0fc3847b31e5121c1daacd"
+    },
+    {
+      "task_id": "saleor-rc-99041211cf9e",
+      "validation_unit_id": "vu-e087af14cbdc",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "era_key": "py38",
+      "target_commit": "99041211cf9e01f39c1c7f8ffffbcbbdaea550bc",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "3b98fc30a8e025c93aba22e947dcf2d172428cfe4c13f8f4b50da58346a0edec"
+    },
+    {
+      "task_id": "saleor-rc-05bdc7feb9ac",
+      "validation_unit_id": "vu-9148a5fac7f7",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "era_key": "py38",
+      "target_commit": "05bdc7feb9acfba14424dc97a6dbefdd8ab8ecae",
+      "f2p_total": 25,
+      "behavioral_f2p": 24,
+      "symbol_absence_f2p": 1,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "a951567ca9932baaa0562cde46b358dc4e929ca8d9d08a3d6612fa23d83262d4"
+    },
+    {
+      "task_id": "saleor-rc-30fe250747ae",
+      "validation_unit_id": "vu-9148a5fac7f7",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "era_key": "py38",
+      "target_commit": "30fe250747ae7f41cbdc6a1d562385515b7ff88c",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "a951567ca9932baaa0562cde46b358dc4e929ca8d9d08a3d6612fa23d83262d4"
+    },
+    {
+      "task_id": "saleor-rc-9057e82cea23",
+      "validation_unit_id": "vu-9148a5fac7f7",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "era_key": "py38",
+      "target_commit": "9057e82cea2335edb4ea0545911e39b5e6d90c1a",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "a951567ca9932baaa0562cde46b358dc4e929ca8d9d08a3d6612fa23d83262d4"
+    },
+    {
+      "task_id": "saleor-rc-1fa6a637c7fc",
+      "validation_unit_id": "vu-2a340620f37b",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "era_key": "py38",
+      "target_commit": "1fa6a637c7fcaf5e1c797339ddae102b43282bc4",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "50bb116e64ac716a053a7ee0dff11453b20f3b2691836d0369aeb37d7ee8ec71"
+    },
+    {
+      "task_id": "saleor-rc-1f6fbe2ebf9b",
+      "validation_unit_id": "vu-6657777e194c",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "era_key": "py38",
+      "target_commit": "1f6fbe2ebf9b7224a09fbdc6d4b00e25ee8ca24b",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "040e82974ded81d8d9d99a5edb3b3717d29ebbd66840500984d68a36a8a374d5"
+    },
+    {
+      "task_id": "saleor-rc-03be7057c1f1",
+      "validation_unit_id": "vu-c17ac95f2f69",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "era_key": "py38",
+      "target_commit": "03be7057c1f1d920d0f5498e3f7669f9f94cb327",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "4f52a9a6eacfccd6053dfd78c068a9e62bc037f21a8acc4f097f6227adf14bdf"
+    },
+    {
+      "task_id": "saleor-rc-2c218aadc9b7",
+      "validation_unit_id": "vu-93d83a7dfa9a",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "era_key": "py38",
+      "target_commit": "2c218aadc9b757835ec7c85832c67468e7ee818d",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "d338054cdbf49d2af9ece638f7de2dcddcf30d7ee34f6c5f8da0aa5890300e32"
+    },
+    {
+      "task_id": "saleor-rc-37a3a7bbec31",
+      "validation_unit_id": "vu-93d83a7dfa9a",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "era_key": "py38",
+      "target_commit": "37a3a7bbec31be4c7cab5d136584077c68155b0f",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "d338054cdbf49d2af9ece638f7de2dcddcf30d7ee34f6c5f8da0aa5890300e32"
+    },
+    {
+      "task_id": "saleor-rc-6370f4a6b8a5",
+      "validation_unit_id": "vu-93d83a7dfa9a",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "era_key": "py38",
+      "target_commit": "6370f4a6b8a5bb47949c3df4aab2c0d4ad744994",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "d338054cdbf49d2af9ece638f7de2dcddcf30d7ee34f6c5f8da0aa5890300e32"
+    },
+    {
+      "task_id": "saleor-rc-8220a53473bb",
+      "validation_unit_id": "vu-cdcf3222cbb5",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "era_key": "py38",
+      "target_commit": "8220a53473bb67bbb247490cbd043c56dac4568c",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "7678fd46aae1159ef2863e151a137958b83adeaa2703d405a6a60b37db2178e0"
+    },
+    {
+      "task_id": "saleor-rc-5c50110d46a2",
+      "validation_unit_id": "vu-56c3822062f3",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "era_key": "py38",
+      "target_commit": "5c50110d46a250d72fa23c1a7f38feb3b64b6921",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "50bb116e64ac716a053a7ee0dff11453b20f3b2691836d0369aeb37d7ee8ec71"
+    },
+    {
+      "task_id": "saleor-rc-32f73ff32b2b",
+      "validation_unit_id": "vu-31452711b5ad",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "era_key": "py38",
+      "target_commit": "32f73ff32b2bc098187ade52d1749e2c2f52b707",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "3b98fc30a8e025c93aba22e947dcf2d172428cfe4c13f8f4b50da58346a0edec"
+    },
+    {
+      "task_id": "saleor-rc-f3a1ec65571f",
+      "validation_unit_id": "vu-31452711b5ad",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "era_key": "py38",
+      "target_commit": "f3a1ec65571fd2f81c3ceb439136e7451906ebc1",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "3b98fc30a8e025c93aba22e947dcf2d172428cfe4c13f8f4b50da58346a0edec"
+    },
+    {
+      "task_id": "saleor-rc-12007c00e480",
+      "validation_unit_id": "vu-ebc9a2321b77",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "era_key": "py38",
+      "target_commit": "12007c00e480f15c7823d5c10f1c29b5535ad34b",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "d338054cdbf49d2af9ece638f7de2dcddcf30d7ee34f6c5f8da0aa5890300e32"
+    },
+    {
+      "task_id": "saleor-rc-305415e0f8b7",
+      "validation_unit_id": "vu-ebc9a2321b77",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "era_key": "py38",
+      "target_commit": "305415e0f8b76b0460949f76f1793db8f3faa722",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "d338054cdbf49d2af9ece638f7de2dcddcf30d7ee34f6c5f8da0aa5890300e32"
+    },
+    {
+      "task_id": "saleor-rc-cd076fed6118",
+      "validation_unit_id": "vu-d70446795f77",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "era_key": "py38",
+      "target_commit": "cd076fed6118cd055e279b32e689efbb76404b4f",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "4f52a9a6eacfccd6053dfd78c068a9e62bc037f21a8acc4f097f6227adf14bdf"
+    },
+    {
+      "task_id": "saleor-rc-ab6c29ba265d",
+      "validation_unit_id": "vu-75b210e72939",
+      "immutable_image_id": "sha256:b3e7e8903350e8c3c89801df6113009a114b0553cca428d096c0847ac6122403",
+      "era_key": "py38",
+      "target_commit": "ab6c29ba265d5a38ea7ce16b96c362d472f053e1",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "7f3d3c3235e83fe24072529260e208b3395e1e612722c4240220aa3926782da3"
+    },
+    {
+      "task_id": "saleor-rc-10889526d151",
+      "validation_unit_id": "vu-457f26c93ff1",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "10889526d151d0817d6ca41fdf876e95921a255d",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "6183ee6b302a4ccad7004c511d0217de83cbf03eb09d7542b817c8a12bf08594"
+    },
+    {
+      "task_id": "saleor-rc-2a59d31fc839",
+      "validation_unit_id": "vu-2483fd026a5e",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "2a59d31fc8398dd13f2a63c1bc23f44791ea3239",
+      "f2p_total": 5,
+      "behavioral_f2p": 5,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "bad4e94b623b730d5c74f6d10f35ec5996572d6bc0c1cbf79ae7251544b0b253"
+    },
+    {
+      "task_id": "saleor-rc-7b3fbb77c331",
+      "validation_unit_id": "vu-34976fcfcdb9",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "7b3fbb77c33120d32b17952d584112bc4159ffce",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "eda4edf7eb1aca141db2d639e1c51fc8cbbc09225784a6099ae3b50071c6e67e"
+    },
+    {
+      "task_id": "saleor-rc-eaf1577585a2",
+      "validation_unit_id": "vu-34976fcfcdb9",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "eaf1577585a27225ca9cce295ab725704b1861c6",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "eda4edf7eb1aca141db2d639e1c51fc8cbbc09225784a6099ae3b50071c6e67e"
+    },
+    {
+      "task_id": "saleor-rc-f953990d221b",
+      "validation_unit_id": "vu-34976fcfcdb9",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "f953990d221b5f59686ac4580926f2a9f178edf0",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "eda4edf7eb1aca141db2d639e1c51fc8cbbc09225784a6099ae3b50071c6e67e"
+    },
+    {
+      "task_id": "saleor-rc-f4eeba7fab16",
+      "validation_unit_id": "vu-ffe68ddec229",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "f4eeba7fab16c9ab74ea14e8ff9fe1b2d60f2438",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "a059c3f540d039c28b1547ea913230517303390cac21824dcd13d1c5e666540f"
+    },
+    {
+      "task_id": "saleor-rc-add4064d238e",
+      "validation_unit_id": "vu-0e0ef31c7634",
+      "immutable_image_id": "sha256:8c90d36aca1393a619f4448e1adfd6c307f27518c44df7baa6320d1ebaaec3ae",
+      "era_key": "py39",
+      "target_commit": "add4064d238ea4b1f012786f72d3e566221b436b",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "6c47dca9c0ae0d006e3eb0d6102e0f0c4397ee2ffabb82c7a031c72282257179"
+    },
+    {
+      "task_id": "saleor-rc-54bbb04b8954",
+      "validation_unit_id": "vu-431fd44d4e16",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "54bbb04b895460cb88d624edb49eb37596d66e30",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "a0ffdf90f706529107e9f09ee3810feddf9ce186ebc9b56f8614d38d66818885"
+    },
+    {
+      "task_id": "saleor-rc-a17f11cf7e87",
+      "validation_unit_id": "vu-431fd44d4e16",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "a17f11cf7e877227a930f7a6abda8b2a6ecbac5e",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "a0ffdf90f706529107e9f09ee3810feddf9ce186ebc9b56f8614d38d66818885"
+    },
+    {
+      "task_id": "saleor-rc-55ff6b5b2b65",
+      "validation_unit_id": "vu-fe57def0dadc",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "55ff6b5b2b6584bed844080185804f5d70c1474a",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "bdefd37bece30216a24107ad207e87552776dee90011d88fa99dfbb6e58dde8f"
+    },
+    {
+      "task_id": "saleor-rc-7691de1ea22e",
+      "validation_unit_id": "vu-fe7a88128f65",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "7691de1ea22e7bb30c6f3aa86c91634ed4e2b61b",
+      "f2p_total": 2,
+      "behavioral_f2p": 2,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "03adfeb71136cc414d77018c287b2a92189ca9bf7a8f42f44b3f88b10f257764"
+    },
+    {
+      "task_id": "saleor-rc-884327b653cc",
+      "validation_unit_id": "vu-9a5ec59e6d06",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "884327b653cc035fdd9c5c85d0601744f7bad43c",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "0268d628a8ed16079e916d758355ba26f06b56d2c7bd261725832dad7a4a87d2"
+    },
+    {
+      "task_id": "saleor-rc-bd0c56fc787e",
+      "validation_unit_id": "vu-9a5ec59e6d06",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "bd0c56fc787ee5d6ff14a4eda0f1087371902b89",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "0268d628a8ed16079e916d758355ba26f06b56d2c7bd261725832dad7a4a87d2"
+    },
+    {
+      "task_id": "saleor-rc-c87441bb1464",
+      "validation_unit_id": "vu-9a5ec59e6d06",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "c87441bb1464abaede7ef4dfd38c22e163ec483f",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "0268d628a8ed16079e916d758355ba26f06b56d2c7bd261725832dad7a4a87d2"
+    },
+    {
+      "task_id": "saleor-rc-c9c1cc0968d3",
+      "validation_unit_id": "vu-9a5ec59e6d06",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "c9c1cc0968d3da65502640b7203f44ebf24d12fc",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "0268d628a8ed16079e916d758355ba26f06b56d2c7bd261725832dad7a4a87d2"
+    },
+    {
+      "task_id": "saleor-rc-d3ab58054844",
+      "validation_unit_id": "vu-9a5ec59e6d06",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "d3ab580548448a4804d9c40a9cc1bd7699624c7c",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "0268d628a8ed16079e916d758355ba26f06b56d2c7bd261725832dad7a4a87d2"
+    },
+    {
+      "task_id": "saleor-rc-484ce8815cf4",
+      "validation_unit_id": "vu-cd262bbb641d",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "484ce8815cf4c6724d49ce26dce5da7fc07ba174",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "61f025b6d10f633879b612a3e6123b50f0d5e3cc67c28bd3cacc24e6e36a4ad3"
+    },
+    {
+      "task_id": "saleor-rc-a7a2bf4146ba",
+      "validation_unit_id": "vu-37c7da0c0820",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "a7a2bf4146ba1afa6ac8e048e209d631e5443711",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "b4815c07e333944189595ccdbb6bed70a13db8103f9e505f5de1b668bc4ae36c"
+    },
+    {
+      "task_id": "saleor-rc-0df62b3144b0",
+      "validation_unit_id": "vu-c5caaf2a1d6f",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "0df62b3144b0ef536b8ecc96aaa2a51f3b8ee175",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "a059c3f540d039c28b1547ea913230517303390cac21824dcd13d1c5e666540f"
+    },
+    {
+      "task_id": "saleor-rc-d8a4cd122bf0",
+      "validation_unit_id": "vu-04c71da705ac",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "d8a4cd122bf0a1828588e17d7045c52b7b3da7fa",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "1a6e4824ee3270fcb8e2de8090f7db934b943c2cb419314ecf5f931a6d289c63"
+    },
+    {
+      "task_id": "saleor-rc-1b4da5a88d08",
+      "validation_unit_id": "vu-cf9b71629fb0",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "1b4da5a88d08b71a5315749a0352ddd9cc0dad39",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "72042c0f16634a94f649489c52bb4c86c5f570ade8cf683334ed47e9f63679b8"
+    },
+    {
+      "task_id": "saleor-rc-67cd71a9e0b7",
+      "validation_unit_id": "vu-cfed8240ddbc",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "67cd71a9e0b76b954d5576f3565c11364dae8ef5",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "0343d8ff1a26ba89f5fd7b83489c2f6b1e6e6a9e4d56a770df1c237b6bfd4822"
+    },
+    {
+      "task_id": "saleor-rc-52a797b00af3",
+      "validation_unit_id": "vu-eba04e0cfe0e",
+      "immutable_image_id": "sha256:8c90d36aca1393a619f4448e1adfd6c307f27518c44df7baa6320d1ebaaec3ae",
+      "era_key": "py39",
+      "target_commit": "52a797b00af305c5bf7732d2b654822f6f4d556d",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "b47d5d6e469ca7af3715fd80ec3b8b89fb9a341c55c0c8b7d78445cba6b3d8c8"
+    },
+    {
+      "task_id": "saleor-rc-45301d74fb45",
+      "validation_unit_id": "vu-3cc575189c53",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "45301d74fb4511b28d6685a9058e57e0c20596a2",
+      "f2p_total": 7,
+      "behavioral_f2p": 7,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "502d826459d893d172828333575939ce8c2c73a42ba3ebb1711d0d709301bc73"
+    },
+    {
+      "task_id": "saleor-rc-5d2721a36364",
+      "validation_unit_id": "vu-930970ddfe91",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "5d2721a363642d633618ef7e25d7e939b7cc8a98",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "a059c3f540d039c28b1547ea913230517303390cac21824dcd13d1c5e666540f"
+    },
+    {
+      "task_id": "saleor-rc-c4dac9df4baf",
+      "validation_unit_id": "vu-930970ddfe91",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "c4dac9df4bafc289f28752fd57410817dfa42cee",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "a059c3f540d039c28b1547ea913230517303390cac21824dcd13d1c5e666540f"
+    },
+    {
+      "task_id": "saleor-rc-ddb8921a6744",
+      "validation_unit_id": "vu-930970ddfe91",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "ddb8921a67441288b2489135a2490f6062d7a7c4",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "a059c3f540d039c28b1547ea913230517303390cac21824dcd13d1c5e666540f"
+    },
+    {
+      "task_id": "saleor-rc-e429b8be07fd",
+      "validation_unit_id": "vu-930970ddfe91",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "e429b8be07fd71bad54ebfe7539d82e02e6af568",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "a059c3f540d039c28b1547ea913230517303390cac21824dcd13d1c5e666540f"
+    },
+    {
+      "task_id": "saleor-rc-6c928b72daa4",
+      "validation_unit_id": "vu-9218196782bc",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "6c928b72daa432ebfa31341310ee32984c11a1f7",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "da1114d6379bdb9cb049b1c65b6d711b6111bc46286373f206e5c8451ac4a3fd"
+    },
+    {
+      "task_id": "saleor-rc-03c5a9916858",
+      "validation_unit_id": "vu-c3065f6a2b55",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "03c5a991685858368c98cb260e8faf75cd07496b",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "1a6e4824ee3270fcb8e2de8090f7db934b943c2cb419314ecf5f931a6d289c63"
+    },
+    {
+      "task_id": "saleor-rc-18430f2a7a16",
+      "validation_unit_id": "vu-b634339e1f8a",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "18430f2a7a16e3ba35c8230e35f81cac1b92a386",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "ffc9268bba1e38f0994a94f68345cabc1089345b98cf6abf5e6496133d456673"
+    },
+    {
+      "task_id": "saleor-rc-e28ca6ad6442",
+      "validation_unit_id": "vu-f98d47987c04",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "e28ca6ad6442fa4f407e7e38d3d78239cba6a43b",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "6317b3a7c2eaf7c6aff5cf030d00c84f312b7a3753235e8f88773e0bba808f07"
+    },
+    {
+      "task_id": "saleor-rc-e129a4d6f9b1",
+      "validation_unit_id": "vu-894cec50f546",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "e129a4d6f9b1cd4e5988c05a173eea4e72564a73",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "f78a3a1fe3ee965a9528e06eaebcc48f1f268596f15ed19ba8a4bd365537c467"
+    },
+    {
+      "task_id": "saleor-rc-95db464ad4ea",
+      "validation_unit_id": "vu-2dc07b65457d",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "95db464ad4ea43495af45a296ca5fbd5114823df",
+      "f2p_total": 4,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 4,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "fbdc6c7187d36bbc75f3854bf56248257e411c8e4f5bdf54dbcffcb4c620bb8d"
+    },
+    {
+      "task_id": "saleor-rc-74fbba6d0734",
+      "validation_unit_id": "vu-7fc2380ce441",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "74fbba6d07346addec1d6477533beb9e5dc295ba",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "00bc6ed880e15ea7acd85fac2e80539ee9fde7e3ed0337c7bba4d4a786dc51b4"
+    },
+    {
+      "task_id": "saleor-rc-f605058a13e8",
+      "validation_unit_id": "vu-7fc2380ce441",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "f605058a13e8860662300dfd7188039d95d01b70",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "b13e373f103d8fd204b0f0d1f1023d6ca19dfadb02efa94b1fae4847eb2178f9"
+    },
+    {
+      "task_id": "saleor-rc-df7c7d4e8466",
+      "validation_unit_id": "vu-f65903cda35f",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "df7c7d4e84667ac413cefaf9041518e87146f326",
+      "f2p_total": 2,
+      "behavioral_f2p": 2,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "c0f831ec7e729945556a11c8745c58eb54f32e3476f8d76638b2940377927c5c"
+    },
+    {
+      "task_id": "saleor-rc-28799575c518",
+      "validation_unit_id": "vu-6e164d4710fa",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "28799575c51810307c71fd14cabc6eaa3b8dfe5e",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "f9049e679ea687a1730de7217262d92ebafd9b75c592f5ea541676d6fa043d43"
+    },
+    {
+      "task_id": "saleor-rc-29c2d1abdce0",
+      "validation_unit_id": "vu-6e164d4710fa",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "29c2d1abdce021bc32ca41b15da5ce10175227ed",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "f9049e679ea687a1730de7217262d92ebafd9b75c592f5ea541676d6fa043d43"
+    },
+    {
+      "task_id": "saleor-rc-ba4ff17faab4",
+      "validation_unit_id": "vu-6e164d4710fa",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "ba4ff17faab45eba3afa4d1d153b4505b42270f1",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "f9049e679ea687a1730de7217262d92ebafd9b75c592f5ea541676d6fa043d43"
+    },
+    {
+      "task_id": "saleor-rc-ef4d31a09e7c",
+      "validation_unit_id": "vu-6e164d4710fa",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "ef4d31a09e7cfb67e7161b1aaa077a98888e7f1a",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "f9049e679ea687a1730de7217262d92ebafd9b75c592f5ea541676d6fa043d43"
+    },
+    {
+      "task_id": "saleor-rc-3513064157fa",
+      "validation_unit_id": "vu-ef2b9ed85c06",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "3513064157fad67cfc2a0d046a0c329b405cac06",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "b4815c07e333944189595ccdbb6bed70a13db8103f9e505f5de1b668bc4ae36c"
+    },
+    {
+      "task_id": "saleor-rc-a9121e630814",
+      "validation_unit_id": "vu-ef2b9ed85c06",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "a9121e630814c3b1940eb70f5a4d2bd0e41fb4ad",
+      "f2p_total": 4,
+      "behavioral_f2p": 4,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "b4815c07e333944189595ccdbb6bed70a13db8103f9e505f5de1b668bc4ae36c"
+    },
+    {
+      "task_id": "saleor-rc-349d88efcfec",
+      "validation_unit_id": "vu-449f84e63781",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "349d88efcfec17730095838fd523d05174686e3b",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "b7c9a749f2ba2c4a32d1068d00030b8c897fc90399a82abea9a52c7df4bc08e5"
+    },
+    {
+      "task_id": "saleor-rc-bcd9f60d2aef",
+      "validation_unit_id": "vu-449f84e63781",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "bcd9f60d2aef8553e5ba522f2acd8437d7a0b7f2",
+      "f2p_total": 9,
+      "behavioral_f2p": 9,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "b7c9a749f2ba2c4a32d1068d00030b8c897fc90399a82abea9a52c7df4bc08e5"
+    },
+    {
+      "task_id": "saleor-rc-693eb302968c",
+      "validation_unit_id": "vu-1bc025c648a9",
+      "immutable_image_id": "sha256:8c90d36aca1393a619f4448e1adfd6c307f27518c44df7baa6320d1ebaaec3ae",
+      "era_key": "py39",
+      "target_commit": "693eb302968cc2633ed75af6bb9a8159599242fd",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "d5cd979931388bbc0a9c0f08e20e79a4a5c7e06c7bff7fa90cb26e709be59935"
+    },
+    {
+      "task_id": "saleor-rc-9b96c1602b1f",
+      "validation_unit_id": "vu-211923a4bbb9",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "9b96c1602b1fb419131fd0151483c668f1d0c8b8",
+      "f2p_total": 2,
+      "behavioral_f2p": 2,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "5d25cbe59956bd518b3111459e35b84c0e224e0014e554ac39b1b329c89890e2"
+    },
+    {
+      "task_id": "saleor-rc-b8786c1bf4d3",
+      "validation_unit_id": "vu-211923a4bbb9",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "b8786c1bf4d3a6f47963e546634c6e3732ca2345",
+      "f2p_total": 2,
+      "behavioral_f2p": 2,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "5d25cbe59956bd518b3111459e35b84c0e224e0014e554ac39b1b329c89890e2"
+    },
+    {
+      "task_id": "saleor-rc-2c44b8eccc2c",
+      "validation_unit_id": "vu-c80b536f2407",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "2c44b8eccc2ce985dade55a4e1efd0e113bd92a0",
+      "f2p_total": 3,
+      "behavioral_f2p": 3,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "ea41a2cd9ad145a5f6e034ebd846a40b4c62a69fc426ca3b0c16d1bc04208e4b"
+    },
+    {
+      "task_id": "saleor-rc-bf938e731bd8",
+      "validation_unit_id": "vu-1322f72e5363",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "bf938e731bd869e3da282917eeb14b8ce0dce306",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "16ace2646b349892c8ff8ac562253542e8e58d904109f83e723591be5a4ae60c"
+    },
+    {
+      "task_id": "saleor-rc-1f47b503f69e",
+      "validation_unit_id": "vu-25266c00d332",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "1f47b503f69e6c027117b7da53fcdce39ed81751",
+      "f2p_total": 5,
+      "behavioral_f2p": 5,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "38d54011a0e047aeab623033b88068e830895faa8b4ec49e5f32389586e4997a"
+    },
+    {
+      "task_id": "saleor-rc-b60266933f7a",
+      "validation_unit_id": "vu-18938eea2931",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "b60266933f7a9563613de9e6e9d151e6ade36c97",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "7d5dced6fef4f634b15fe15f9dd87bfb56e4ae625a2b3968379b74e829474741"
+    },
+    {
+      "task_id": "saleor-rc-0fd3a4d986a0",
+      "validation_unit_id": "vu-69576eeb06f2",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "0fd3a4d986a00ebe182729316b70c87601ffc972",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "24a7f2a5c2a887e136c7f7ea3b7c9acf543d892b65af6cf862bd799285613664"
+    },
+    {
+      "task_id": "saleor-rc-17c8d807b3d1",
+      "validation_unit_id": "vu-bedcd6ce97ff",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "17c8d807b3d1e1fb2edcff22a63181af94033526",
+      "f2p_total": 2,
+      "behavioral_f2p": 2,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "1085cb6f0c8b59ec7b64022bb790713c0f508b266c3e3ffff92dcb03ad69afbe"
+    },
+    {
+      "task_id": "saleor-rc-571a3b145aea",
+      "validation_unit_id": "vu-d0ceadc7a5d0",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "571a3b145aeaefed14a8140208ae54450834c288",
+      "f2p_total": 4,
+      "behavioral_f2p": 3,
+      "symbol_absence_f2p": 1,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "d91b411472b8d1b1e2c0142d0a84226326217f504f90b24fa5068071a5ae3159"
+    },
+    {
+      "task_id": "saleor-rc-8b0cbe2fb72f",
+      "validation_unit_id": "vu-d0ceadc7a5d0",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "8b0cbe2fb72f0137567c64d16bd3bfa12962cbd3",
+      "f2p_total": 12,
+      "behavioral_f2p": 12,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "d91b411472b8d1b1e2c0142d0a84226326217f504f90b24fa5068071a5ae3159"
+    },
+    {
+      "task_id": "saleor-rc-c38263743e9e",
+      "validation_unit_id": "vu-a199ad1732dc",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "c38263743e9ea67c2c198e731f2a6490c700aa57",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "9b71c8603ff7ce8a047d30c890371bcd394981609af4f42d1a4dbaa44dc2e152"
+    },
+    {
+      "task_id": "saleor-rc-66907b149076",
+      "validation_unit_id": "vu-ff51c2dbdaf7",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "66907b149076418cc20168692e7d8dbb00353e8a",
+      "f2p_total": 19,
+      "behavioral_f2p": 19,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "ea41a2cd9ad145a5f6e034ebd846a40b4c62a69fc426ca3b0c16d1bc04208e4b"
+    },
+    {
+      "task_id": "saleor-rc-b0245506e69b",
+      "validation_unit_id": "vu-27136572a530",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "b0245506e69b77bcd8d11b375897b4eb018023d4",
+      "f2p_total": 2,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 2,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "cc9cf355345abc66c330824da1493dfe0344e5bb3c9622c89155f01c0d112128"
+    },
+    {
+      "task_id": "saleor-rc-d299e27e5f04",
+      "validation_unit_id": "vu-27136572a530",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "d299e27e5f044b98d8314fa19a10c0c7f7d5c9c8",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "cc9cf355345abc66c330824da1493dfe0344e5bb3c9622c89155f01c0d112128"
+    },
+    {
+      "task_id": "saleor-rc-349fe0c194a1",
+      "validation_unit_id": "vu-648e07c887c6",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "349fe0c194a17875b84f276b44a3524d218edb20",
+      "f2p_total": 3,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 3,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "93cca94dcebf3e341105d8ad0835b8a99dec31fd9d3db941baa3d278b8ee55b4"
+    },
+    {
+      "task_id": "saleor-rc-c428b47bddc5",
+      "validation_unit_id": "vu-d391fc5c988e",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "c428b47bddc57dc1f3f4e34c202466e39a61e9d2",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "f5bd24dbb34efb9d086115006a72c970646eb5334e4d36d34bb27d2e61dfb3c7"
+    },
+    {
+      "task_id": "saleor-rc-0c1062eb0da6",
+      "validation_unit_id": "vu-bd505dbe0e91",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "0c1062eb0da691a67f6edb7babacea694d666830",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "911b2908caa6f3b3685c1b7234ac6dfe9863872e23f6b2fbfe99f31c9be210e1"
+    },
+    {
+      "task_id": "saleor-rc-4386f322f659",
+      "validation_unit_id": "vu-bd505dbe0e91",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "4386f322f6598cba95d499ac5b9c852aea2844e4",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "911b2908caa6f3b3685c1b7234ac6dfe9863872e23f6b2fbfe99f31c9be210e1"
+    },
+    {
+      "task_id": "saleor-rc-65dfc61ec9fc",
+      "validation_unit_id": "vu-bd505dbe0e91",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "65dfc61ec9fc5cd69439816bf1b68fe8c6df71c3",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "911b2908caa6f3b3685c1b7234ac6dfe9863872e23f6b2fbfe99f31c9be210e1"
+    },
+    {
+      "task_id": "saleor-rc-b41168d9077d",
+      "validation_unit_id": "vu-bd505dbe0e91",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "b41168d9077d671e1a553767c7b1be262600a742",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "911b2908caa6f3b3685c1b7234ac6dfe9863872e23f6b2fbfe99f31c9be210e1"
+    },
+    {
+      "task_id": "saleor-rc-ba0f225cc7d3",
+      "validation_unit_id": "vu-bd505dbe0e91",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "ba0f225cc7d338deeb2ed19929b432208470a69f",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "911b2908caa6f3b3685c1b7234ac6dfe9863872e23f6b2fbfe99f31c9be210e1"
+    },
+    {
+      "task_id": "saleor-rc-24f9b244d6bc",
+      "validation_unit_id": "vu-9af2f5398149",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "24f9b244d6bc8c591c9707380917d9b6c6d35c35",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "11a443ca30587af2b893e7ee4bb7e68df5c0895ada4f8ab6c30c2800d39f793a"
+    },
+    {
+      "task_id": "saleor-rc-5821309aed09",
+      "validation_unit_id": "vu-9af2f5398149",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "5821309aed09ba6f1089f9f2f08691bd3812b8b3",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "11a443ca30587af2b893e7ee4bb7e68df5c0895ada4f8ab6c30c2800d39f793a"
+    },
+    {
+      "task_id": "saleor-rc-6a1f884168d2",
+      "validation_unit_id": "vu-9af2f5398149",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "6a1f884168d23962d2fc14a0d65979f770b57314",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "11a443ca30587af2b893e7ee4bb7e68df5c0895ada4f8ab6c30c2800d39f793a"
+    },
+    {
+      "task_id": "saleor-rc-fd5b7971c5d2",
+      "validation_unit_id": "vu-9af2f5398149",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "fd5b7971c5d29036e24ec05cd569711e4568a977",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "11a443ca30587af2b893e7ee4bb7e68df5c0895ada4f8ab6c30c2800d39f793a"
+    },
+    {
+      "task_id": "saleor-rc-1af1c3a368ec",
+      "validation_unit_id": "vu-c4f8d5ea7e5a",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "1af1c3a368ec7488f7460a059f20d8db4bf5bd99",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "3cb754fcf1330d44fc17c2471b172fd1672db87898c603cc0525b98395ed2152"
+    },
+    {
+      "task_id": "saleor-rc-dd8ead382526",
+      "validation_unit_id": "vu-c4f8d5ea7e5a",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "dd8ead3825260c154f7ee5ec00fd7e31cb17a1d0",
+      "f2p_total": 7,
+      "behavioral_f2p": 7,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "3cb754fcf1330d44fc17c2471b172fd1672db87898c603cc0525b98395ed2152"
+    },
+    {
+      "task_id": "saleor-rc-ea98ffa79753",
+      "validation_unit_id": "vu-c4f8d5ea7e5a",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "ea98ffa797530747a25690132390669aa6daba03",
+      "f2p_total": 2,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 2,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "3cb754fcf1330d44fc17c2471b172fd1672db87898c603cc0525b98395ed2152"
+    },
+    {
+      "task_id": "saleor-rc-45cfb26218c8",
+      "validation_unit_id": "vu-0925adc62ab4",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "45cfb26218c8b0e59be8409bdbfd14ec7189f4d0",
+      "f2p_total": 8,
+      "behavioral_f2p": 2,
+      "symbol_absence_f2p": 6,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "538e46e70ff2dbb6e9ae6d551af058b4359876e9356c1309c18c93c7c74c4679"
+    },
+    {
+      "task_id": "saleor-rc-50eff94aa37c",
+      "validation_unit_id": "vu-b38ed89dc9a4",
+      "immutable_image_id": "sha256:8c90d36aca1393a619f4448e1adfd6c307f27518c44df7baa6320d1ebaaec3ae",
+      "era_key": "py39",
+      "target_commit": "50eff94aa37cb8b0394643e9b5baca4352b9b096",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "6b124d54a7ceb0ee742306546157b06a2cc61a6425b70e1a58e23c63a4c3a10a"
+    },
+    {
+      "task_id": "saleor-rc-fbfc66e3a46b",
+      "validation_unit_id": "vu-b38ed89dc9a4",
+      "immutable_image_id": "sha256:8c90d36aca1393a619f4448e1adfd6c307f27518c44df7baa6320d1ebaaec3ae",
+      "era_key": "py39",
+      "target_commit": "fbfc66e3a46b2c4ae2b73183df87307d3193f1bf",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "6b124d54a7ceb0ee742306546157b06a2cc61a6425b70e1a58e23c63a4c3a10a"
+    },
+    {
+      "task_id": "saleor-rc-63a25a0c46d5",
+      "validation_unit_id": "vu-b0971c77cd3b",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "63a25a0c46d54b6f800ddb2f94ca20cba50f54f3",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "5d2e6d7d7f33049c4f77a9cd1528251c0e13f4974fe1b896d11c4f0fd7395029"
+    },
+    {
+      "task_id": "saleor-rc-f3a0bc28797b",
+      "validation_unit_id": "vu-b0971c77cd3b",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "f3a0bc28797b59bf52e7746d5c0991c744b9eb20",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "5d2e6d7d7f33049c4f77a9cd1528251c0e13f4974fe1b896d11c4f0fd7395029"
+    },
+    {
+      "task_id": "saleor-rc-b2622810adf1",
+      "validation_unit_id": "vu-2bcc39756c5a",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "b2622810adf1cad70ea4f10cee82f8db6f76ef8b",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "c703c78ca42263b045c504e8cfea605960385da075bef57dc47bf4c9570384be"
+    },
+    {
+      "task_id": "saleor-rc-f1d4e82c1dea",
+      "validation_unit_id": "vu-e009f3a36367",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "f1d4e82c1dea2283fb108324a6944adc1e2d82e0",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "7d5dced6fef4f634b15fe15f9dd87bfb56e4ae625a2b3968379b74e829474741"
+    },
+    {
+      "task_id": "saleor-rc-8c8d9db54d63",
+      "validation_unit_id": "vu-3975af462f4e",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "8c8d9db54d63d747bc5ec32807cb94361a952fe9",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "977d6df53b153df78f2d09172edfa5977aa6f774f68377d63712500b59c4f555"
+    },
+    {
+      "task_id": "saleor-rc-02dfdad9985b",
+      "validation_unit_id": "vu-a49265fc9017",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "02dfdad9985b2ee573b6ab9f64b766fe73fe012c",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "c97ad95e424c9335396b01abb5e44b6ee8ae5ed684b6919118e77f5bf6346732"
+    },
+    {
+      "task_id": "saleor-rc-14a682044ca4",
+      "validation_unit_id": "vu-a49265fc9017",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "14a682044ca49af5406781e8b921fce6fe4f3d85",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "c97ad95e424c9335396b01abb5e44b6ee8ae5ed684b6919118e77f5bf6346732"
+    },
+    {
+      "task_id": "saleor-rc-506cd1157e9c",
+      "validation_unit_id": "vu-27e8f29e8efc",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "506cd1157e9c1bb83b6153b6561a179ad92dd17f",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "ec325915a20e8d0401631dab923587587ba7e7237e2ab98791e68bbb54e7f3e2"
+    },
+    {
+      "task_id": "saleor-rc-4e45b83e7475",
+      "validation_unit_id": "vu-60d3684b344f",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "4e45b83e7475a3ebc9b3076d7941a2916d0c386c",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "5617204a563fff0a38b929baba17ad2a1c419d10e7c7277092548d9a5c8ec5b3"
+    },
+    {
+      "task_id": "saleor-rc-65643ec7c37f",
+      "validation_unit_id": "vu-60d3684b344f",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "65643ec7c37f68aea30f668feed4193c34a33db8",
+      "f2p_total": 2,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 2,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "5617204a563fff0a38b929baba17ad2a1c419d10e7c7277092548d9a5c8ec5b3"
+    },
+    {
+      "task_id": "saleor-rc-1f9b5c53a63a",
+      "validation_unit_id": "vu-25c83915bd75",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "1f9b5c53a63a04fae221cb65832fae3c3a61c236",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "b7abfeb10c6ca768f1a3f541b55f38ec2587968eaa55da2475b69794291792e4"
+    },
+    {
+      "task_id": "saleor-rc-bd64d6fdbe4b",
+      "validation_unit_id": "vu-25c83915bd75",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "bd64d6fdbe4b16280eb061d88ab0ddd90533c64e",
+      "f2p_total": 2,
+      "behavioral_f2p": 2,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "b7abfeb10c6ca768f1a3f541b55f38ec2587968eaa55da2475b69794291792e4"
+    },
+    {
+      "task_id": "saleor-rc-4931e989d82d",
+      "validation_unit_id": "vu-481aef932595",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "4931e989d82dd30329329938863322aa0ab7d16b",
+      "f2p_total": 35,
+      "behavioral_f2p": 35,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "dc2a5c29f6ca570fb0e99767d07bfc216b30fee1ea835ee8c0e38b1ed446aad4"
+    },
+    {
+      "task_id": "saleor-rc-b0672eea0422",
+      "validation_unit_id": "vu-bbb37661a274",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "b0672eea04229f2a2194c64162bade73eb246047",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "058758c12b2757236974a85949f2ac0d4ea0ac7f56764b84224b17f05967e1fd"
+    },
+    {
+      "task_id": "saleor-rc-843a2c1905ad",
+      "validation_unit_id": "vu-afe5a5c0e422",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "843a2c1905ad253efc736f8b5e8e76a9006d233b",
+      "f2p_total": 28,
+      "behavioral_f2p": 28,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "e0ec8f557926f4f78467162100116a0394b3c68b8198c0ab9d3bcbe59535c5ad"
+    },
+    {
+      "task_id": "saleor-rc-a5e831779345",
+      "validation_unit_id": "vu-0f0447cc3e76",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "a5e83177934590f18ae0d3b0b92c7cb86d6fc1d5",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "296828458dd1a7509ec8e7cdde36815ee342a74ab91d6f28ed0bc8d369e7bfbf"
+    },
+    {
+      "task_id": "saleor-rc-1abda1e0d36e",
+      "validation_unit_id": "vu-f36465a05af1",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "1abda1e0d36e73402bd7581646b0db5ac647e973",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "d1dee5fe704a731e30146558ca37b679c93b933ba01011bda1efabcab179b54b"
+    },
+    {
+      "task_id": "saleor-rc-a650f8f05c02",
+      "validation_unit_id": "vu-87c9ec56b2bc",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "a650f8f05c025de7c12ed5301b72a9d8ba9bf811",
+      "f2p_total": 53,
+      "behavioral_f2p": 53,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "6eceb00f3897d00828dd47f518fa4a5ed091f6910425429aa758548323328494"
+    },
+    {
+      "task_id": "saleor-rc-c0d4785abd74",
+      "validation_unit_id": "vu-87c9ec56b2bc",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "c0d4785abd7410108364b4e0830862143cc9940c",
+      "f2p_total": 28,
+      "behavioral_f2p": 28,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "6eceb00f3897d00828dd47f518fa4a5ed091f6910425429aa758548323328494"
+    },
+    {
+      "task_id": "saleor-rc-255d39da978a",
+      "validation_unit_id": "vu-b6f3aa535043",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "255d39da978a7ec3f20b8cbc8b54b4c02a94566a",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "d43e95e01df654a17d378a69b45b0850e871943a9e1a80bc202ed07bba03eaf1"
+    },
+    {
+      "task_id": "saleor-rc-c12e83aac8f6",
+      "validation_unit_id": "vu-b6f3aa535043",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "c12e83aac8f643ef1c393e6762d4cbe6dd1af102",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "d43e95e01df654a17d378a69b45b0850e871943a9e1a80bc202ed07bba03eaf1"
+    },
+    {
+      "task_id": "saleor-rc-5f78ba7b1647",
+      "validation_unit_id": "vu-3f1261723b37",
+      "immutable_image_id": "sha256:8c90d36aca1393a619f4448e1adfd6c307f27518c44df7baa6320d1ebaaec3ae",
+      "era_key": "py39",
+      "target_commit": "5f78ba7b164730a844ec868db6669639babc402f",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "6b124d54a7ceb0ee742306546157b06a2cc61a6425b70e1a58e23c63a4c3a10a"
+    },
+    {
+      "task_id": "saleor-rc-373efa067922",
+      "validation_unit_id": "vu-92d8208bc063",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "373efa067922e942e503b210ca4cbfaa7be72962",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "83d092441ceebfb5f49955c5adede5d63a4ee3556e12e5b7f82682f2b057416e"
+    },
+    {
+      "task_id": "saleor-rc-4adf36dfdbe7",
+      "validation_unit_id": "vu-5985a7f5c711",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "4adf36dfdbe72d356f20321c3f7ca03648c6f58d",
+      "f2p_total": 4,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 4,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "17cf9d82db12fc08ad1bc4ee85962fb638c6a3fdf7b160069142701b7210e73d"
+    },
+    {
+      "task_id": "saleor-rc-cae629dc4166",
+      "validation_unit_id": "vu-c9fbfeece4f3",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "cae629dc41669454d71bff48238b7eeaaa651656",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "0d763df27327b7710fd81796fad88bc43fb4f7e8df293e075c7a9bd16eaa4d95"
+    },
+    {
+      "task_id": "saleor-rc-cbd7310268c6",
+      "validation_unit_id": "vu-c9fbfeece4f3",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "cbd7310268c66f6b4ac8b1e60cc748669e947a70",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "0d763df27327b7710fd81796fad88bc43fb4f7e8df293e075c7a9bd16eaa4d95"
+    },
+    {
+      "task_id": "saleor-rc-b2e3652af826",
+      "validation_unit_id": "vu-38186b1280dd",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "b2e3652af826f151135834ecbc67e05b53b4f0fe",
+      "f2p_total": 2,
+      "behavioral_f2p": 2,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "fd6d54483e74f3aebf4b967aabd211d335c60917fbc92b1db555f753993284a8"
+    },
+    {
+      "task_id": "saleor-rc-81d02e76b22e",
+      "validation_unit_id": "vu-9ed193747002",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "81d02e76b22e3d3b3603e5ae27c5788033ac01b3",
+      "f2p_total": 22,
+      "behavioral_f2p": 18,
+      "symbol_absence_f2p": 4,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "77f14bceba9941a8c5adc62bad28af09bc495f9cfa997432a52ede252530dadb"
+    },
+    {
+      "task_id": "saleor-rc-c6220233ccb1",
+      "validation_unit_id": "vu-9ed193747002",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "c6220233ccb1ed14fbd66c48b7febbbe62cf4411",
+      "f2p_total": 3,
+      "behavioral_f2p": 3,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "77f14bceba9941a8c5adc62bad28af09bc495f9cfa997432a52ede252530dadb"
+    },
+    {
+      "task_id": "saleor-rc-094b1ec0f610",
+      "validation_unit_id": "vu-6a7d0c94de02",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "094b1ec0f61011d423c04a736976f3286037d5a1",
+      "f2p_total": 3,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 3,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "d574eed52f4d03ee3bc139ebafb4c2e9b403947348e7f656e8dbd490c3d66fd6"
+    },
+    {
+      "task_id": "saleor-rc-27b65eae2a9a",
+      "validation_unit_id": "vu-27ae8fa10bfc",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "27b65eae2a9af0fbb0d2f85a955f8334a3115bac",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "502d826459d893d172828333575939ce8c2c73a42ba3ebb1711d0d709301bc73"
+    },
+    {
+      "task_id": "saleor-rc-c7207e71e0d3",
+      "validation_unit_id": "vu-2864e8ec8e21",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "c7207e71e0d303ebd01cb01c35649290c7bceacd",
+      "f2p_total": 1,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 1,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "7966ae5a2b8c186abdc6e8ec31b7ea5b3169cec486c3c96db0848f26337e94dc"
+    },
+    {
+      "task_id": "saleor-rc-33010c0d5f7f",
+      "validation_unit_id": "vu-28c3ab8a0637",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "33010c0d5f7fbe40fe588f804b807cbc4300826f",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "0bc1fc39a7a9311b762befcc26846452c602099be8d7bb687d1a4757f2c458d7"
+    },
+    {
+      "task_id": "saleor-rc-9b88221ba8c2",
+      "validation_unit_id": "vu-5cf74906951d",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "9b88221ba8c270b183ef17f6288045fcbe1fee96",
+      "f2p_total": 3,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 3,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "64a2ca6e4f506b117b40e3dd50ad7040438f5cc2c58fb34e68daf44006b061dc"
+    },
+    {
+      "task_id": "saleor-rc-a93a877388ae",
+      "validation_unit_id": "vu-a677a0561630",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "a93a877388aefe4277e1adde93c81bdfb6b09c95",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "118316a78a6fdc1adc8c1a8b81fab6eca8613aaa5a7e792073644dfa10808e1f"
+    },
+    {
+      "task_id": "saleor-rc-0b46c89dfd9e",
+      "validation_unit_id": "vu-d5a8e4885ae5",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "0b46c89dfd9e5e22defb45cbd9869403a7817320",
+      "f2p_total": 20,
+      "behavioral_f2p": 20,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "f5bd24dbb34efb9d086115006a72c970646eb5334e4d36d34bb27d2e61dfb3c7"
+    },
+    {
+      "task_id": "saleor-rc-585562cf1cec",
+      "validation_unit_id": "vu-f393f956c6ee",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "585562cf1cecd77f96f7a2aa783e73aae4fd1a23",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "dfed755ad84ce58ee413a50e3d09bf5b9d4adcd14ba43302cac998f748170fe9"
+    },
+    {
+      "task_id": "saleor-rc-14f2176b5d8c",
+      "validation_unit_id": "vu-048cdcee7907",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "14f2176b5d8c7da0b20bec1806d7f274b23baf2c",
+      "f2p_total": 23,
+      "behavioral_f2p": 23,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "f851859eacd03f9f08730b036ec1cc8373a97bdb0f03ce33d0618b26bdd41b96"
+    },
+    {
+      "task_id": "saleor-rc-e089e93419bf",
+      "validation_unit_id": "vu-cff7c5fc6d8e",
+      "immutable_image_id": "sha256:8c90d36aca1393a619f4448e1adfd6c307f27518c44df7baa6320d1ebaaec3ae",
+      "era_key": "py39",
+      "target_commit": "e089e93419bf164f0c3d24d9642db56104f221e2",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "09d047753e9f2cee37d8d01c1e06cf6d8e474c3e3f70b31fd513d9857442a1d7"
+    },
+    {
+      "task_id": "saleor-rc-a36d8a8d0c0c",
+      "validation_unit_id": "vu-6fa34a604db4",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "a36d8a8d0c0c073a13ddbf5852707bd32e5c213f",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "4be05485bfb8a7d6650d6ae3c55c07d477cd4d1ddc855ad9b8d92cfddcfc4a30"
+    },
+    {
+      "task_id": "saleor-rc-a576e993bab7",
+      "validation_unit_id": "vu-101c124a89c7",
+      "immutable_image_id": "sha256:4332cce523045c92934bb5b1c6f422c9527d9c01fa70aa9dc7bb3b70d7776523",
+      "era_key": "py39",
+      "target_commit": "a576e993bab7d31d9cccb1bc336b681161bc33e2",
+      "f2p_total": 1,
+      "behavioral_f2p": 1,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": true,
+      "environment_fingerprint": "e1e60bc2966eaf0c8a2482494c59fafef5bb34e002535ac26c95ad5818d2461b"
+    },
+    {
+      "task_id": "saleor-rc-5c458f26276d",
+      "validation_unit_id": "vu-00c65e6f8459",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "5c458f26276d374607ebc2fa6b38219697b207cc",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "1a6e4824ee3270fcb8e2de8090f7db934b943c2cb419314ecf5f931a6d289c63"
+    },
+    {
+      "task_id": "saleor-rc-aa2bcdd0c218",
+      "validation_unit_id": "vu-ef6a56039231",
+      "immutable_image_id": "sha256:94246e6bc8ae952f2172bac25973118a3d5d99f5fbed54bb451b55954067ac28",
+      "era_key": "py39",
+      "target_commit": "aa2bcdd0c2184766e3fa0354cd9ca21c05a432fd",
+      "f2p_total": 0,
+      "behavioral_f2p": 0,
+      "symbol_absence_f2p": 0,
+      "primary_behavioral_f2p_eligible": false,
+      "environment_fingerprint": "43911acdbc5363feb211b5e8aa0c394af9a876e17f836bcef62e38e19d1e3aa6"
+    }
+  ],
+  "n_f2p_positive": 83,
+  "n_primary_behavioral_f2p_eligible": 71,
+  "per_task_extra_ids_outside_population": [
+    "saleor-rc-f76d0093b450"
+  ]
+}

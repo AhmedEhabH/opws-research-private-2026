@@ -1,0 +1,3117 @@
+{
+  "artifact": "opws_eligibility_funnel_manifest",
+  "schema_version": "opws-eligibility-funnel/1.0-additive",
+  "scope": "219-task frozen Full-D7 READY population",
+  "tri_state_rule": "true = gate passes from frozen evidence; false = gate fails from frozen evidence; UNRESOLVED_* = gate has not been evaluated and must never be reported as pass or fail",
+  "stage_counts": {
+    "stage1_in_universe": {
+      "true": 219,
+      "false": 0,
+      "unresolved": 0
+    },
+    "stage2_test_evidence": {
+      "true": 83,
+      "false": 136,
+      "unresolved": 0
+    },
+    "stage3_behavior_contract": {
+      "true": 219,
+      "false": 0,
+      "unresolved": 0
+    },
+    "stage4_env_ready": {
+      "true": 219,
+      "false": 0,
+      "unresolved": 0
+    },
+    "stage5_behavior_executable": {
+      "true": 0,
+      "false": 0,
+      "unresolved": 219
+    },
+    "stage6_opws_eligible": {
+      "true": 0,
+      "false": 136,
+      "unresolved": 83
+    },
+    "stage7_primary_paired_eligible": {
+      "true": 0,
+      "false": 136,
+      "unresolved": 83
+    }
+  },
+  "distinct_markers": {
+    "ENV_READY": 219,
+    "OPWS_ELIGIBLE": "UNRESOLVED (stage 5 preflight not executed in Phase 0/1)",
+    "PRIMARY_PAIRED_ELIGIBLE": "UNRESOLVED (stage 7 arm artifacts not validated in Phase 0/1)"
+  },
+  "per_task": [
+    {
+      "task_id": "saleor-rc-438595033c60",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-fa1ed1794a8a",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-f5d2c47e47c3",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-5f8b1cc4db2d",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-80a33b28b80d",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-697cbdc85b4a",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-8a03c74411d7",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-8eb11da07f09",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-954887b39f13",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-99f9e28f8b6f",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-dea5ffb730ac",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-d7b03a3eeec0",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-36a9a14e8d12",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-7b1e8cee95d5",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-b97d1d9c7064",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-3d304a30a5bc",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-aea05da547c8",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-e6198146186d",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-07f02e2c40ae",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-663543eaf563",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-a9e79dac40a2",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-bd11af3ea0a4",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-ccd3960acd1d",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-f623ab428821",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-5477b7dd3867",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-dacded922b1f",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 8,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-eb61406cecc5",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-fe6e46266e81",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-9c032845e29b",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 12,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-19bb9b070965",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-f74a5394c7f1",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-659af1b19239",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-1a8b592913a0",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-d4fcbd22a853",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-78c9081e2731",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-4800fa0beb60",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-aa814bd5f355",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 4,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-0e895847d8ae",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-b79cf8f91f04",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-f6a3751a8bc2",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-5144ee6bd55f",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-a1e1e2554327",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-e0f2933d58b9",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 6,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-3bf31ab2fefc",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-95dbffbc523a",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 5,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-b356a525ba2a",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-ce3b63edecef",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 24,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-ffe3a3ece0fb",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-11756ee6b65a",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-032b98afff20",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 169,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-0ad61b3f0096",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-3cac33590b90",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 4,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-30b4edece5aa",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 8,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-e0890780bf56",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-22a30bf2e4cc",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-333febd35223",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 17,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-fd463c8aae38",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 2,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-46456e7317ca",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-d6656e0f2a1d",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 2,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-d361479ab7da",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-07c8859c0ac3",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 2,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-481c2d367c6f",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-0179b331be38",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 4,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-138ee68c3818",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-2c770c685a57",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 49,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-c31fb4cfd08f",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-7e42fc67ce72",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 3,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-e7175003a542",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 15,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-796f4a0fd969",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-224bf29fb39f",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-8e6164e3d123",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 4,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-db5440f7994f",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-b35783838e51",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 7,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-d498167dcd30",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-e8733aee630a",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-0f16ed78b02b",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 3,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-940b8d83ec5c",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 63,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-208833e2fa53",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-63a31dd3c8ca",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-85d416c024e1",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-367b8038f6b9",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-99041211cf9e",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-05bdc7feb9ac",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 25,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-30fe250747ae",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-9057e82cea23",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-1fa6a637c7fc",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-1f6fbe2ebf9b",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-03be7057c1f1",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-2c218aadc9b7",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-37a3a7bbec31",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-6370f4a6b8a5",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-8220a53473bb",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-5c50110d46a2",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-32f73ff32b2b",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-f3a1ec65571f",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-12007c00e480",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-305415e0f8b7",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-cd076fed6118",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-ab6c29ba265d",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-10889526d151",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-2a59d31fc839",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 5,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-7b3fbb77c331",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-eaf1577585a2",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-f953990d221b",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-f4eeba7fab16",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-add4064d238e",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-54bbb04b8954",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-a17f11cf7e87",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-55ff6b5b2b65",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-7691de1ea22e",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 2,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-884327b653cc",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-bd0c56fc787e",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-c87441bb1464",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-c9c1cc0968d3",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-d3ab58054844",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-484ce8815cf4",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-a7a2bf4146ba",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-0df62b3144b0",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-d8a4cd122bf0",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-1b4da5a88d08",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-67cd71a9e0b7",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-52a797b00af3",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-45301d74fb45",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 7,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-5d2721a36364",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-c4dac9df4baf",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-ddb8921a6744",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-e429b8be07fd",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-6c928b72daa4",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-03c5a9916858",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-18430f2a7a16",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-e28ca6ad6442",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-e129a4d6f9b1",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-95db464ad4ea",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 4,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-74fbba6d0734",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-f605058a13e8",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-df7c7d4e8466",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 2,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-28799575c518",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-29c2d1abdce0",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-ba4ff17faab4",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-ef4d31a09e7c",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-3513064157fa",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-a9121e630814",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 4,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-349d88efcfec",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-bcd9f60d2aef",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 9,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-693eb302968c",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-9b96c1602b1f",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 2,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-b8786c1bf4d3",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 2,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-2c44b8eccc2c",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 3,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-bf938e731bd8",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-1f47b503f69e",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 5,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-b60266933f7a",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-0fd3a4d986a0",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-17c8d807b3d1",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 2,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-571a3b145aea",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 4,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-8b0cbe2fb72f",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 12,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-c38263743e9e",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-66907b149076",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 19,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-b0245506e69b",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 2,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-d299e27e5f04",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-349fe0c194a1",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 3,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-c428b47bddc5",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-0c1062eb0da6",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-4386f322f659",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-65dfc61ec9fc",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-b41168d9077d",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-ba0f225cc7d3",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-24f9b244d6bc",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-5821309aed09",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-6a1f884168d2",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-fd5b7971c5d2",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-1af1c3a368ec",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-dd8ead382526",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 7,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-ea98ffa79753",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 2,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-45cfb26218c8",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 8,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-50eff94aa37c",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-fbfc66e3a46b",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-63a25a0c46d5",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-f3a0bc28797b",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-b2622810adf1",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-f1d4e82c1dea",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-8c8d9db54d63",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-02dfdad9985b",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-14a682044ca4",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-506cd1157e9c",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-4e45b83e7475",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-65643ec7c37f",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 2,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-1f9b5c53a63a",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-bd64d6fdbe4b",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 2,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-4931e989d82d",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 35,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-b0672eea0422",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-843a2c1905ad",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 28,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-a5e831779345",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-1abda1e0d36e",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-a650f8f05c02",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 53,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-c0d4785abd74",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 28,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-255d39da978a",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-c12e83aac8f6",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-5f78ba7b1647",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-373efa067922",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-4adf36dfdbe7",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 4,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-cae629dc4166",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-cbd7310268c6",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-b2e3652af826",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 2,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-81d02e76b22e",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 22,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-c6220233ccb1",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 3,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-094b1ec0f610",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 3,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-27b65eae2a9a",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-c7207e71e0d3",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-33010c0d5f7f",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-9b88221ba8c2",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 3,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-a93a877388ae",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-0b46c89dfd9e",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 20,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-585562cf1cec",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-14f2176b5d8c",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 23,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-e089e93419bf",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-a36d8a8d0c0c",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-a576e993bab7",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": true,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage7_primary_paired_eligible": "UNRESOLVED_PENDING_STAGE7_ARM_ARTIFACTS",
+      "frozen_f2p_total": 1,
+      "reason_codes": [
+        "UNRESOLVED_PENDING_STAGE5_PREFLIGHT"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-5c458f26276d",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "task_id": "saleor-rc-aa2bcdd0c218",
+      "stage1_in_universe": true,
+      "stage2_test_evidence": false,
+      "stage3_behavior_contract": true,
+      "stage4_env_ready": true,
+      "stage5_behavior_executable": "UNRESOLVED_PENDING_STAGE5_PREFLIGHT",
+      "stage6_opws_eligible": false,
+      "stage7_primary_paired_eligible": false,
+      "frozen_f2p_total": 0,
+      "reason_codes": [
+        "TEST_EVIDENCE_MISSING"
+      ]
+    }
+  ],
+  "manifest_sha256": "31f2c9319e878f87798b4b63a89741dafae8ef3e0b8f209affa2c5ade0112512"
+}
