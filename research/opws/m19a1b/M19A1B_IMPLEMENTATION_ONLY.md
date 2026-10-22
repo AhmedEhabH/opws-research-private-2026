@@ -59,19 +59,21 @@
      `PREDICTION_SOURCE_MISSING` per-task records + clear plan-mode blocker; no
      deceptive "219/219 12 arms audited" claim (exit 4). `RANDOM_SIZE_MATCHED_RM_CSS`
      recorded DEFERRED (Phase 4) and excluded explicitly.
-2. **`tests/unit/opws/test_opws_m19a1b_tree_audit.py`** — 12 synthetic-git tests
-   (mission scenarios i–x plus positive plan-counts): identity across modify/delete/
-   add/mode change; zero-byte `__init__.py`; no-final-newline; flagged `test_*.py`
-   outside `tests/` (flag authority, no filename heuristic); rename within one
-   boundary reconstructs and crossing records STOP; wrong test flag fails
-   classification even when tree matches; target-tree mismatch reports first
-   differing path; cleanup on failed apply with source store refs/index/object store
-   unchanged; hostile global git config inert; plan-mode missing frozen arm can never
-   count as completed; complete-validated three measures asserted.
+2. **`tests/unit/opws/test_opws_m19a1b_tree_audit.py`** — 15 synthetic-git tests
+   (mission scenarios i–x plus positive plan-counts, bare-repo store, alternates
+   store, CLI smoke): identity across modify/delete/add/mode change; zero-byte
+   `__init__.py`; no-final-newline; flagged `test_*.py` outside `tests/` (flag
+   authority, no filename heuristic); rename within one boundary reconstructs and
+   crossing records STOP; wrong test flag fails classification even when tree
+   matches; target-tree mismatch reports first differing path; cleanup on failed
+   apply with source store refs/index/object store unchanged; hostile global git
+   config inert; plan-mode missing frozen arm can never count as completed;
+   complete-validated three measures asserted; bare-repo `--saleor-git`;
+   `objects/info/alternates`-served store; end-to-end CLI `--mode tree`.
 
 ## Test evidence
 
-- `py -3.11 -m pytest tests/unit/opws/ -q` → **153 passed** (141 pre-existing + 12 new; none weakened).
+- `py -3.11 -m pytest tests/unit/opws/ -q` → **156 passed** (141 pre-existing + 15 new; none weakened).
 - `ruff check` on both changed files: pass. `mypy --strict` on the new script: pass
   (0 issues). `py_compile` both files: pass. `git diff --check`: pass.
 - No Saleor store touched, no network/dependency/Docker/WSL/pytest-from-real-Saleor;

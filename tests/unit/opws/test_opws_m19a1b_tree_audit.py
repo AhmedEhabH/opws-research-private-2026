@@ -781,3 +781,123 @@ def test_plan_complete_validated_three_measures(tmp_path: Path, monkeypatch: pyt
     assert 0 < dedup["n_physical_executions"] <= 26
     assert "frozen OPWS_EXECUTION_REUSE_DEDUP_R1 five fields, unchanged" in dedup["dedup_semantics"]
     assert plan["tree_receipt_read"] is False
+
+
+# ================================================================= 11. bare-repo saleor-git store
+# The mission requires the real object directory to resolve for BOTH ordinary clones
+# AND bare repositories (fail closed otherwise).
+def test_tree_audit_against_bare_repo_store(tmp_path: Path) -> None:
+    seed = _init_repo(tmp_path)
+    _write_lf(seed / "saleor/core/jwt.py", "def encode(p):\n    return p\n")
+    _write_lf(seed / "saleor/graphql/tests/test_a.py", "def test_a():\n    assert True\n")
+    _commit_all(seed, "one")
+    parent = _git(seed, "rev-parse", "HEAD")
+    _write_lf(seed / "saleor/core/jwt.py", "def encode(p):\n    return p.upper()\n")
+    _write_lf(seed / "saleor/graphql/tests/test_a.py", "def test_a():\n    assert True\n    assert 2 == 2\n")
+    _commit_all(seed, "two")
+    target = _git(seed, "rev-parse", "HEAD")
+    bare = tmp_path / "store.git"
+    proc = subprocess.run(["git", "clone", "-q", "--bare", str(seed), str(bare)],
+                          capture_output=True, env=_ENV)
+    assert proc.returncode == 0, proc.stderr.decode("utf-8", "replace")
+    records = [
+        {"path": "saleor/core/jwt.py", "status": "modified", "test_file": False},
+        {"path": "saleor/graphql/tests/test_a.py", "status": "modified", "test_file": True},
+    ]
+    source = _write_source(tmp_path, task_id="t1", parent=parent, target=target, records=records)
+    # GitStore.open resolves git-dir and common-dir for a BARE repo
+    sstore = ta.GitStore.open(bare)
+    assert sstore.git_dir_abs == bare.resolve()
+    receipt = _run_tree(tmp_path, source=source, store=bare)
+    rec = _first_record(receipt)
+    assert rec["exact_equal"] is True
+    assert rec["classification_reconciled"] is True
+    assert receipt["exit_gate"]["pass"] is True
+
+
+# ================================================================= 12. alternates resolution
+# A store whose object dir is served by another store's objects/info/alternates must
+# still reconstruct exactly (the audit reads the real objects, never writes them).
+def test_tree_audit_reads_store_through_object_alternates(tmp_path: Path) -> None:
+    owner = _init_repo(tmp_path)
+    _write_lf(owner / "saleor/core/jwt.py", "def encode(p):\n    return p\n")
+    _write_lf(owner / "saleor/graphql/tests/test_a.py", "def test_a():\n    assert True\n")
+    _commit_all(owner, "one")
+    parent = _git(owner, "rev-parse", "HEAD")
+    _write_lf(owner / "saleor/core/jwt.py", "def encode(p):\n    return p.upper()\n")
+    _write_lf(owner / "saleor/graphql/tests/test_a.py", "def test_a():\n    assert True\n    assert 2 == 2\n")
+    _commit_all(owner, "two")
+    target = _git(owner, "rev-parse", "HEAD")
+
+    # vacuous clone: same repo shape, EMPTY object dir, served by owner's objects
+    vacuous = tmp_path / "vacuous"
+    proc = subprocess.run(["git", "clone", "-q", "--no-local", "--no-hardlinks", str(owner), str(vacuous)],
+                          capture_output=True, env=_ENV)
+    assert proc.returncode == 0, proc.stderr.decode("utf-8", "replace")
+    _rmtree_retry_local(vacuous / ".git" / "objects")
+    (vacuous / ".git" / "objects").mkdir(parents=True, exist_ok=True)
+    (vacuous / ".git" / "objects" / "info").mkdir(parents=True, exist_ok=True)
+    # LF-only alternates line (CRLF would corrupt the path)
+    (vacuous / ".git" / "objects" / "info" / "alternates").write_bytes(
+        (owner / ".git" / "objects").resolve().as_posix().encode("utf-8") + b"\n"
+    )
+    records = [
+        {"path": "saleor/core/jwt.py", "status": "modified", "test_file": False},
+        {"path": "saleor/graphql/tests/test_a.py", "status": "modified", "test_file": True},
+    ]
+    source = _write_source(tmp_path, task_id="t1", parent=parent, target=target, records=records)
+    # GitStore must follow the alternates file and expose BOTH object dirs
+    sstore = ta.GitStore.open(vacuous)
+    assert len(sstore.object_dirs) == 2
+    receipt = _run_tree(tmp_path, source=source, store=vacuous)
+    rec = _first_record(receipt)
+    assert rec["exact_equal"] is True
+    assert rec["classification_reconciled"] is True
+    # the vacuous clone's local object store stays empty: nothing was written to it
+    assert not list((vacuous / ".git" / "objects").glob("[0-9a-f][0-9a-f]"))
+
+
+def _rmtree_retry_local(path: Path) -> None:
+    import shutil
+    import time
+
+    for _ in range(6):
+        try:
+            shutil.rmtree(path)
+            return
+        except PermissionError:
+            time.sleep(0.4)
+    shutil.rmtree(path, ignore_errors=True)
+
+
+# ================================================================= 13. CLI entry-point smoke
+# All other tests call module functions; this one exercises the real CLI end-to-end
+# on synthetic fixtures (fixture-only execution, allowed by the M18 guardrails).
+def test_cli_tree_mode_end_to_end(tmp_path: Path) -> None:
+    store = _init_repo(tmp_path)
+    _write_lf(store / "saleor/core/jwt.py", "def encode(p):\n    return p\n")
+    _write_lf(store / "saleor/graphql/tests/test_a.py", "def test_a():\n    assert True\n")
+    _commit_all(store, "one")
+    parent = _git(store, "rev-parse", "HEAD")
+    _write_lf(store / "saleor/core/jwt.py", "def encode(p):\n    return p.upper()\n")
+    _write_lf(store / "saleor/graphql/tests/test_a.py", "def test_a():\n    assert True\n    assert 2 == 2\n")
+    _commit_all(store, "two")
+    target = _git(store, "rev-parse", "HEAD")
+    records = [
+        {"path": "saleor/core/jwt.py", "status": "modified", "test_file": False},
+        {"path": "saleor/graphql/tests/test_a.py", "status": "modified", "test_file": True},
+    ]
+    source = _write_source(tmp_path, task_id="t1", parent=parent, target=target, records=records)
+    out = tmp_path / "cli_out"
+    proc = subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "opws_m19a1b_tree_audit.py"),
+         "--repo", str(source), "--saleor-git", str(store), "--out", str(out),
+         "--mode", "tree", "--min-free-gib", "0.01"],
+        capture_output=True, text=True, env=_ENV,
+    )
+    assert proc.returncode == 0, proc.stderr
+    assert "TREE_RECEIPT=" in proc.stdout
+    assert "TREE_GATE=" in proc.stdout
+    receipt = json.loads((out / ta.TREE_RECEIPT_NAME).read_text(encoding="utf-8"))
+    assert receipt["exit_gate"]["pass"] is True
+    assert receipt["summary"]["REAL_TASK_BEHAVIORAL_OUTCOMES"] == 0
