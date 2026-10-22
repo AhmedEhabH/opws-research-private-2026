@@ -1,0 +1,17 @@
+{
+  "schema": "opws-r11-owner-local-attestation/1.0",
+  "status": "OWNER_ATTESTED_BY_EXPLICIT_LOCAL_SWITCH",
+  "owner_action": "Executed script with -ConfirmOwnerApproval",
+  "time_local_iso8601": "2026-10-22T15:54:03.1647766+03:00",
+  "pre_commit_head": "51ab05fefd1ff0c3221867e3dbfdc941e0083ac8",
+  "branch": "parallel/opws-instrument-build-2026-10-20",
+  "frozen_r1_commit": "9038df3ea80d7d478c2f949b2d3fae75754bb6e1",
+  "frozen_r2_tag": "m17-comp-baselines-r2-frozen-2026-10-12",
+  "frozen_r2_commit": "6c2f698154ddcba22ff7d9a85656753a6eaee5ff",
+  "amendment_file_sha256": "64ba6508a8d06d9fd36414259bd9a56572fe2a4cc26b0f2b8b6558e38e2c5d2e",
+  "baseline_inventory_sha256": "2bed55cc7e13971a891b20da0f17e986b7abbd5441712c1e8a83d08c2bbb2867",
+  "baseline_coverage_note": "Key presence 219/219; path validity and dense-model identity not proven by inventory.",
+  "scientific_saleor_runs_authorized": false,
+  "real_task_behavioral_outcomes_observed_to_date": 0,
+  "amendment_original_source_sha256": "98799de1315da6c9cfa72b1e9cf91d75703c598408353e9048a4664a058e6d37"
+}
