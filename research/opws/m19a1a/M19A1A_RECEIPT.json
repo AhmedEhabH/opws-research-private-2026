@@ -1,0 +1,62 @@
+{
+  "schema": "opws-m19a1a-receipt/1.0",
+  "mission": "M19A1A",
+  "title": "OPWS patch materializer integrity repair (atomic, no real Saleor execution)",
+  "created_at": "2026-10-20-local",
+  "before_head": "7af889202c9fe951284a4ee315593b6f832b0af8",
+  "branch": "parallel/opws-instrument-build-2026-10-20",
+  "frozen_r1_commit_short": "9038df3e",
+  "source_identity": {
+    "scripts/opws_phase3b_patch_materialize.py": {
+      "git_blob_sha1": "2b4d71b5f60c429aff23b8b8ca8c777f03f03ce1",
+      "sha256": "577a3695fb5a1f64d225d20f6c73df84a38616b1ea8437d718174d311eeb476a"
+    },
+    "tests/unit/opws/test_opws_phase3b_patch_materialize.py": {
+      "git_blob_sha1": "7999162a2cc401cfc9e272c20ee49a1873f80ba0"
+    },
+    "tests/unit/opws/test_opws_phase3b_m19a1a_integrity.py": {
+      "git_blob_sha1": "b068e1e021d4b7d4773beb40017d5ddcef18de28",
+      "sha256": "447eb6819425160aad2fc3f276bf9691360cd31ae2d675a15767eb6a5dc919b9"
+    }
+  },
+  "test_identity": {
+    "opws_unit_tests_existing_passing": 123,
+    "opws_unit_tests_new_synthetic": 18,
+    "opws_unit_tests_total_passing": 141,
+    "pytest_command": "py -3.11 -m pytest tests/unit/opws/ -q",
+    "ruff": "pass on 3 touched files",
+    "mypy_strict": "pass on scripts/opws_phase3b_patch_materialize.py",
+    "py_compile": "pass on 3 files"
+  },
+  "changed_behavior": [
+    "single deterministic git_diff_bytes producer for ALL patch sides (--no-renames --full-index --binary; hostile-config isolation via GIT_CONFIG_GLOBAL=os.devnull)",
+    "explicit TestPathAuthority from census test_file flags; no filename heuristic; coverage equality enforced; TEST_CLASSIFICATION_AUTHORITY_MISSING fail-closed",
+    "materializer requires the COMPLETE git changed path set (git name-status cross-check); non-test-only FULL_REFERENCE side rejected as a classification",
+    "verify_split_invariants (census equality, disjointness, reference_test_free, union vs classification and git universe) computed and exposed",
+    "FULL_REFERENCE = complete partition incl. added files and migrations + complete common test patch",
+    "fail-closed binary (NUL), symlink (120000), submodule (160000) with evidence; rename old/new side-header validation"
+  ],
+  "census_mapping": {
+    "authority_source": "research/wp2/wp2_saleor_main297_census_2026-09-22.json",
+    "per_path_flag": "tasks[].changed_paths[].test_file",
+    "A_side": "census 'added' record path (1:1 flag)",
+    "D_side": "census 'deleted' record path (1:1 flag)",
+    "M_side": "census 'modified' record path (1:1 flag)",
+    "rename": "single pair-level 'renamed' record; per-side flags require explicit rename_sides authority; otherwise TEST_CLASSIFICATION_AUTHORITY_MISSING (1/297 census tasks affected)",
+    "predicate_declared": "any path segment == tests OR basename starts with test_ OR basename ends with _test.py (frozen census data, not a runtime heuristic)"
+  },
+  "blockers": [
+    "census rename records have no offline-derivable per-side old/new flags; real rename tasks fail closed until a documented side authority exists (M19A1B)"
+  ],
+  "assumptions": [
+    "synthetic repositories are the authoritative engineering fixture; full-tree equality alone cannot validate the test split (demonstrated by test_full_tree_equality_alone_is_insufficient_for_split_validation)",
+    "faithful autocrlf=false worktrees required to apply --full-index patches (fixture corrected; no assertion masked)",
+    "no protocol changes, no edits to frozen evidence, no scientific outcomes"
+  ],
+  "real_task_claims": {
+    "real_tasks_executed": false,
+    "real_saleor_trees_measured": 0,
+    "binding_219_manifest_claims": "none — per-task test path flags are not present in OPWS_BEHAVIOR_CONTRACT_MANIFEST_219.json; no claims made",
+    "REAL_TASK_BEHAVIORAL_OUTCOMES": 0
+  }
+}

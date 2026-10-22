@@ -110,6 +110,15 @@ def _simple_task_repo(tmp_path: Path, *scenario: str) -> tuple[Path, str, str]:
     target = _git(repo, "rev-parse", "HEAD")
     return repo, parent, target
 
+
+def _authority(classification: dict[str, str], tests: set[str]) -> m.TestPathAuthority:
+    """M19A1A: explicit frozen test-path authority for a synthetic task change set."""
+    return m.TestPathAuthority(
+        changed_paths=frozenset(classification),
+        test_paths=frozenset(tests),
+        source="synthetic-fixture",
+    )
+
 # ---------------------------------------------------------------- 1. modified
 def test_modified_file_materializes_correct_patch(tmp_path: Path) -> None:
     repo, parent, target = _simple_task_repo(tmp_path, "modified")
@@ -120,6 +129,7 @@ def test_modified_file_materializes_correct_patch(tmp_path: Path) -> None:
         target_commit=target,
         scope_paths=["saleor/core/jwt.py"],
         classification={"saleor/core/jwt.py": "M"},
+        test_path_authority=_authority({"saleor/core/jwt.py": "M"}, set()),
     )
     patch = result.reference_patch_bytes.decode("utf-8")
     assert "a/saleor/core/jwt.py" in patch and "b/saleor/core/jwt.py" in patch
@@ -139,6 +149,7 @@ def test_added_file_full_creation_for_reference_arms(tmp_path: Path) -> None:
         target_commit=target,
         scope_paths=["saleor/core/new_stuff.py"],
         classification={"saleor/core/new_stuff.py": "A"},
+        test_path_authority=_authority({"saleor/core/new_stuff.py": "A"}, set()),
         allow_added=True,
     )
     patch = result.reference_patch_bytes.decode("utf-8")
@@ -157,6 +168,7 @@ def test_added_file_parent_only_scope_is_recorded_not_silently_dropped(tmp_path:
         target_commit=target,
         scope_paths=["saleor/core/new_stuff.py"],
         classification={"saleor/core/new_stuff.py": "A"},
+        test_path_authority=_authority({"saleor/core/new_stuff.py": "A"}, set()),
         allow_added=False,
     )
     assert result.per_path_status == {}
@@ -177,6 +189,7 @@ def test_deleted_file_materializes_deletion(tmp_path: Path) -> None:
         target_commit=target,
         scope_paths=["saleor/core/legacy.py"],
         classification={"saleor/core/legacy.py": "D"},
+        test_path_authority=_authority({"saleor/core/legacy.py": "D"}, set()),
     )
     patch = result.reference_patch_bytes.decode("utf-8")
     assert "deleted file mode" in patch and "def legacy():" in patch
@@ -193,6 +206,9 @@ def test_deleted_test_file_goes_to_common_contract(tmp_path: Path) -> None:
         target_commit=target,
         scope_paths=["saleor/graphql/tests/test_tracing.py"],
         classification={"saleor/graphql/tests/test_tracing.py": "D"},
+        test_path_authority=_authority(
+            {"saleor/graphql/tests/test_tracing.py": "D"}, {"saleor/graphql/tests/test_tracing.py"}
+        ),
     )
     assert result.reference_patch_bytes == b""
     # a scope listing a test file is a fail-closed invalid prediction (test files are
@@ -215,6 +231,7 @@ def test_rename_pair_old_and_new_sides(tmp_path: Path) -> None:
         target_commit=target,
         scope_paths=["saleor/core/jwt.py"],
         classification=classification,
+        test_path_authority=_authority(classification, set()),
     )
     new = m.materialize_scoped_reference_patch(
         task_id="saleor-rc-t",
@@ -223,6 +240,7 @@ def test_rename_pair_old_and_new_sides(tmp_path: Path) -> None:
         target_commit=target,
         scope_paths=["saleor/core/token_utils.py"],
         classification=classification,
+        test_path_authority=_authority(classification, set()),
         allow_added=True,
     )
     old_patch = old.reference_patch_bytes.decode("utf-8")
@@ -242,6 +260,9 @@ def test_rename_new_path_not_selectable_by_parent_only_scope(tmp_path: Path) -> 
         target_commit=target,
         scope_paths=["saleor/core/token_utils.py"],
         classification={"saleor/core/jwt.py": "R_OLD", "saleor/core/token_utils.py": "R_NEW"},
+        test_path_authority=_authority(
+            {"saleor/core/jwt.py": "R_OLD", "saleor/core/token_utils.py": "R_NEW"}, set()
+        ),
         allow_added=False,
     )
     assert result.reference_patch_bytes == b""
@@ -262,12 +283,13 @@ def test_test_file_common_contract_split_and_separate_hash(tmp_path: Path) -> No
         target_commit=target,
         scope_paths=["saleor/core/jwt.py"],
         classification=classification,
+        test_path_authority=_authority(classification, {"saleor/graphql/tests/test_a.py"}),
     )
     # test change is in the common-contract patch, never in the editable reference patch
     assert b"saleor/graphql/tests/test_a.py" not in result.reference_patch_bytes
     assert b"saleor/graphql/tests/test_a.py" in result.test_patch_bytes
     assert result.test_patch_hash != result.reference_patch_hash
-    ref, test = m.split_test_reference(classification)
+    ref, test = m.split_test_reference(classification, _authority(classification, {"saleor/graphql/tests/test_a.py"}))
     assert ref == {"saleor/core/jwt.py": "M"}
     assert test == {"saleor/graphql/tests/test_a.py": "M"}
 
@@ -282,6 +304,7 @@ def test_empty_scope_safe_null_patch(tmp_path: Path) -> None:
         target_commit=target,
         scope_paths=[],
         classification={"saleor/core/jwt.py": "M"},
+        test_path_authority=_authority({"saleor/core/jwt.py": "M"}, set()),
     )
     assert result.reference_patch_bytes == b""
     assert result.reference_patch_hash == hashlib.sha256(b"").hexdigest()
@@ -313,6 +336,7 @@ def test_traversal_absolute_and_alias_paths_rejected(tmp_path: Path, bad: str) -
             target_commit=target,
             scope_paths=[bad],
             classification={"saleor/core/jwt.py": "M"},
+            test_path_authority=_authority({"saleor/core/jwt.py": "M"}, set()),
         )
 
 
@@ -325,6 +349,7 @@ def test_unsafe_classification_path_rejected_not_guessed(tmp_path: Path) -> None
         target_commit=target,
         scope_paths=["saleor/core/jwt.py"],
         classification={"saleor/core/jwt.py": "M", "../evil.py": "A"},
+        test_path_authority=_authority({"saleor/core/jwt.py": "M"}, set()),
     )
     assert any(rec["path"] == "../evil.py" for rec in result.invalid_prediction_paths)
 
@@ -338,6 +363,7 @@ def test_nonempty_garbage_repo_path_rejected(tmp_path: Path) -> None:
             target_commit="b" * 40,
             scope_paths=["a.py"],
             classification={"a.py": "M"},
+            test_path_authority=_authority({"a.py": "M"}, set()),
         )
 
 
@@ -359,6 +385,8 @@ def test_symlink_blob_path_rejected(tmp_path: Path) -> None:
     _git(repo, "commit", "-qm", "two")  # NOT add -A: that would drop the staged cacheinfo symlink
     target = _git(repo, "rev-parse", "HEAD")
     assert m.target_blob_mode(repo, target, "link.txt") == "120000"
+    # M19A1A: classification must cover the COMPLETE git changed set (real.txt also changed)
+    classification = {"link.txt": "A", "real.txt": "M"}
     with pytest.raises(m.SymlinkPathError):
         m.materialize_scoped_reference_patch(
             task_id="saleor-rc-t",
@@ -366,7 +394,8 @@ def test_symlink_blob_path_rejected(tmp_path: Path) -> None:
             parent_commit=parent,
             target_commit=target,
             scope_paths=["link.txt"],
-            classification={"link.txt": "A"},
+            classification=classification,
+            test_path_authority=_authority(classification, set()),
             allow_added=True,
         )
 
@@ -383,6 +412,7 @@ def test_missing_parent_or_target_object_fails_closed(tmp_path: Path, which: str
             repo=repo,
             scope_paths=["saleor/core/jwt.py"],
             classification={"saleor/core/jwt.py": "M"},
+            test_path_authority=_authority({"saleor/core/jwt.py": "M"}, set()),
             **kwargs,
         )
 
@@ -397,11 +427,15 @@ def test_patch_conflict_detected_via_apply_check(tmp_path: Path) -> None:
         target_commit=target,
         scope_paths=["saleor/core/jwt.py"],
         classification={"saleor/core/jwt.py": "M"},
+        test_path_authority=_authority({"saleor/core/jwt.py": "M"}, set()),
     )
     worktree = tmp_path / "wt"
     proc = subprocess.run(["git", "clone", "-q", str(repo), str(worktree)], capture_output=True)
     assert proc.returncode == 0
-    _git(worktree, "checkout", "-q", parent)
+    # faithful parent worktree: --full-index patches verify the old-side blob hash, so
+    # autocrlf must be off before checkout (Windows git defaults autocrlf=true)
+    _git(worktree, "config", "core.autocrlf", "false")
+    _git(worktree, "checkout", "-qf", parent)
     ok, _ = m.apply_check(worktree, result.reference_patch_bytes)
     assert ok is True
     # tamper the parent file -> patch no longer applies cleanly
@@ -423,6 +457,7 @@ def test_changed_blob_fingerprint_matches_target_blob(tmp_path: Path) -> None:
         target_commit=target,
         scope_paths=["saleor/core/jwt.py"],
         classification={"saleor/core/jwt.py": "M"},
+        test_path_authority=_authority({"saleor/core/jwt.py": "M"}, set()),
     )
     worktree = tmp_path / "wt"
     proc = subprocess.run(["git", "clone", "-q", str(repo), str(worktree)], capture_output=True)
@@ -461,11 +496,13 @@ def test_unexpected_output_bounded(tmp_path: Path) -> None:
 # ---------------------------------------------------------------- 13. stable sha double run
 def test_stable_sha_deterministic_double_run(tmp_path: Path) -> None:
     repo, parent, target = _simple_task_repo(tmp_path, "modified", "added", "deleted", "renamed", "test_mod")
+    # scenario is (modified, added, deleted, renamed, test_mod): git has FIVE changed
+    # paths (no test_del); classification must reflect the COMPLETE changed set (M19A1A)
     classification = {
         "saleor/core/jwt.py": "R_OLD",
         "saleor/core/token_utils.py": "R_NEW",
         "saleor/core/new_stuff.py": "A",
-        "saleor/graphql/tests/test_tracing.py": "D",
+        "saleor/core/legacy.py": "D",
         "saleor/graphql/tests/test_a.py": "M",
     }
     kwargs = {
@@ -480,6 +517,7 @@ def test_stable_sha_deterministic_double_run(tmp_path: Path) -> None:
             "saleor/graphql/tests/test_tracing.py",
         ],
         "classification": classification,
+        "test_path_authority": _authority(classification, {"saleor/graphql/tests/test_a.py"}),
         "allow_added": True,
     }
     first = m.materialize_scoped_reference_patch(**kwargs)
@@ -497,12 +535,14 @@ def test_scope_hash_mismatch_equal_patch_hash_not_deduped(tmp_path: Path) -> Non
     scope_a = m.materialize_scoped_reference_patch(
         task_id="t", repo=repo, parent_commit=parent, target_commit=target,
         scope_paths=["saleor/core/jwt.py"], classification=classification,
+        test_path_authority=_authority(classification, set()),
     )
     # scope adds an UNCHANGED sibling path -> same reference patch bytes, different scope hash
     scope_b = m.materialize_scoped_reference_patch(
         task_id="t", repo=repo, parent_commit=parent, target_commit=target,
         scope_paths=["saleor/core/jwt.py", "saleor/graphql/tests/test_a.py"],
         classification=classification,
+        test_path_authority=_authority(classification, set()),
     )
     assert scope_a.reference_patch_hash == scope_b.reference_patch_hash  # equal patch hashes
     assert scope_a.selected_scope_hash != scope_b.selected_scope_hash  # but different scopes
@@ -529,19 +569,34 @@ def test_scope_hash_mismatch_equal_patch_hash_not_deduped(tmp_path: Path) -> Non
 
 
 # ---------------------------------------------------------------- 15. FULL_REFERENCE derivation
-def test_full_reference_classification_excludes_test_files(tmp_path: Path) -> None:
+def test_full_reference_partition_splits_complete_change_set_by_authority(tmp_path: Path) -> None:
     repo, parent, target = _simple_task_repo(tmp_path, "modified", "added", "deleted", "test_mod", "test_del")
-    fr = m.full_reference_classification(repo, parent, target)
-    # non-test changed files present in the historical change set
-    assert "saleor/core/jwt.py" in fr
-    assert "saleor/core/new_stuff.py" in fr
-    # test-file changes belong to the common contract, never to FULL_REFERENCE
-    assert "saleor/graphql/tests/test_a.py" not in fr
-    assert "saleor/graphql/tests/test_tracing.py" not in fr
-    assert not any("/tests/" in p or p.endswith("_test.py") for p in fr)
-    ref, test = m.split_test_reference(fr)
-    assert set(test) == set()  # already test-free
-    assert ref == fr
+    classification = {
+        "saleor/core/jwt.py": "M",
+        "saleor/core/new_stuff.py": "A",
+        "saleor/core/legacy.py": "D",
+        "saleor/graphql/tests/test_a.py": "M",
+        "saleor/graphql/tests/test_tracing.py": "D",
+    }
+    authority = _authority(classification, {"saleor/graphql/tests/test_a.py", "saleor/graphql/tests/test_tracing.py"})
+    reference, test = m.full_reference_partition(repo, parent, target, authority)
+    # FULL_REFERENCE carries ALL non-test changes (added files included), never test changes
+    assert reference == {
+        "saleor/core/jwt.py": "M",
+        "saleor/core/new_stuff.py": "A",
+        "saleor/core/legacy.py": "D",
+    }
+    assert set(test) == authority.test_paths
+    inv = m.verify_split_invariants(classification, reference, test, test_path_authority=authority)
+    assert inv["disjoint"] and inv["union_all_classification"] and inv["test_equals_census_authoritative"]
+    # full materialization: added non-test file materialized; the common test patch is preserved
+    full = m.materialize_full_reference(
+        task_id="saleor-rc-t", repo=repo, parent_commit=parent, target_commit=target,
+        test_path_authority=authority,
+    )
+    assert b"new file mode" in full.reference_patch_bytes
+    assert b"saleor/graphql/tests/test_a.py" in full.test_patch_bytes
+    assert full.split_invariants["union_all_git_changed"] is True
 
 
 def test_full_reference_contract_failure_is_invalid_contract_not_selector(tmp_path: Path) -> None:
