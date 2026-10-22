@@ -1577,6 +1577,7 @@ def _cli() -> int:
             tree_receipt = result.summary
             if not result.summary["exit_gate"]["pass"]:
                 print("TREE_GATE=FAIL (failures are DATA; see per_task records)", file=sys.stderr)
+                return 4
 
         if args.mode in ("plan", "all"):
             if args.mode == "plan":

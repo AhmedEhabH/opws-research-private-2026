@@ -901,3 +901,57 @@ def test_cli_tree_mode_end_to_end(tmp_path: Path) -> None:
     receipt = json.loads((out / ta.TREE_RECEIPT_NAME).read_text(encoding="utf-8"))
     assert receipt["exit_gate"]["pass"] is True
     assert receipt["summary"]["REAL_TASK_BEHAVIORAL_OUTCOMES"] == 0
+
+def test_cli_tree_gate_fail_returns_nonzero(tmp_path: Path) -> None:
+    store = _init_repo(tmp_path)
+    prod = store / "saleor/core/jwt.py"
+    test = store / "saleor/graphql/tests/test_a.py"
+
+    _write_lf(prod, "value = 1\n")
+    _write_lf(test, "def test_a():\n    assert True\n")
+    _commit_all(store, "parent")
+    parent = _git(store, "rev-parse", "HEAD")
+
+    _write_lf(prod, "value = 2\n")
+    _write_lf(test, "def test_a():\n    assert 2 == 2\n")
+    _commit_all(store, "target")
+    target = _git(store, "rev-parse", "HEAD")
+
+    # Deliberately inconsistent census counts versus test_file flags.
+    records = [
+        {"path": "saleor/core/jwt.py", "status": "modified", "test_file": False},
+        {"path": "saleor/graphql/tests/test_a.py", "status": "modified", "test_file": False},
+    ]
+    counts = {
+        "n_changed": 2, "n_test": 1,
+        "n_test_added": 0, "n_test_modified": 1, "n_test_deleted": 0,
+        "n_migration": 0, "n_config_or_infra": 0,
+    }
+
+    source = _write_source(
+        tmp_path, task_id="t1", parent=parent, target=target,
+        records=records, counts=counts,
+    )
+    out = tmp_path / "cli_failed_out"
+    proc = subprocess.run(
+        [
+            sys.executable,
+            str(ROOT / "scripts" / "opws_m19a1b_tree_audit.py"),
+            "--repo", str(source),
+            "--saleor-git", str(store),
+            "--out", str(out),
+            "--mode", "tree",
+            "--min-free-gib", "0.01",
+        ],
+        capture_output=True, text=True, env=_ENV,
+    )
+
+    assert proc.returncode == 4, proc.stderr
+    assert "TREE_GATE=FAIL" in proc.stderr
+
+    receipt = json.loads(
+        (out / ta.TREE_RECEIPT_NAME).read_text(encoding="utf-8")
+    )
+    assert receipt["exit_gate"]["pass"] is False
+    assert receipt["summary"]["n_reconstructed_exact"] == 1
+    assert receipt["summary"]["n_classification_reconciled"] == 0
