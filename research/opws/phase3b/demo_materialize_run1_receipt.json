@@ -1,0 +1,24 @@
+{
+ "files_changed": [
+  "saleor/core/jwt.py",
+  "saleor/core/legacy.py",
+  "saleor/core/new_stuff.py"
+ ],
+ "invalid_prediction_paths": [],
+ "parent_commit": "ee2f811f3af1153db8a460d80043785869934006",
+ "per_path_status": {
+  "saleor/core/jwt.py": "M",
+  "saleor/core/legacy.py": "D",
+  "saleor/core/new_stuff.py": "A"
+ },
+ "reference_patch_bytes": 594,
+ "reference_patch_sha256": "57891c693d7b7210a019e7c1b019fd3fe400907088d940d60d9e38a23bbc0a1e",
+ "schema": "opws-phase3b-patch-materialize/1.0-engineering",
+ "scientific_outcome": "UNOBSERVED",
+ "selected_scope_hash": "eda107cbc76d5bef489a276fa2baaaeeaa87796a916d754607b0a788b850c0c0",
+ "target_commit": "467599d2630b94855231573871837df98f17870c",
+ "task_id": "saleor-rc-demo",
+ "test_patch_bytes": 248,
+ "test_patch_sha256": "f1da2c6c5497ad22dda3227a0aab3eddbaa1e274984a3de3c548f3ee13beecd6",
+ "unresolved_contracts": []
+}

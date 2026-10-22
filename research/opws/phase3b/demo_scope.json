@@ -1,0 +1,3 @@
+{
+  "scope": ["saleor/core/jwt.py", "saleor/core/new_stuff.py", "saleor/core/legacy.py"]
+}

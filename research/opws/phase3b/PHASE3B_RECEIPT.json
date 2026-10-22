@@ -1,0 +1,136 @@
+{
+  "schema": "opws-phase3b-engineering-receipt/1.0",
+  "mission": "M18_PHASE3B_ENGINEERING",
+  "classification": "TECHNICAL_IMPLEMENTATION_PASS",
+  "scientific_classification_note": "engineering only; scientific PASS is explicitly NOT claimed",
+  "counters": {
+    "REAL_TASK_BEHAVIORAL_OUTCOMES": 0,
+    "LLM_GENERATION_RUNS": 0,
+    "SCIENTIFIC_OUTCOME_COUNT": 0,
+    "STAGE5_PREFLIGHT_RUNS": 0,
+    "DOCKER_WSL_RUNS": 0,
+    "API_INFERENCE_RUNS": 0,
+    "DEPENDENCY_DOWNLOADS": 0,
+    "COMMITS_TAGS_PUSHES": 0
+  },
+  "git_state": {
+    "branch": "parallel/opws-instrument-build-2026-10-20",
+    "base_head": "0fab02d38b6c3747f32808f375ade9b7a8e4e40d",
+    "final_head": "0fab02d38b6c3747f32808f375ade9b7a8e4e40d",
+    "origin_main": "1661ec215ede6ae96e82735148db4febffb21580",
+    "frozen_r1_commit": "9038df3ea80d7d478c2f949b2d3fae75754bb6e1",
+    "frozen_r1_is_ancestor_of_head": false,
+    "worktree_clean_at_start": true,
+    "tracked_files_modified": []
+  },
+  "files_changed": [
+    "scripts/opws_phase3b_patch_materialize.py",
+    "scripts/opws_phase3b_evaluator_adapter.py",
+    "tests/unit/opws/test_opws_phase3b_patch_materialize.py",
+    "tests/unit/opws/test_opws_phase3b_evaluator_adapter.py",
+    "research/opws/PHASE3B_ENGINEERING_RESULT.md",
+    "research/opws/phase3b/PHASE3B_RECEIPT.json",
+    "research/opws/phase3b/demo_scope.json",
+    "research/opws/phase3b/demo_classification.json",
+    "research/opws/phase3b/demo_materialize_run1_receipt.json",
+    "research/opws/phase3b/demo_materialize_run2_receipt.json"
+  ],
+  "input_source_hashes": {
+    "OPWS_BEHAVIOR_CONTRACT_MANIFEST_219.json": "5bd64af020caae5cca495aad31221411f87f347841a728452a0a2d3ee63cd064",
+    "OPWS_POPULATION_BINDING_R1.json": "91ba96f7a721cf23aa33ba73bafe86754c46714f36e70ca0eeb8928de7bbd42f",
+    "OPWS_ENVIRONMENT_ID_PROPOSAL.json": "94859d48e7040547d1cc92fc6868056246b4082d302cc47052059dfd58bac2cc",
+    "saleor_reserve_300_proxies.json": "d4ecdb7de555e0943c726a5e9ec0bfc7854515aba4406883f164697e39056e43",
+    "PHASE3A_RESULT.md": "086acade9bfd106075679452eebf5dca2dbe5304a91982cd9672cab9d7c82ad7",
+    "PHASE2_RESULT.md": "2def79ddfb00de89e26c442e08a5254eb5226a58406f6fc660ec5856be70823a",
+    "scripts/opws_build.py": "47b3a62162b896bfa9c9f3db83b6c33b2c42ccc55e541e175f88f84693ecd879",
+    "scripts/opws_phase2_plan.py": "785c679f309149cddc9572eae066cdcc00b4aad6a4705d904b6599e0337c0449",
+    "scripts/opws_toy_engine.py": "2a6e62b03954924a3e7071428c481ebe222026741701a8567ed153d0f389ae97",
+    "OPWS_PROTOCOL_R1_bundle": "44f18bcad2a80f160646ddd676bca2eb80bd3fc06a1a4925a82e301f025cd767"
+  },
+  "new_modules_and_functions": {
+    "scripts/opws_phase3b_patch_materialize.py": [
+      "materialize_scoped_reference_patch",
+      "normalize_classification",
+      "split_test_reference",
+      "git_name_status_map",
+      "verify_repository",
+      "verify_ref_commit",
+      "git_capture",
+      "full_reference_classification",
+      "physical_execution_identity",
+      "plan_physical_dedup",
+      "apply_check",
+      "errors: GitObjectIdentityError/RepoPathError/ScopePathInvalidError/UnsupportedStatusError/SymlinkPathError/OutputTooLargeError/GitCommandError/UnresolvedContractRecord"
+    ],
+    "scripts/opws_phase3b_evaluator_adapter.py": [
+      "instantiate_contract",
+      "evaluate_behavior (fail closed, UNOBSERVED)",
+      "apply_common_tests_once",
+      "r11_proposed_control_records",
+      "classify_engineering_failure",
+      "classify_apply_check",
+      "guard_non_scientific",
+      "errors: ContractNotInstantiatedError/BehavioralEvaluationNotAuthorizedError/EnvironmentNotMaterializedError/BadEnvironmentIdentityError/InconsistentTestPatchIdentityError/UnsupportedFileStatusError/UnknownFailClosedError"
+    ]
+  },
+  "per_fixture_deterministic_hashes": {
+    "demo_task": {
+      "task_id": "saleor-rc-demo",
+      "scope_source": "research/opws/phase3b/demo_scope.json",
+      "classification_source": "research/opws/phase3b/demo_classification.json",
+      "allow_added": true,
+      "reference_patch_sha256": "57891c693d7b7210a019e7c1b019fd3fe400907088d940d60d9e38a23bbc0a1e",
+      "test_patch_sha256": "f1da2c6c5497ad22dda3227a0aab3eddbaa1e274984a3de3c548f3ee13beecd6",
+      "selected_scope_hash": "eda107cbc76d5bef489a276fa2baaaeeaa87796a916d754607b0a788b850c0c0",
+      "double_run_identical": true
+    },
+    "adapter_dry_run": {
+      "contract_kind": "COMMON_TEST",
+      "instantiation_id": "68d7c4a65443de19927eb23a5787245aefb3025c041c3bc2c92592a563e0c8ce",
+      "node_ids": ["f2p-1", "f2p-2"]
+    }
+  },
+  "test_counts": {
+    "new_phase3b_materializer_tests": 28,
+    "new_phase3b_adapter_tests": 16,
+    "phase3a_regression_tests": 79,
+    "total_opws_unit_tests_passed": 123,
+    "ruff_findings": 0,
+    "mypy_strict_issues": 0,
+    "py_compile": "OK",
+    "git_diff_check": "CLEAN"
+  },
+  "unresolved_r11_decisions": [
+    {
+      "id": "U1",
+      "contract": "GOLD_SOURCE_VS_GOLD_VALIDITY",
+      "status": "UNRESOLVED_PENDING_OWNER",
+      "detail": "GOLD scope source is the frozen historical proxy non-test set; GOLD-validity expects full non-test reference patch. R1.1 amendment DRAFT/UNAPPROVED; GOLD NOT rewritten; FULL_REFERENCE is a separate PROPOSED diagnostic control."
+    },
+    {
+      "id": "U2",
+      "contract": "R1-ADDED-HANDLING",
+      "status": "UNRESOLVED_PENDING_OWNER",
+      "detail": "Frozen ADDED treatment (reference-derived arms may include added files) vs frozen scope sources that cannot express added paths. Explicit unresolved records produced; no guess, no silent injection."
+    },
+    {
+      "id": "U3",
+      "contract": "ENVIRONMENT_ID_SERIALIZATION",
+      "status": "OWNER_DECISION_OPEN_FROM_P2A",
+      "detail": "Recipe proposed in OPWS_ENVIRONMENT_ID_PROPOSAL.json; not re-decided in M18."
+    },
+    {
+      "id": "U4",
+      "contract": "REAL_SALEOR_REPO_PATH",
+      "status": "UNRESOLVED_IN_M18",
+      "detail": "Materializer takes the read-only repository path as an explicit parameter; a future authorized execution mission must supply a read-only Saleor mirror."
+    },
+    {
+      "id": "U5",
+      "contract": "LIVE_STATUS_UPDATE",
+      "status": "DECIDED_OUT_FOR_M18",
+      "detail": "AGENTS.md standing LIVE_STATUS update applies to the WP-1b research line; M18 receipt contract is the controlling deliverable set, so docs/LIVE_STATUS.json was not modified. Flagged for owner."
+    }
+  ],
+  "no_behavioral_claim": true
+}

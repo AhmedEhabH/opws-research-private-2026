@@ -1,0 +1,8 @@
+{
+  "changes": {
+    "saleor/core/jwt.py": "M",
+    "saleor/core/new_stuff.py": "A",
+    "saleor/core/legacy.py": "D",
+    "saleor/graphql/tests/test_a.py": "M"
+  }
+}
