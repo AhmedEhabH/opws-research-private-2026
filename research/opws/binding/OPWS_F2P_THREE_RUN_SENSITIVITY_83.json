@@ -1,0 +1,3429 @@
+{
+  "changed_nodes_total": 27,
+  "status": "STRICT_THREE_RUN_SENSITIVITY_NOT_HISTORICAL_REDEFINITION",
+  "tasks": [
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 4,
+        "FLAKY": 1,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 13,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/product/tests/test_tasks.py::test_update_products_search_vector_task_with_static_number_of_queries[0]",
+          "saleor/product/tests/test_tasks.py::test_update_products_search_vector_task_with_static_number_of_queries[1]",
+          "saleor/product/tests/test_tasks.py::test_update_products_search_vector_task_with_static_number_of_queries[2]",
+          "saleor/product/tests/test_tasks.py::test_update_products_search_vector_task_with_static_number_of_queries[3]"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 4,
+        "FLAKY": 1,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 13,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-0179b331be38"
+    },
+    {
+      "changed_nodes": [
+        {
+          "historical": "P2P_ONLY",
+          "node_id": "saleor/graphql/order/tests/mutations/test_draft_order_complete.py::test_draft_order_complete_product_without_inventory_tracking",
+          "parent_runs": [
+            "passed",
+            "failed",
+            "passed"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "passed",
+            "passed",
+            "passed"
+          ]
+        }
+      ],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 169,
+        "FLAKY": 28,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 948,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/checkout/tests/test_actions.py::test_call_checkout_event_only_async_when_sync_missing",
+          "saleor/checkout/tests/test_actions.py::test_call_checkout_event_skips_tax_webhook_when_not_expired",
+          "saleor/checkout/tests/test_actions.py::test_call_checkout_event_triggers_sync_webhook_when_needed",
+          "saleor/checkout/tests/test_actions.py::test_call_checkout_events_only_async_when_sync_missing",
+          "saleor/checkout/tests/test_actions.py::test_call_checkout_events_skips_tax_webhook_when_not_expired",
+          "saleor/checkout/tests/test_actions.py::test_call_checkout_events_triggers_sync_webhook_when_needed",
+          "saleor/checkout/tests/test_actions.py::test_call_checkout_info_event_only_async_when_sync_missing",
+          "saleor/checkout/tests/test_actions.py::test_call_checkout_info_event_skips_tax_webhook_when_not_expired",
+          "saleor/checkout/tests/test_actions.py::test_call_checkout_info_event_triggers_sync_webhook_when_needed",
+          "saleor/checkout/tests/test_actions.py::test_transaction_amounts_for_checkout_fully_authorized_triggers_sync_webhook",
+          "saleor/checkout/tests/test_actions.py::test_transaction_amounts_for_checkout_fully_paid_triggers_sync_webhook",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_add_promo_code.py::test_checkout_add_voucher_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_billing_address_update.py::test_checkout_billing_address_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_create.py::test_checkout_create_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_customer_attach.py::test_checkout_customer_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_customer_detach.py::test_checkout_customer_detach_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_customer_note_update.py::test_checkout_customer_note_update_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_delivery_method_update.py::test_checkout_delivery_method_update_cc_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_delivery_method_update.py::test_checkout_delivery_method_update_external_shipping_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_delivery_method_update.py::test_checkout_delivery_method_update_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_email_update.py::test_checkout_email_update_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_language_code_update.py::test_checkout_update_language_code_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_line_delete.py::test_checkout_line_delete_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_lines_delete.py::test_checkout_lines_delete_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_shipping_address_update.py::test_checkout_shipping_address_update_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_shipping_method_update.py::test_checkout_shipping_method_update_to_none_triggers_webhooks",
+          "saleor/graphql/meta/tests/mutations/test_checkout.py::test_add_metadata_for_checkout_triggers_webhooks_with_checkout_updated",
+          "saleor/graphql/meta/tests/mutations/test_checkout.py::test_add_metadata_for_checkout_triggers_webhooks_with_updated_metadata",
+          "saleor/graphql/meta/tests/mutations/test_order.py::test_change_in_private_metadata_triggers_webhooks",
+          "saleor/graphql/meta/tests/mutations/test_order.py::test_change_in_public_metadata_triggers_webhooks",
+          "saleor/graphql/order/tests/mutations/test_draft_order_complete.py::test_draft_order_complete_triggers_webhooks",
+          "saleor/graphql/order/tests/mutations/test_draft_order_create.py::test_draft_order_create_triggers_webhooks",
+          "saleor/graphql/order/tests/mutations/test_draft_order_delete.py::test_draft_order_delete_do_not_trigger_sync_webhooks",
+          "saleor/graphql/order/tests/mutations/test_draft_order_update.py::test_draft_order_update_triggers_webhooks",
+          "saleor/graphql/order/tests/mutations/test_draft_order_update.py::test_draft_order_update_triggers_webhooks_when_tax_webhook_not_needed",
+          "saleor/graphql/order/tests/mutations/test_order_cancel.py::test_order_cancel_skip_trigger_webhooks",
+          "saleor/graphql/order/tests/mutations/test_order_capture.py::test_order_capture_triggers_webhooks",
+          "saleor/graphql/order/tests/mutations/test_order_confirm.py::test_order_confirm_triggers_webhooks",
+          "saleor/graphql/order/tests/mutations/test_order_fulfill.py::test_order_fulfill_triggers_webhooks",
+          "saleor/graphql/order/tests/mutations/test_order_line_delete.py::test_order_line_delete_triggers_webhooks[draft-draft_order_updated]",
+          "saleor/graphql/order/tests/mutations/test_order_line_delete.py::test_order_line_delete_triggers_webhooks[unconfirmed-order_updated]",
+          "saleor/graphql/order/tests/mutations/test_order_line_update.py::test_order_line_update_triggers_webhooks[draft-draft_order_updated]",
+          "saleor/graphql/order/tests/mutations/test_order_line_update.py::test_order_line_update_triggers_webhooks[unconfirmed-order_updated]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_triggers_webhooks[draft-draft_order_updated]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_triggers_webhooks[unconfirmed-order_updated]",
+          "saleor/graphql/order/tests/mutations/test_order_note_add.py::test_order_note_add_user_triggers_webhooks[draft-draft_order_updated]",
+          "saleor/graphql/order/tests/mutations/test_order_note_add.py::test_order_note_add_user_triggers_webhooks[unconfirmed-order_updated]",
+          "saleor/graphql/order/tests/mutations/test_order_note_update.py::test_order_note_update_user_triggers_webhooks[draft-draft_order_updated]",
+          "saleor/graphql/order/tests/mutations/test_order_note_update.py::test_order_note_update_user_triggers_webhooks[unconfirmed-order_updated]",
+          "saleor/graphql/order/tests/mutations/test_order_update.py::test_order_update_triggers_webhooks",
+          "saleor/graphql/order/tests/mutations/test_order_update_shipping.py::test_draft_order_update_shipping_triggers_proper_updated_webhook",
+          "saleor/graphql/order/tests/mutations/test_order_update_shipping.py::test_draft_order_update_shipping_triggers_proper_updated_webhook_for_null_shipping_method",
+          "saleor/graphql/order/tests/mutations/test_order_update_shipping.py::test_editable_order_update_shipping_triggers_proper_updated_webhook_for_null_shipping_method",
+          "saleor/graphql/order/tests/mutations/test_order_update_shipping.py::test_order_update_shipping_triggers_webhooks",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_missing_filter_shipping_method_webhook[order_cancelled]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_missing_filter_shipping_method_webhook[order_confirmed]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_missing_filter_shipping_method_webhook[order_created]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_missing_filter_shipping_method_webhook[order_expired]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_missing_filter_shipping_method_webhook[order_fulfilled]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_missing_filter_shipping_method_webhook[order_fully_paid]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_missing_filter_shipping_method_webhook[order_fully_refunded]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_missing_filter_shipping_method_webhook[order_metadata_updated]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_missing_filter_shipping_method_webhook[order_paid]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_missing_filter_shipping_method_webhook[order_refunded]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_missing_filter_shipping_method_webhook[order_updated]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_sync_webhooks_when_draft_order_deleted",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_sync_webhooks_when_order_not_editable[draft_order_created]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_sync_webhooks_when_order_not_editable[draft_order_updated]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_sync_webhooks_when_order_not_editable[order_cancelled]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_sync_webhooks_when_order_not_editable[order_confirmed]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_sync_webhooks_when_order_not_editable[order_created]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_sync_webhooks_when_order_not_editable[order_expired]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_sync_webhooks_when_order_not_editable[order_fulfilled]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_sync_webhooks_when_order_not_editable[order_fully_paid]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_sync_webhooks_when_order_not_editable[order_fully_refunded]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_sync_webhooks_when_order_not_editable[order_metadata_updated]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_sync_webhooks_when_order_not_editable[order_paid]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_sync_webhooks_when_order_not_editable[order_refunded]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_sync_webhooks_when_order_not_editable[order_updated]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_tax_webhook_when_prices_are_valid[draft_order_created]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_tax_webhook_when_prices_are_valid[draft_order_updated]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_tax_webhook_when_prices_are_valid[order_cancelled]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_tax_webhook_when_prices_are_valid[order_confirmed]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_tax_webhook_when_prices_are_valid[order_created]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_tax_webhook_when_prices_are_valid[order_expired]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_tax_webhook_when_prices_are_valid[order_fulfilled]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_tax_webhook_when_prices_are_valid[order_fully_paid]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_tax_webhook_when_prices_are_valid[order_fully_refunded]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_tax_webhook_when_prices_are_valid[order_metadata_updated]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_tax_webhook_when_prices_are_valid[order_paid]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_tax_webhook_when_prices_are_valid[order_refunded]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_tax_webhook_when_prices_are_valid[order_updated]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_skips_when_sync_webhooks_missing",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_triggers_sync_webhook[order_cancelled]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_triggers_sync_webhook[order_confirmed]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_triggers_sync_webhook[order_created]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_triggers_sync_webhook[order_expired]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_triggers_sync_webhook[order_fulfilled]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_triggers_sync_webhook[order_fully_paid]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_triggers_sync_webhook[order_fully_refunded]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_triggers_sync_webhook[order_metadata_updated]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_triggers_sync_webhook[order_paid]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_triggers_sync_webhook[order_refunded]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_event_triggers_sync_webhook[order_updated]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_missing_filter_shipping_method_webhook[order_cancelled]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_missing_filter_shipping_method_webhook[order_confirmed]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_missing_filter_shipping_method_webhook[order_created]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_missing_filter_shipping_method_webhook[order_expired]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_missing_filter_shipping_method_webhook[order_fulfilled]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_missing_filter_shipping_method_webhook[order_fully_paid]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_missing_filter_shipping_method_webhook[order_fully_refunded]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_missing_filter_shipping_method_webhook[order_paid]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_missing_filter_shipping_method_webhook[order_refunded]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_missing_filter_shipping_method_webhook[order_updated]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_sync_webhooks_when_draft_order_deleted",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_sync_webhooks_when_order_not_editable[draft_order_created]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_sync_webhooks_when_order_not_editable[draft_order_updated]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_sync_webhooks_when_order_not_editable[order_cancelled]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_sync_webhooks_when_order_not_editable[order_confirmed]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_sync_webhooks_when_order_not_editable[order_created]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_sync_webhooks_when_order_not_editable[order_expired]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_sync_webhooks_when_order_not_editable[order_fulfilled]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_sync_webhooks_when_order_not_editable[order_fully_paid]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_sync_webhooks_when_order_not_editable[order_fully_refunded]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_sync_webhooks_when_order_not_editable[order_paid]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_sync_webhooks_when_order_not_editable[order_refunded]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_sync_webhooks_when_order_not_editable[order_updated]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_tax_webhook_when_prices_are_valid[draft_order_created]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_tax_webhook_when_prices_are_valid[draft_order_updated]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_tax_webhook_when_prices_are_valid[order_cancelled]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_tax_webhook_when_prices_are_valid[order_confirmed]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_tax_webhook_when_prices_are_valid[order_created]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_tax_webhook_when_prices_are_valid[order_expired]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_tax_webhook_when_prices_are_valid[order_fulfilled]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_tax_webhook_when_prices_are_valid[order_fully_paid]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_tax_webhook_when_prices_are_valid[order_fully_refunded]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_tax_webhook_when_prices_are_valid[order_paid]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_tax_webhook_when_prices_are_valid[order_refunded]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_tax_webhook_when_prices_are_valid[order_updated]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_skips_when_sync_webhooks_missing",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_triggers_sync_webhook[order_cancelled]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_triggers_sync_webhook[order_confirmed]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_triggers_sync_webhook[order_created]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_triggers_sync_webhook[order_expired]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_triggers_sync_webhook[order_fulfilled]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_triggers_sync_webhook[order_fully_paid]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_triggers_sync_webhook[order_fully_refunded]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_triggers_sync_webhook[order_paid]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_triggers_sync_webhook[order_refunded]",
+          "saleor/order/tests/test_order_actions.py::test_call_order_events_triggers_sync_webhook[order_updated]",
+          "saleor/order/tests/test_order_actions.py::test_cancel_order_dont_trigger_webhooks",
+          "saleor/order/tests/test_order_actions.py::test_handle_fully_paid_order_triggers_webhooks",
+          "saleor/order/tests/test_order_actions.py::test_order_authorized_triggers_webhooks",
+          "saleor/order/tests/test_order_actions.py::test_order_awaits_fulfillment_approval_triggers_webhooks",
+          "saleor/order/tests/test_order_actions.py::test_order_charged_triggers_webhooks",
+          "saleor/order/tests/test_order_actions.py::test_order_confirmed_triggers_webhooks",
+          "saleor/order/tests/test_order_actions.py::test_order_created_triggers_webhooks",
+          "saleor/order/tests/test_order_actions.py::test_order_fulfilled_dont_trigger_webhooks",
+          "saleor/order/tests/test_order_actions.py::test_order_refunded_triggers_webhooks",
+          "saleor/order/tests/test_order_actions.py::test_order_transaction_updated_for_authorized_triggers_webhooks",
+          "saleor/order/tests/test_order_actions.py::test_order_transaction_updated_for_charged_triggers_webhooks",
+          "saleor/order/tests/test_order_actions.py::test_order_transaction_updated_for_refunded_triggers_webhooks",
+          "saleor/order/tests/test_order_actions.py::test_order_voided_triggers_webhooks",
+          "saleor/order/tests/test_tasks.py::test_expire_orders_task_do_not_call_sync_webhooks",
+          "saleor/order/tests/test_tasks.py::test_send_order_updated",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_event_delivery_retry",
+          "saleor/webhook/tests/test_webhook_protocols.py::test_trigger_webhooks_async_pick_up_queue_based_on_protocol[None-https://localhost:8888/webhook-endpoint/]",
+          "saleor/webhook/tests/test_webhook_protocols.py::test_trigger_webhooks_async_pick_up_queue_based_on_protocol[PUBSUB_QUEUE-gcpubsub://cloud.google.com/projects/saleor/topics/test]",
+          "saleor/webhook/tests/test_webhook_protocols.py::test_trigger_webhooks_async_pick_up_queue_based_on_protocol[SQS_QUEUE-awssqs://key:secret@sqs.us-east-2.amazonaws.com/xxxx/myqueue.fifo]"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 169,
+        "FLAKY": 29,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 947,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-032b98afff20"
+    },
+    {
+      "changed_nodes": [
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/graphql/order/tests/test_fulfillment_return_products.py::test_fulfillment_refund_products_order_lines_quantity_bigger_than_unfulfilled",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "SYMBOL_ABSENCE_F2P",
+          "node_id": "saleor/graphql/order/tests/test_fulfillment_return_products.py::test_fulfillment_return_products_amount_and_shipping_costs",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/graphql/order/tests/test_fulfillment_return_products.py::test_fulfillment_return_products_amount_bigger_than_captured_amount",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/graphql/order/tests/test_fulfillment_return_products.py::test_fulfillment_return_products_fulfillment_lines",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/graphql/order/tests/test_fulfillment_return_products.py::test_fulfillment_return_products_fulfillment_lines_and_order_lines",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/graphql/order/tests/test_fulfillment_return_products.py::test_fulfillment_return_products_fulfillment_lines_include_shipping_costs",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/graphql/order/tests/test_fulfillment_return_products.py::test_fulfillment_return_products_fulfillment_lines_quantity_bigger_than_total",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/graphql/order/tests/test_fulfillment_return_products.py::test_fulfillment_return_products_lines_with_incorrect_status",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/graphql/order/tests/test_fulfillment_return_products.py::test_fulfillment_return_products_order_lines",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/graphql/order/tests/test_fulfillment_return_products.py::test_fulfillment_return_products_order_lines_custom_amount",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/graphql/order/tests/test_fulfillment_return_products.py::test_fulfillment_return_products_order_lines_quantity_bigger_than_total",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/order/tests/test_order_actions.py::test_cancel_fulfillment",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/order/tests/test_order_actions.py::test_cancel_fulfillment_variant_witout_inventory_tracking",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/order/tests/test_order_actions.py::test_cancel_order",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/order/tests/test_order_actions.py::test_clean_mark_order_as_paid",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/order/tests/test_order_actions.py::test_fulfill_digital_lines",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/order/tests/test_order_actions.py::test_fulfill_order_line",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/order/tests/test_order_actions.py::test_fulfill_order_line_with_variant_deleted",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/order/tests/test_order_actions.py::test_fulfill_order_line_without_inventory_tracking",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/order/tests/test_order_actions.py::test_handle_fully_paid_order",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/order/tests/test_order_actions.py::test_handle_fully_paid_order_no_email",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/order/tests/test_order_actions.py::test_mark_as_paid",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/order/tests/test_order_actions.py::test_mark_as_paid_no_billing_address",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/order/tests/test_order_actions.py::test_mark_as_paid_with_external_reference",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        },
+        {
+          "historical": "BEHAVIORAL_F2P",
+          "node_id": "saleor/order/tests/test_order_actions.py::test_order_refunded",
+          "parent_runs": [
+            "error",
+            "error",
+            "error"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "error",
+            "error",
+            "passed"
+          ]
+        }
+      ],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 24,
+        "FLAKY": 209,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 0,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 1,
+        "TARGET_ORACLE_INVALID": 34
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 234,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 0,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 34
+      },
+      "task_id": "saleor-rc-05bdc7feb9ac"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 2,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 36,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/shop/tests/mutations/test_shop_settings_update.py::test_shop_settings_update_name",
+          "saleor/graphql/shop/tests/mutations/test_shop_settings_update.py::test_shop_settings_update_name_too_long"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 2,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 36,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-07c8859c0ac3"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 498,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 106,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 3,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [],
+        "SYMBOL_ABSENCE_F2P": [
+          "saleor/checkout/tests/test_order_from_checkout.py::test_create_order_from_checkout_updates_total_authorized_amount",
+          "saleor/checkout/tests/test_order_from_checkout.py::test_create_order_from_checkout_updates_total_charged_amount",
+          "saleor/graphql/checkout/tests/test_checkout_complete.py::test_checkout_complete"
+        ]
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 498,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 106,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 3,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-094b1ec0f610"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 20,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 189,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 8
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/product/tests/test_bulk_delete.py::test_delete_product_variants_by_sku",
+          "saleor/graphql/product/tests/test_variant.py::test_delete_variant_by_sku",
+          "saleor/graphql/product/tests/test_variant.py::test_update_product_variant_by_sku",
+          "saleor/graphql/product/tests/test_variant.py::test_update_product_variant_by_sku_return_error_when_sku_dont_exists",
+          "saleor/graphql/product/tests/test_variant_channel_listing_update.py::test_product_channel_listing_update_invalid_cost_price",
+          "saleor/graphql/product/tests/test_variant_channel_listing_update.py::test_product_channel_listing_update_too_many_decimal_places_in_cost_price",
+          "saleor/graphql/product/tests/test_variant_channel_listing_update.py::test_product_variant_channel_listing_update_remove_cost_price",
+          "saleor/graphql/product/tests/test_variant_channel_listing_update.py::test_product_variant_channel_listing_update_updates_discounted_price",
+          "saleor/graphql/product/tests/test_variant_channel_listing_update.py::test_variant_channel_listing_update_as_anonymous",
+          "saleor/graphql/product/tests/test_variant_channel_listing_update.py::test_variant_channel_listing_update_as_app",
+          "saleor/graphql/product/tests/test_variant_channel_listing_update.py::test_variant_channel_listing_update_as_customer",
+          "saleor/graphql/product/tests/test_variant_channel_listing_update.py::test_variant_channel_listing_update_as_staff_user",
+          "saleor/graphql/product/tests/test_variant_channel_listing_update.py::test_variant_channel_listing_update_by_sku",
+          "saleor/graphql/product/tests/test_variant_channel_listing_update.py::test_variant_channel_listing_update_duplicated_channel",
+          "saleor/graphql/product/tests/test_variant_channel_listing_update.py::test_variant_channel_listing_update_negative_price",
+          "saleor/graphql/product/tests/test_variant_channel_listing_update.py::test_variant_channel_listing_update_not_assigned_channel",
+          "saleor/graphql/product/tests/test_variant_channel_listing_update.py::test_variant_channel_listing_update_preorder",
+          "saleor/graphql/product/tests/test_variant_channel_listing_update.py::test_variant_channel_listing_update_trigger_webhook_product_variant_updated",
+          "saleor/graphql/product/tests/test_variant_channel_listing_update.py::test_variant_channel_listing_update_with_empty_input",
+          "saleor/graphql/product/tests/test_variant_channel_listing_update.py::test_variant_channel_listing_update_with_too_many_decimal_places_in_price"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 20,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 189,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 8
+      },
+      "task_id": "saleor-rc-0b46c89dfd9e"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 3,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 156,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/order/tests/mutations/test_fulfillment_cancel.py::test_cancel_fulfillment_awaiting_approval",
+          "saleor/graphql/order/tests/mutations/test_fulfillment_cancel.py::test_cancel_fulfillment_awaiting_approval_warehouse_specified",
+          "saleor/order/tests/test_order_actions.py::test_cancel_fulfillment_waiting_for_approval"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 3,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 156,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-0f16ed78b02b"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 40,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/account/tests/test_notifications.py::test_send_email_changed_notification"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 40,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-0fd3a4d986a0"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 161,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/webhook/tests/subscription_webhooks/test_create_deliveries_for_subscription.py::test_account_confirmed_query_channel_without_channel_slug_in_payload"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 161,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-11756ee6b65a"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 9,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/invoice/tests/test_invoice_request.py::test_invoice_request"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 9,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-138ee68c3818"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 23,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 3,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_filter_products_by_channel[channel_PLN.slug-channel_PLN.slug-1-indexes_of_products_in_result3]",
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_filter_products_by_channel[channel_PLN.slug-channel_USD.slug-1-indexes_of_products_in_result2]",
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_filter_products_by_channel[channel_USD.slug-channel_PLN.slug-2-indexes_of_products_in_result1]",
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_filter_products_by_channel[channel_USD.slug-channel_USD.slug-2-indexes_of_products_in_result0]",
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_filter_products_by_ids",
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_filter_products_by_is_published[False-1-indexes_of_products_in_result1]",
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_filter_products_by_is_published[True-2-indexes_of_products_in_result0]",
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_filter_products_by_multiple_attributes",
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_filter_products_by_price",
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_filter_products_by_stock_availability[IN_STOCK-1-indexes_of_products_in_result1]",
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_filter_products_by_stock_availability[OUT_OF_STOCK-2-indexes_of_products_in_result0]",
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_filter_products_by_stocks[None-warehouse_indexes4-1-indexes_of_products_in_result4]",
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_filter_products_by_stocks[None-warehouse_indexes5-2-indexes_of_products_in_result5]",
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_filter_products_by_stocks[quantity_input0-warehouse_indexes0-1-indexes_of_products_in_result0]",
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_filter_products_by_stocks[quantity_input1-warehouse_indexes1-1-indexes_of_products_in_result1]",
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_filter_products_by_stocks[quantity_input2-warehouse_indexes2-1-indexes_of_products_in_result2]",
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_filter_products_by_stocks[quantity_input3-warehouse_indexes3-0-indexes_of_products_in_result3]",
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_filter_products_by_stocks[quantity_input6-warehouse_indexes6-1-indexes_of_products_in_result6]",
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_filter_products_by_stocks[quantity_input7-warehouse_indexes7-1-indexes_of_products_in_result7]",
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_filter_products_by_stocks[quantity_input8-warehouse_indexes8-0-indexes_of_products_in_result8]",
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_filter_products_search_by_sku[False-0-indexes_of_products_in_result1]",
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_filter_products_search_by_sku[True-1-indexes_of_products_in_result0]",
+          "saleor/graphql/product/tests/test_category_filtering.py::test_category_sort_products_by_name"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 23,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 3,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-14f2176b5d8c"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 2,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 165,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/attribute/tests/mutations/test_attribute_create.py::test_create_attribute_similar_names",
+          "saleor/graphql/attribute/tests/mutations/test_attribute_update.py::test_update_attribute_name_similar_value"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 2,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 165,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-17c8d807b3d1"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 34,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/payment/gateways/stripe/tests/test_plugin.py::test_process_payment_with_disabled_include_receipt_email"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 34,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-18430f2a7a16"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 535,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 16
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/account/tests/test_account.py::test_query_user_avatar_no_size_value"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 535,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 16
+      },
+      "task_id": "saleor-rc-1af1c3a368ec"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 5,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 43,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/payment/gateways/stripe/tests/test_webhooks.py::test_finalize_checkout_not_created_order_payment_refund",
+          "saleor/payment/gateways/stripe/tests/test_webhooks.py::test_finalize_checkout_not_created_order_payment_void",
+          "saleor/payment/gateways/stripe/tests/test_webhooks.py::test_handle_authorized_payment_intent_when_order_creation_raises_exception",
+          "saleor/payment/gateways/stripe/tests/test_webhooks.py::test_handle_processing_payment_intent_when_order_creation_raises_exception",
+          "saleor/payment/gateways/stripe/tests/test_webhooks.py::test_handle_successful_payment_intent_when_order_creation_raises_exception"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 5,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 43,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-1f47b503f69e"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 9,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/webhook/tests/queries/test_webhook.py::test_webhook_without_name"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 9,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-1f9b5c53a63a"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 1,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/core/tests/garbage_collection/test_saleor_context.py::test_query_with_site_settings_no_memory_cycles"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 1,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-22a30bf2e4cc"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 93,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/plugins/tests/test_manager.py::test_calculate_checkout_total_zero_default_value"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 93,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-27b65eae2a9a"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 5,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 385,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 1
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/core/tests/test_core.py::test_build_absolute_uri_with_host",
+          "saleor/core/tests/test_jwt.py::test_create_access_token_for_app_extension_staff_user_with_more_permissions",
+          "saleor/graphql/account/tests/mutations/test_token_create.py::test_create_token",
+          "saleor/graphql/account/tests/mutations/test_token_create.py::test_create_token_active_user_logged_before",
+          "saleor/graphql/account/tests/mutations/test_token_refresh.py::test_refresh_token_get_token_from_cookie"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 5,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 385,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 1
+      },
+      "task_id": "saleor-rc-2a59d31fc839"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 3,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 91,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/checkout/tests/mutations/test_checkout_add_promo_code.py::test_checkout_add_gift_card_without_checkout_email",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_add_promo_code.py::test_checkout_add_gift_card_without_checkout_email_used_by_other_user",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_add_promo_code.py::test_checkout_add_gift_card_without_checkout_email_used_by_someone_else_email"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 3,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 91,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-2c44b8eccc2c"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 49,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 228,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/checkout/tests/test_calculations.py::test_fetch_checkout_data_flat_rates[False-False]",
+          "saleor/checkout/tests/test_calculations.py::test_fetch_checkout_data_flat_rates[False-True]",
+          "saleor/checkout/tests/test_calculations.py::test_fetch_checkout_data_flat_rates[True-False]",
+          "saleor/checkout/tests/test_calculations.py::test_fetch_checkout_data_flat_rates[True-True]",
+          "saleor/checkout/tests/test_calculations.py::test_fetch_checkout_data_flat_rates_and_no_tax_calc_strategy",
+          "saleor/checkout/tests/test_calculations.py::test_fetch_checkout_data_flat_rates_shipping_tax_differs_from_default",
+          "saleor/graphql/account/tests/queries/test_me.py::test_me_query_checkouts_calculate_flat_taxes[\\n    query Me {\\n        me {\\n            id\\n            email\\n            checkouts(first: 10) {\\n                edges {\\n                    node {\\n                        id\\n                        lines{\\n                            totalPrice {\\n                                currency\\n                                gross {\\n                                    amount\\n                                }\\n                            }\\n                        }\\n                    }\\n                }\\n                totalCount\\n            }\\n        }\\n    }\\n]",
+          "saleor/graphql/account/tests/queries/test_me.py::test_me_query_checkouts_calculate_flat_taxes[\\n    query Me {\\n        me {\\n            id\\n            email\\n            checkouts(first: 10) {\\n                edges {\\n                    node {\\n                        id\\n                        totalPrice {\\n                            currency\\n                            gross {\\n                                amount\\n                            }\\n                        }\\n                    }\\n                }\\n                totalCount\\n            }\\n        }\\n    }\\n]",
+          "saleor/graphql/account/tests/queries/test_me.py::test_me_query_checkouts_do_not_trigger_sync_tax_webhooks[\\n    query Me {\\n        me {\\n            id\\n            email\\n            checkouts(first: 10) {\\n                edges {\\n                    node {\\n                        id\\n                        lines{\\n                            totalPrice {\\n                                currency\\n                                gross {\\n                                    amount\\n                                }\\n                            }\\n                        }\\n                    }\\n                }\\n                totalCount\\n            }\\n        }\\n    }\\n]",
+          "saleor/graphql/account/tests/queries/test_me.py::test_me_query_checkouts_do_not_trigger_sync_tax_webhooks[\\n    query Me {\\n        me {\\n            id\\n            email\\n            checkouts(first: 10) {\\n                edges {\\n                    node {\\n                        id\\n                        totalPrice {\\n                            currency\\n                            gross {\\n                                amount\\n                            }\\n                        }\\n                    }\\n                }\\n                totalCount\\n            }\\n        }\\n    }\\n]",
+          "saleor/graphql/checkout/tests/test_checkout.py::test_query_checkout_lines_calculate_flat_taxes",
+          "saleor/graphql/checkout/tests/test_checkout.py::test_query_checkout_lines_do_not_trigger_sync_tax_webhooks",
+          "saleor/graphql/checkout/tests/test_checkout.py::test_query_checkouts_calculate_flat_taxes[\\n    {\\n        checkouts(first: 20) {\\n            edges {\\n                node {\\n                    token\\n                    lines{\\n                        totalPrice {\\n                            currency\\n                            gross {\\n                                amount\\n                            }\\n                        }\\n                    }\\n                }\\n            }\\n        }\\n    }\\n]",
+          "saleor/graphql/checkout/tests/test_checkout.py::test_query_checkouts_calculate_flat_taxes[\\n    {\\n        checkouts(first: 20) {\\n            edges {\\n                node {\\n                    token\\n                    totalPrice {\\n                        currency\\n                        gross {\\n                            amount\\n                        }\\n                    }\\n                }\\n            }\\n        }\\n    }\\n]",
+          "saleor/graphql/checkout/tests/test_checkout.py::test_query_checkouts_do_not_trigger_sync_tax_webhooks[\\n    {\\n        checkouts(first: 20) {\\n            edges {\\n                node {\\n                    token\\n                    lines{\\n                        totalPrice {\\n                            currency\\n                            gross {\\n                                amount\\n                            }\\n                        }\\n                    }\\n                }\\n            }\\n        }\\n    }\\n]",
+          "saleor/graphql/checkout/tests/test_checkout.py::test_query_checkouts_do_not_trigger_sync_tax_webhooks[\\n    {\\n        checkouts(first: 20) {\\n            edges {\\n                node {\\n                    token\\n                    totalPrice {\\n                        currency\\n                        gross {\\n                            amount\\n                        }\\n                    }\\n                }\\n            }\\n        }\\n    }\\n]",
+          "saleor/graphql/checkout/tests/test_checkout_line_problems.py::test_query_checkouts_calculate_flat_taxes_when_variant_not_available[\\n{\\n  checkouts(first: 10) {\\n    edges {\\n      node {\\n        lines {\\n          problems {\\n            __typename\\n            ... on CheckoutLineProblemVariantNotAvailable {\\n              line {\\n                totalPrice {\\n                  gross {\\n                    amount\\n                  }\\n                }\\n              }\\n            }\\n            ... on CheckoutLineProblemInsufficientStock {\\n              line {\\n                totalPrice {\\n                  gross {\\n                    amount\\n                  }\\n                }\\n              }\\n            }\\n          }\\n        }\\n      }\\n    }\\n  }\\n}\\n]",
+          "saleor/graphql/checkout/tests/test_checkout_line_problems.py::test_query_checkouts_calculate_flat_taxes_when_variant_not_available[\\n{\\n  checkouts(first:10){\\n    edges{\\n      node{\\n        problems{\\n          __typename\\n          ...on CheckoutLineProblemVariantNotAvailable{\\n            line{\\n              totalPrice{\\n                gross{\\n                  amount\\n                }\\n              }\\n            }\\n          }\\n          ...on CheckoutLineProblemInsufficientStock{\\n            line{\\n              totalPrice{\\n                gross{\\n                  amount\\n                }\\n              }\\n            }\\n          }\\n        }\\n      }\\n    }\\n  }\\n}\\n]",
+          "saleor/graphql/checkout/tests/test_checkout_line_problems.py::test_query_checkouts_calculate_flat_taxes_when_variant_out_of_stock[\\n{\\n  checkouts(first: 10) {\\n    edges {\\n      node {\\n        lines {\\n          problems {\\n            __typename\\n            ... on CheckoutLineProblemVariantNotAvailable {\\n              line {\\n                totalPrice {\\n                  gross {\\n                    amount\\n                  }\\n                }\\n              }\\n            }\\n            ... on CheckoutLineProblemInsufficientStock {\\n              line {\\n                totalPrice {\\n                  gross {\\n                    amount\\n                  }\\n                }\\n              }\\n            }\\n          }\\n        }\\n      }\\n    }\\n  }\\n}\\n]",
+          "saleor/graphql/checkout/tests/test_checkout_line_problems.py::test_query_checkouts_calculate_flat_taxes_when_variant_out_of_stock[\\n{\\n  checkouts(first:10){\\n    edges{\\n      node{\\n        problems{\\n          __typename\\n          ...on CheckoutLineProblemVariantNotAvailable{\\n            line{\\n              totalPrice{\\n                gross{\\n                  amount\\n                }\\n              }\\n            }\\n          }\\n          ...on CheckoutLineProblemInsufficientStock{\\n            line{\\n              totalPrice{\\n                gross{\\n                  amount\\n                }\\n              }\\n            }\\n          }\\n        }\\n      }\\n    }\\n  }\\n}\\n]",
+          "saleor/graphql/checkout/tests/test_checkout_line_problems.py::test_query_checkouts_do_not_trigger_sync_tax_webhooks_when_out_of_stock[\\n{\\n  checkouts(first: 10) {\\n    edges {\\n      node {\\n        lines {\\n          problems {\\n            __typename\\n            ... on CheckoutLineProblemVariantNotAvailable {\\n              line {\\n                totalPrice {\\n                  gross {\\n                    amount\\n                  }\\n                }\\n              }\\n            }\\n            ... on CheckoutLineProblemInsufficientStock {\\n              line {\\n                totalPrice {\\n                  gross {\\n                    amount\\n                  }\\n                }\\n              }\\n            }\\n          }\\n        }\\n      }\\n    }\\n  }\\n}\\n]",
+          "saleor/graphql/checkout/tests/test_checkout_line_problems.py::test_query_checkouts_do_not_trigger_sync_tax_webhooks_when_out_of_stock[\\n{\\n  checkouts(first:10){\\n    edges{\\n      node{\\n        problems{\\n          __typename\\n          ...on CheckoutLineProblemVariantNotAvailable{\\n            line{\\n              totalPrice{\\n                gross{\\n                  amount\\n                }\\n              }\\n            }\\n          }\\n          ...on CheckoutLineProblemInsufficientStock{\\n            line{\\n              totalPrice{\\n                gross{\\n                  amount\\n                }\\n              }\\n            }\\n          }\\n        }\\n      }\\n    }\\n  }\\n}\\n]",
+          "saleor/graphql/checkout/tests/test_checkout_line_problems.py::test_query_checkouts_do_not_trigger_sync_tax_webhooks_when_variant_not_available[\\n{\\n  checkouts(first: 10) {\\n    edges {\\n      node {\\n        lines {\\n          problems {\\n            __typename\\n            ... on CheckoutLineProblemVariantNotAvailable {\\n              line {\\n                totalPrice {\\n                  gross {\\n                    amount\\n                  }\\n                }\\n              }\\n            }\\n            ... on CheckoutLineProblemInsufficientStock {\\n              line {\\n                totalPrice {\\n                  gross {\\n                    amount\\n                  }\\n                }\\n              }\\n            }\\n          }\\n        }\\n      }\\n    }\\n  }\\n}\\n]",
+          "saleor/graphql/checkout/tests/test_checkout_line_problems.py::test_query_checkouts_do_not_trigger_sync_tax_webhooks_when_variant_not_available[\\n{\\n  checkouts(first:10){\\n    edges{\\n      node{\\n        problems{\\n          __typename\\n          ...on CheckoutLineProblemVariantNotAvailable{\\n            line{\\n              totalPrice{\\n                gross{\\n                  amount\\n                }\\n              }\\n            }\\n          }\\n          ...on CheckoutLineProblemInsufficientStock{\\n            line{\\n              totalPrice{\\n                gross{\\n                  amount\\n                }\\n              }\\n            }\\n          }\\n        }\\n      }\\n    }\\n  }\\n}\\n]",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_shipping_with_not_weighted_taxes[10.00-12.30-False]",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_shipping_with_not_weighted_taxes[8.13-10.00-True]",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_shipping_with_weighted_taxes[10.00-11.44-False]",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_shipping_with_weighted_taxes[8.81-10.00-True]",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_subtotal[40.65-50.00-True]",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_subtotal[50.00-61.50-False]",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_subtotal_with_gift_promotion",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_subtotal_with_order_promotion",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_subtotal_with_promotion_prices_entered_with_tax",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_subtotal_with_promotion_prices_not_entered_with_tax",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_total[30.08-37.00-0.230-3.0-True-False]",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_total[30.08-37.00-0.230-3.0-True-True]",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_total[40.00-49.20-0.230-0.0-False-False]",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_total[40.00-49.20-0.230-0.0-False-True]",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_total_default_tax_rate_for_country",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_total_with_multiple_tax_rates[69.78-80.00-True-False]",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_total_with_multiple_tax_rates[70.46-80.00-True-True]",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_total_with_multiple_tax_rates[80.00-91.54-False-True]",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_total_with_multiple_tax_rates[80.00-92.40-False-False]",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_total_with_sale[20.00-24.60-5.0-False]",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_total_with_sale[20.33-25.00-0.0-True]",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_total_with_shipping_voucher[30.08-37.00-3.0-True]",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_total_with_shipping_voucher[40.00-49.20-0.0-False]",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_total_with_shipping_voucher_and_sale[20.00-24.60-5.0-False]",
+          "saleor/tax/tests/test_checkout_calculations.py::test_calculate_checkout_total_with_shipping_voucher_and_sale[20.33-25.00-0.0-True]"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 49,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 228,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-2c770c685a57"
+    },
+    {
+      "changed_nodes": [
+        {
+          "historical": "P2P_ONLY",
+          "node_id": "saleor/graphql/giftcard/tests/queries/test_gift_card.py::test_query_used_gift_card_by_owner",
+          "parent_runs": [
+            "passed",
+            "passed",
+            "passed"
+          ],
+          "strict": "FLAKY",
+          "target_runs": [
+            "failed",
+            "passed",
+            "passed"
+          ]
+        }
+      ],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 8,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 111,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/meta/tests/mutations/test_account.py::test_add_private_metadata_for_staff_as_app",
+          "saleor/graphql/meta/tests/mutations/test_account.py::test_add_public_metadata_for_staff_as_app",
+          "saleor/graphql/meta/tests/mutations/test_account.py::test_delete_private_metadata_for_staff_address_as_app",
+          "saleor/graphql/meta/tests/mutations/test_account.py::test_delete_private_metadata_for_staff_as_app",
+          "saleor/graphql/meta/tests/mutations/test_account.py::test_delete_public_metadata_for_staff_address_as_app",
+          "saleor/graphql/meta/tests/mutations/test_account.py::test_delete_public_metadata_for_staff_as_app",
+          "saleor/graphql/meta/tests/mutations/test_account.py::test_update_private_metadata_for_staff_address_by_app_with_perm",
+          "saleor/graphql/meta/tests/mutations/test_account.py::test_update_public_metadata_for_staff_address_by_app_with_perm"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 8,
+        "FLAKY": 1,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 110,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-30b4edece5aa"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 2,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/plugins/webhook/tests/subscription_webhooks/test_webhook.py::test_trigger_webhooks_async"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 2,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-33010c0d5f7f"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 13,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 17,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [],
+        "SYMBOL_ABSENCE_F2P": [
+          "saleor/checkout/tests/test_delivery_context.py::test_fetch_shipping_methods_for_checkout_non_applicable_assigned_built_in_shipping_method",
+          "saleor/checkout/tests/test_delivery_context.py::test_fetch_shipping_methods_for_checkout_non_applicable_assigned_external_shipping_method",
+          "saleor/checkout/tests/test_delivery_context.py::test_fetch_shipping_methods_for_checkout_removes_non_applicable_built_in_shipping_method",
+          "saleor/checkout/tests/test_delivery_context.py::test_fetch_shipping_methods_for_checkout_removes_non_applicable_external_shipping_method",
+          "saleor/checkout/tests/test_delivery_context.py::test_fetch_shipping_methods_for_checkout_updates_existing_built_in_shipping_method",
+          "saleor/checkout/tests/test_delivery_context.py::test_fetch_shipping_methods_for_checkout_updates_existing_external_shipping_method",
+          "saleor/checkout/tests/test_delivery_context.py::test_fetch_shipping_methods_for_checkout_with_built_in_shipping_method",
+          "saleor/checkout/tests/test_delivery_context.py::test_fetch_shipping_methods_for_checkout_with_changed_price_of_built_in_shipping_method",
+          "saleor/checkout/tests/test_delivery_context.py::test_fetch_shipping_methods_for_checkout_with_changed_price_of_external_shipping_method",
+          "saleor/checkout/tests/test_delivery_context.py::test_fetch_shipping_methods_for_checkout_with_changed_tax_class_of_built_in_shipping_method",
+          "saleor/checkout/tests/test_delivery_context.py::test_fetch_shipping_methods_for_checkout_with_excluded_built_in_shipping_method",
+          "saleor/checkout/tests/test_delivery_context.py::test_fetch_shipping_methods_for_checkout_with_preserve_when_assigned_is_invalid_and_refreshed_is_none",
+          "saleor/checkout/tests/test_delivery_context.py::test_fetch_shipping_methods_for_checkout_with_preserve_when_assigned_is_valid_and_refreshed_is_none",
+          "saleor/graphql/checkout/tests/test_checkouts_query.py::test_query_checkouts_do_not_trigger_exclude_shipping_webhooks_with_flat_rates",
+          "saleor/graphql/checkout/tests/test_checkouts_query.py::test_query_checkouts_do_not_trigger_exclude_shipping_webhooks_with_tax_app",
+          "saleor/graphql/checkout/tests/test_checkouts_query.py::test_query_checkouts_do_not_trigger_external_shipping_webhook_with_flat_rates",
+          "saleor/graphql/checkout/tests/test_checkouts_query.py::test_query_checkouts_do_not_trigger_external_shipping_webhook_with_tax_app"
+        ]
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 13,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 17,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-333febd35223"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 92,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete.py::test_checkout_complete_check_reservations_create"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 92,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-349d88efcfec"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 159,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 3,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [],
+        "SYMBOL_ABSENCE_F2P": [
+          "saleor/graphql/account/tests/mutations/account/test_confirm_email_change.py::test_account_email_changed_webhook_event_triggered",
+          "saleor/graphql/account/tests/mutations/account/test_confirm_email_change.py::test_email_update",
+          "saleor/plugins/webhook/tests/subscription_webhooks/test_create_deliveries_for_subscription.py::test_account_email_changed"
+        ]
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 159,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 3,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-349fe0c194a1"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 6,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/checkout/tests/mutations/test_checkout_customer_attach.py::test_checkout_customer_attach_with_customer_id_same_as_in_request"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 6,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-3513064157fa"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 4,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 142,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/page/tests/queries/pages_with_where/test_with_where_attributes.py::test_pages_query_with_empty_attributes[empty_list-attributes_value0]",
+          "saleor/graphql/page/tests/queries/pages_with_where/test_with_where_attributes.py::test_pages_query_with_empty_attributes[null-None]",
+          "saleor/graphql/product/tests/queries/variants_where/test_over_attributes.py::test_product_variants_query_with_empty_attributes[empty_list-attributes_value0]",
+          "saleor/graphql/product/tests/queries/variants_where/test_over_attributes.py::test_product_variants_query_with_empty_attributes[null-None]"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 4,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 142,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-3cac33590b90"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 7,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 198,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/checkout/tests/test_checkout.py::test_checkout_shipping_methods_with_price_based_shipping_and_shipping_discount",
+          "saleor/graphql/checkout/tests/test_checkout_promo_codes.py::test_checkout_add_free_shipping_voucher_do_not_invalidate_shipping_method[10]",
+          "saleor/graphql/checkout/tests/test_checkout_promo_codes.py::test_checkout_add_free_shipping_voucher_do_not_invalidate_shipping_method[12]",
+          "saleor/graphql/checkout/tests/test_checkout_promo_codes.py::test_checkout_add_free_shipping_voucher_do_not_invalidate_shipping_method[5]",
+          "saleor/graphql/checkout/tests/test_checkout_promo_codes.py::test_checkout_add_shipping_voucher_do_not_invalidate_shipping_method[10]",
+          "saleor/graphql/checkout/tests/test_checkout_promo_codes.py::test_checkout_add_shipping_voucher_do_not_invalidate_shipping_method[12]",
+          "saleor/graphql/checkout/tests/test_checkout_promo_codes.py::test_checkout_add_shipping_voucher_do_not_invalidate_shipping_method[5]"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 7,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 198,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-45301d74fb45"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 2,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 0,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 6,
+        "TARGET_ORACLE_INVALID": 1
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/meta/tests/queries/test_channel.py::test_query_private_meta_for_channel_as_anonymous_user",
+          "saleor/graphql/meta/tests/queries/test_channel.py::test_query_private_meta_for_channel_as_customer"
+        ],
+        "SYMBOL_ABSENCE_F2P": [
+          "saleor/graphql/meta/tests/queries/test_channel.py::test_query_private_meta_for_channel_as_app",
+          "saleor/graphql/meta/tests/queries/test_channel.py::test_query_private_meta_for_channel_as_staff",
+          "saleor/graphql/meta/tests/queries/test_channel.py::test_query_public_meta_for_channel_as_anonymous_user",
+          "saleor/graphql/meta/tests/queries/test_channel.py::test_query_public_meta_for_channel_as_app",
+          "saleor/graphql/meta/tests/queries/test_channel.py::test_query_public_meta_for_channel_as_customer",
+          "saleor/graphql/meta/tests/queries/test_channel.py::test_query_public_meta_for_channel_as_staff"
+        ]
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 2,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 0,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 6,
+        "TARGET_ORACLE_INVALID": 1
+      },
+      "task_id": "saleor-rc-45cfb26218c8"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 27,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/core/tests/test_pagination.py::test_pagination_cursor_decodes_to_non_list"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 27,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-46456e7317ca"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 113,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/payment/gateways/np_atobarai/tests/test_api_helpers.py::test_get_goods_with_refunds_previous_manual_product_refund"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 113,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-484ce8815cf4"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 35,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 25,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/payment/gateways/stripe/tests/test_plugin.py::test_process_payment",
+          "saleor/payment/gateways/stripe/tests/test_plugin.py::test_process_payment_offline",
+          "saleor/payment/gateways/stripe/tests/test_plugin.py::test_process_payment_with_customer",
+          "saleor/payment/gateways/stripe/tests/test_plugin.py::test_process_payment_with_customer_and_future_usage[OFF_SESSION]",
+          "saleor/payment/gateways/stripe/tests/test_plugin.py::test_process_payment_with_customer_and_future_usage[ON_SESSION]",
+          "saleor/payment/gateways/stripe/tests/test_plugin.py::test_process_payment_with_customer_and_future_usage_no_store",
+          "saleor/payment/gateways/stripe/tests/test_plugin.py::test_process_payment_with_customer_and_payment_method",
+          "saleor/payment/gateways/stripe/tests/test_plugin.py::test_process_payment_with_customer_and_payment_method_raises_authentication_error",
+          "saleor/payment/gateways/stripe/tests/test_plugin.py::test_process_payment_with_customer_and_payment_method_raises_error",
+          "saleor/payment/gateways/stripe/tests/test_plugin.py::test_process_payment_with_disabled_order_auto_confirmation",
+          "saleor/payment/gateways/stripe/tests/test_plugin.py::test_process_payment_with_error",
+          "saleor/payment/gateways/stripe/tests/test_plugin.py::test_process_payment_with_manual_capture",
+          "saleor/payment/gateways/stripe/tests/test_plugin.py::test_process_payment_with_payment_method_types",
+          "saleor/payment/gateways/stripe/tests/test_plugin_deprecated.py::test_process_payment_with_customer_and_future_usage",
+          "saleor/payment/gateways/stripe/tests/test_stripe_api.py::test_cancel_payment_intent",
+          "saleor/payment/gateways/stripe/tests/test_stripe_api.py::test_cancel_payment_intent_stripe_returns_error",
+          "saleor/payment/gateways/stripe/tests/test_stripe_api.py::test_capture_payment_intent",
+          "saleor/payment/gateways/stripe/tests/test_stripe_api.py::test_capture_payment_intent_stripe_returns_error",
+          "saleor/payment/gateways/stripe/tests/test_stripe_api.py::test_create_payment_intent_manual_auto_capture",
+          "saleor/payment/gateways/stripe/tests/test_stripe_api.py::test_create_payment_intent_returns_error",
+          "saleor/payment/gateways/stripe/tests/test_stripe_api.py::test_create_payment_intent_returns_intent_object",
+          "saleor/payment/gateways/stripe/tests/test_stripe_api.py::test_create_payment_intent_with_customer",
+          "saleor/payment/gateways/stripe/tests/test_stripe_api.py::test_delete_webhook",
+          "saleor/payment/gateways/stripe/tests/test_stripe_api.py::test_get_or_create_customer_create",
+          "saleor/payment/gateways/stripe/tests/test_stripe_api.py::test_get_or_create_customer_failed_create",
+          "saleor/payment/gateways/stripe/tests/test_stripe_api.py::test_get_or_create_customer_failed_retrieve",
+          "saleor/payment/gateways/stripe/tests/test_stripe_api.py::test_get_or_create_customer_retrieve",
+          "saleor/payment/gateways/stripe/tests/test_stripe_api.py::test_is_secret_api_key_valid_correct_key",
+          "saleor/payment/gateways/stripe/tests/test_stripe_api.py::test_list_customer_payment_methods",
+          "saleor/payment/gateways/stripe/tests/test_stripe_api.py::test_list_customer_payment_methods_failed_to_fetch",
+          "saleor/payment/gateways/stripe/tests/test_stripe_api.py::test_refund_payment_intent",
+          "saleor/payment/gateways/stripe/tests/test_stripe_api.py::test_refund_payment_intent_returns_error",
+          "saleor/payment/gateways/stripe/tests/test_stripe_api.py::test_retrieve_payment_intent",
+          "saleor/payment/gateways/stripe/tests/test_stripe_api.py::test_retrieve_payment_intent_stripe_returns_error",
+          "saleor/payment/gateways/stripe/tests/test_stripe_api.py::test_subscribe_webhook_returns_webhook_object"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 35,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 25,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-4931e989d82d"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 286,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 4,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [],
+        "SYMBOL_ABSENCE_F2P": [
+          "saleor/graphql/account/tests/test_account.py::test_query_user_avatar_with_size_and_format_proxy_url_returned",
+          "saleor/graphql/account/tests/test_account.py::test_query_user_avatar_with_size_proxy_url_returned",
+          "saleor/thumbnail/tests/test_views.py::test_handle_thumbnail_view_for_user",
+          "saleor/thumbnail/tests/test_views.py::test_handle_thumbnail_view_for_user_thumbnail_already_exist"
+        ]
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 286,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 4,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-4adf36dfdbe7"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 387,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/order/tests/test_order.py::test_draft_order_mark_as_paid_check_price_recalculation"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 387,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-4e45b83e7475"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 3,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 109,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 1,
+        "TARGET_ORACLE_INVALID": 2
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/checkout/tests/test_checkout_complete.py::test_checkout_complete_0_total_value_from_giftcard",
+          "saleor/graphql/checkout/tests/test_checkout_complete.py::test_checkout_complete_0_total_value_from_voucher",
+          "saleor/graphql/checkout/tests/test_checkout_complete.py::test_checkout_complete_0_total_value_no_payment"
+        ],
+        "SYMBOL_ABSENCE_F2P": [
+          "saleor/checkout/tests/test_checkout_complete.py::test_complete_checkout_0_total_captured_payment_creates_expected_events"
+        ]
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 3,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 109,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 1,
+        "TARGET_ORACLE_INVALID": 2
+      },
+      "task_id": "saleor-rc-571a3b145aea"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 10,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 2,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [],
+        "SYMBOL_ABSENCE_F2P": [
+          "saleor/graphql/core/tests/test_converters.py::test_get_form_field_description_empty_extra_help_text",
+          "saleor/graphql/core/tests/test_converters.py::test_get_form_field_description_nonempty_extra_help_text"
+        ]
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 10,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 2,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-65643ec7c37f"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 19,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 346,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 1
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/attribute/tests/test_utils.py::test_validate_multiselect_attribute_duplicated_external_refs[False]",
+          "saleor/graphql/attribute/tests/test_utils.py::test_validate_multiselect_attribute_duplicated_external_refs[True]",
+          "saleor/graphql/attribute/tests/test_utils.py::test_validate_selectable_attribute_by_external_reference[False]",
+          "saleor/graphql/attribute/tests/test_utils.py::test_validate_selectable_attribute_by_external_reference[True]",
+          "saleor/graphql/attribute/tests/test_utils.py::test_validate_selectable_attribute_by_id_and_external_reference[False]",
+          "saleor/graphql/attribute/tests/test_utils.py::test_validate_selectable_attribute_by_id_and_external_reference[True]",
+          "saleor/graphql/attribute/tests/test_utils.py::test_validate_selectable_attribute_by_value_and_external_reference[False]",
+          "saleor/graphql/attribute/tests/test_utils.py::test_validate_selectable_attribute_by_value_and_external_reference[True]",
+          "saleor/graphql/product/tests/mutations/test_product_bulk_create.py::test_product_bulk_create_return_error_when_attribute_id_and_external_ref_provided",
+          "saleor/graphql/product/tests/mutations/test_product_bulk_create.py::test_product_bulk_create_with_attributes",
+          "saleor/graphql/product/tests/mutations/test_product_bulk_create.py::test_product_bulk_create_with_attributes_and_create_new_value_with_external_ref",
+          "saleor/graphql/product/tests/mutations/test_product_bulk_create.py::test_product_bulk_create_with_attributes_using_external_refs",
+          "saleor/graphql/product/tests/mutations/test_product_create.py::test_create_product_with_using_attribute_and_value_external_ref",
+          "saleor/graphql/product/tests/mutations/test_product_create.py::test_create_product_with_using_attribute_external_ref",
+          "saleor/graphql/product/tests/mutations/test_product_create.py::test_create_product_with_using_attribute_id_and_external_ref",
+          "saleor/graphql/product/tests/mutations/test_product_variant_bulk_create.py::test_product_variant_bulk_create_by_attribute_external_ref",
+          "saleor/graphql/product/tests/mutations/test_product_variant_bulk_create.py::test_product_variant_bulk_create_by_name",
+          "saleor/graphql/product/tests/mutations/test_product_variant_bulk_create.py::test_product_variant_bulk_create_return_error_when_attribute_external_ref_and_id",
+          "saleor/graphql/product/tests/mutations/test_product_variant_bulk_create.py::test_product_variant_bulk_create_will_create_new_attr_value_and_external_reference"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 19,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 346,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 1
+      },
+      "task_id": "saleor-rc-66907b149076"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 2,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 53,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/order/tests/queries/test_order.py::test_query_order_by_not_existing_external_reference[\" \"]",
+          "saleor/graphql/order/tests/queries/test_order.py::test_query_order_by_not_existing_external_reference[not-existing]"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 2,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 53,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-7691de1ea22e"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 35,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 2
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/product/tests/mutations/test_product_bulk_create.py::test_product_bulk_create_with_variants"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 35,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 2
+      },
+      "task_id": "saleor-rc-796f4a0fd969"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 3,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 103,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 11
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/app/tests/test_app_commands.py::test_creates_app_from_manifest_skips_sending_token_when_target_url_not_provided",
+          "saleor/app/tests/test_installation_utils.py::test_install_app_manifest_data_without_token_target_url",
+          "saleor/app/tests/test_validators.py::test_new_tab_relative_url_without_app_url"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 3,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 103,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 11
+      },
+      "task_id": "saleor-rc-7e42fc67ce72"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 18,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 35,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 4,
+        "TARGET_ORACLE_INVALID": 5
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/app/tests/test_installation_utils.py::test_install_app_created_app",
+          "saleor/app/tests/test_installation_utils.py::test_install_app_with_extension",
+          "saleor/graphql/app/tests/mutations/test_app_create.py::test_app_is_not_allowed_to_call_create_mutation_for_app",
+          "saleor/graphql/app/tests/mutations/test_app_token_create.py::test_app_token_create_as_app_out_of_scope_app",
+          "saleor/graphql/app/tests/mutations/test_app_token_create.py::test_app_token_create_for_app",
+          "saleor/graphql/app/tests/mutations/test_app_token_delete.py::test_app_token_delete_for_app",
+          "saleor/graphql/app/tests/mutations/test_app_token_delete.py::test_app_token_delete_for_app_out_of_scope_app",
+          "saleor/graphql/app/tests/mutations/test_app_token_verify.py::test_app_token_verify_invalid_token",
+          "saleor/graphql/app/tests/mutations/test_app_token_verify.py::test_app_token_verify_valid_token",
+          "saleor/graphql/app/tests/mutations/test_app_update.py::test_app_update_mutation_for_app",
+          "saleor/graphql/app/tests/mutations/test_app_update.py::test_app_update_mutation_for_app_out_of_scope_app",
+          "saleor/graphql/app/tests/mutations/test_app_update.py::test_app_update_mutation_for_app_out_of_scope_permissions",
+          "saleor/graphql/app/tests/queries/test_app.py::test_app_query_with_permission",
+          "saleor/graphql/app/tests/queries/test_app.py::test_app_query_without_permission",
+          "saleor/graphql/app/tests/queries/test_app.py::test_app_with_access_to_resources",
+          "saleor/graphql/app/tests/queries/test_app.py::test_own_app_without_id",
+          "saleor/graphql/core/tests/test_context.py::test_app_middleware_accepts_app_requests",
+          "saleor/graphql/core/tests/test_context.py::test_app_middleware_accepts_saleors_header"
+        ],
+        "SYMBOL_ABSENCE_F2P": [
+          "saleor/graphql/app/tests/mutations/test_app_create.py::test_app_create_mutation",
+          "saleor/graphql/app/tests/mutations/test_app_create.py::test_app_create_mutation_superuser_can_create_app_with_any_perms",
+          "saleor/graphql/app/tests/mutations/test_app_token_create.py::test_app_token_create",
+          "saleor/graphql/app/tests/mutations/test_app_token_create.py::test_app_token_create_superuser_can_create_token_for_any_app"
+        ]
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 18,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 35,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 4,
+        "TARGET_ORACLE_INVALID": 5
+      },
+      "task_id": "saleor-rc-81d02e76b22e"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 28,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 0,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_invalid_order_when_creating_lines",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create[draft]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create[unconfirmed]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_by_app",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_by_user_no_channel_access",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_for_just_published_product[draft]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_for_just_published_product[unconfirmed]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_for_variant_with_many_stocks_with_out_of_stock_webhook",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_variant_on_promotion[draft]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_variant_on_promotion[unconfirmed]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_when_some_line_has_deleted_product[draft]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_when_some_line_has_deleted_product[unconfirmed]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_when_variant_already_in_multiple_lines[draft]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_when_variant_already_in_multiple_lines[unconfirmed]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_with_custom_price[draft-False]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_with_custom_price[unconfirmed-True]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_with_existing_variant[draft]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_with_existing_variant[unconfirmed]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_with_out_of_stock_webhook",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_with_product_and_variant_not_assigned_to_channel[draft]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_with_product_and_variant_not_assigned_to_channel[unconfirmed]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_with_same_variant_and_force_new_line[draft]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_with_same_variant_and_force_new_line[unconfirmed]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_with_unavailable_variant",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_with_variant_not_assigned_to_channel[draft]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_with_variant_not_assigned_to_channel[unconfirmed]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_without_sku[draft]",
+          "saleor/graphql/order/tests/mutations/test_order_lines_create.py::test_order_lines_create_without_sku[unconfirmed]"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 28,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 0,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-843a2c1905ad"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 12,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 98,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 1
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/payment/gateways/adyen/tests/webhooks/test_handle_api_response.py::test_handle_api_response_auto_capture_cannot_create_order_refund_payment",
+          "saleor/payment/gateways/adyen/tests/webhooks/test_handle_api_response.py::test_handle_api_response_auto_capture_cannot_create_order_variant_deleted",
+          "saleor/payment/gateways/adyen/tests/webhooks/test_handle_api_response.py::test_handle_api_response_auto_capture_false_cannot_create_order_void_payment",
+          "saleor/payment/gateways/adyen/tests/webhooks/test_handle_notifications.py::test_handle_authorization_for_checkout_one_of_variants_deleted",
+          "saleor/payment/gateways/adyen/tests/webhooks/test_handle_notifications.py::test_handle_capture_for_checkout_order_not_created_checkout_line_variant_deleted",
+          "saleor/payment/gateways/adyen/tests/webhooks/test_handle_notifications.py::test_handle_not_created_order_order_not_created_checkout_line_variant_deleted",
+          "saleor/payment/gateways/adyen/tests/webhooks/test_handle_notifications.py::test_handle_not_created_order_refund_when_create_order_raises",
+          "saleor/payment/gateways/adyen/tests/webhooks/test_handle_notifications.py::test_handle_not_created_order_success_transaction_create_order_raises_and_refund",
+          "saleor/payment/gateways/adyen/tests/webhooks/test_handle_notifications.py::test_handle_not_created_order_success_transaction_create_order_raises_and_void",
+          "saleor/payment/gateways/adyen/tests/webhooks/test_handle_notifications.py::test_handle_not_created_order_void_when_create_order_raises",
+          "saleor/payment/gateways/stripe/tests/test_webhooks.py::test_finalize_checkout_not_created_checkout_variant_deleted_order_payment_refund",
+          "saleor/payment/gateways/stripe/tests/test_webhooks.py::test_finalize_checkout_not_created_checkout_variant_deleted_order_payment_void"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 12,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 98,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 1
+      },
+      "task_id": "saleor-rc-8b0cbe2fb72f"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 56,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/product/tests/queries/test_products_query.py::test_products_query_by_rank_returns_error_with_filter_nontype_search"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 56,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-8c8d9db54d63"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 4,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 22,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/app/tests/mutations/test_app_create.py::test_app_create_without_permissions[explicit_null-permissions_variable1]",
+          "saleor/graphql/app/tests/mutations/test_app_create.py::test_app_create_without_permissions[omitted-permissions_variable0]",
+          "saleor/graphql/app/tests/mutations/test_app_update.py::test_app_update_null_permissions_leaves_them_untouched[explicit_null-permissions_variable1]",
+          "saleor/graphql/app/tests/mutations/test_app_update.py::test_app_update_null_permissions_leaves_them_untouched[omitted-permissions_variable0]"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 4,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 22,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-8e6164e3d123"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 63,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 143,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 28
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/checkout/tests/test_actions.py::test_transaction_amounts_for_checkout_updated_without_price_recalculation_considers_gift_cards_balance_when_updating_checkout_payment_status[20-full-full]",
+          "saleor/checkout/tests/test_actions.py::test_transaction_amounts_for_checkout_updated_without_price_recalculation_considers_gift_cards_balance_when_updating_checkout_payment_status[40-full-overcharged]",
+          "saleor/checkout/tests/test_calculations.py::test_fetch_checkout_data_considers_gift_cards_balance_when_updating_checkout_payment_status[20-full-full]",
+          "saleor/checkout/tests/test_calculations.py::test_fetch_checkout_data_considers_gift_cards_balance_when_updating_checkout_payment_status[40-full-overcharged]",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_empty_product_translation",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_gift_card_bought",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_line_deleted_in_the_meantime",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_log_unknown_discount_reason",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_own_reservation",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_raises_InsufficientStock_when_quantity_above_stock_sum",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_reservations_drop",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_saving_addresses_off",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_saving_addresses_on",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_sets_product_type_id_for_all_order_lines",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_with_different_email_than_user_email",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_with_digital",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_with_digital_no_shipping_address_set",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_with_digital_saving_addresses_off",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_with_entire_order_voucher_paid_with_gift_card_and_transaction",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_with_inactive_channel",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_with_metadata",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_with_metadata_checkout_without_metadata",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_with_metadata_updates_existing_keys",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_with_not_normalized_billing_address",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_with_not_normalized_shipping_address",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_with_preorder_variant",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_with_shipping_voucher",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_with_shipping_voucher_and_gift_card",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_with_variant_without_sku",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_with_voucher_apply_once_per_order[False-percentage-expected_voucher_discount_value1]",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_with_voucher_apply_once_per_order[True-fixed-expected_voucher_discount_value0]",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_with_voucher_apply_once_per_order_and_gift_card",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_with_voucher_on_specific_product_and_gift_card",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_with_voucher_paid_with_gift_card",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_with_voucher_single_use",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_without_inventory_tracking",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_complete_without_redirect_url",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_with_gift_card_not_applicable",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_with_insufficient_stock",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_with_order_promotion_complete[False-expected_unit_discount_amount1]",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_with_order_promotion_complete[True-expected_unit_discount_amount0]",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_with_voucher_complete[False-expected_unit_discount_amount1-None]",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_with_voucher_complete[True-expected_unit_discount_amount0-Entire order voucher code: saleor]",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_with_voucher_inactive_code",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_with_voucher_not_applicable",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_with_voucher_not_increase_uses_on_preprocess_order_creation_failure",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_with_voucher_on_specific_product_complete[False-percentage-expected_voucher_discount_value1]",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_with_voucher_on_specific_product_complete[True-fixed-expected_voucher_discount_value0]",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_with_voucher_on_specific_product_complete_with_product_on_promotion[False-percentage-expected_voucher_discount_value1]",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_checkout_with_voucher_on_specific_product_complete_with_product_on_promotion[True-fixed-expected_voucher_discount_value0]",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_comp_checkout_builds_order_for_all_warehouse_even_if_not_available_locally",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_complete_checkout_for_global_click_and_collect",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_complete_checkout_for_local_click_and_collect",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_complete_with_transactions.py::test_complete_checkout_raises_error_for_local_stock",
+          "saleor/order/tests/test_order_utils.py::test_add_gift_cards_to_order_invalidates_prices_for_other_checkout_attached_to_the_same_gift_card",
+          "saleor/tests/e2e/checkout/test_checkout_complete_with_gift_card_recalculcates_status_for_other_checkout.py::test_checkout_complete_with_gift_card_recalculcates_status_for_other_checkout[False]",
+          "saleor/tests/e2e/checkout/test_checkout_complete_with_gift_card_recalculcates_status_for_other_checkout.py::test_checkout_complete_with_gift_card_recalculcates_status_for_other_checkout[True]",
+          "saleor/tests/e2e/checkout/test_checkout_complete_with_transaction_and_gift_card.py::test_checkout_complete_with_gift_card_and_transaction",
+          "saleor/tests/e2e/checkout/test_checkout_complete_with_transaction_and_gift_card.py::test_checkout_complete_with_only_gift_card",
+          "saleor/tests/e2e/checkout/test_checkout_complete_with_transaction_and_gift_card.py::test_checkout_complete_with_transaction_and_gift_card",
+          "saleor/tests/e2e/checkout/zero_total/test_pay_for_total_checkout_with_gift_card.py::test_gift_card_total_payment_for_checkout_core_1101[PAYMENT_FLOW]",
+          "saleor/tests/e2e/checkout/zero_total/test_pay_for_total_checkout_with_gift_card.py::test_gift_card_total_payment_for_checkout_core_1101[TRANSACTION_FLOW]"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 63,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 143,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 28
+      },
+      "task_id": "saleor-rc-940b8d83ec5c"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 60,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 4,
+        "TARGET_ORACLE_INVALID": 5
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [],
+        "SYMBOL_ABSENCE_F2P": [
+          "saleor/app/tests/test_app_commands.py::test_creates_app_object",
+          "saleor/app/tests/test_installation_utils.py::test_install_app_created_app",
+          "saleor/graphql/app/tests/mutations/test_app_create.py::test_app_create_mutation",
+          "saleor/graphql/app/tests/mutations/test_app_install.py::test_install_app_mutation"
+        ]
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 60,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 4,
+        "TARGET_ORACLE_INVALID": 5
+      },
+      "task_id": "saleor-rc-95db464ad4ea"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 5,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 238,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/order/tests/mutations/test_order_capture.py::test_draft_order_capture_dont_triggers_fully_paid_webhook",
+          "saleor/graphql/payment/tests/mutations/test_transaction_event_report.py::test_transaction_event_report_for_draft_order_does_not_trigger_webhooks_when_fully_paid[False]",
+          "saleor/graphql/payment/tests/mutations/test_transaction_event_report.py::test_transaction_event_report_for_draft_order_does_not_trigger_webhooks_when_fully_paid[True]",
+          "saleor/graphql/payment/tests/mutations/test_transaction_update.py::test_transaction_update_for_draft_order_does_not_trigger_webhooks_when_fully_paid[False]",
+          "saleor/graphql/payment/tests/mutations/test_transaction_update.py::test_transaction_update_for_draft_order_does_not_trigger_webhooks_when_fully_paid[True]"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 5,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 238,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-95dbffbc523a"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 94,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 3,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [],
+        "SYMBOL_ABSENCE_F2P": [
+          "saleor/app/tests/test_installation_utils.py::test_install_app_created_app_trigger_webhook",
+          "saleor/graphql/app/tests/mutations/test_app_create.py::test_app_create_trigger_webhook",
+          "saleor/plugins/webhook/tests/subscription_webhooks/test_create_deliveries_for_subscription.py::test_app_installed"
+        ]
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 94,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 3,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-9b88221ba8c2"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 2,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 12,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/giftcard/tests/mutations/test_gift_card_create.py::test_create_gift_card_with_code",
+          "saleor/graphql/giftcard/tests/mutations/test_gift_card_create.py::test_create_gift_card_with_to_short_code"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 2,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 12,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-9b96c1602b1f"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 12,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 98,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/product/tests/queries/test_product_query.py::test_product_only_with_variants_without_sku_query_by_anonymous",
+          "saleor/graphql/product/tests/queries/test_product_query.py::test_product_only_with_variants_without_sku_query_by_customer",
+          "saleor/graphql/product/tests/queries/test_product_query.py::test_product_query_by_id_as_user",
+          "saleor/graphql/product/tests/queries/test_product_query.py::test_product_query_invalid_id",
+          "saleor/graphql/product/tests/queries/test_product_query.py::test_product_query_object_with_given_id_does_not_exist",
+          "saleor/graphql/product/tests/queries/test_product_query.py::test_product_query_with_invalid_object_type",
+          "saleor/graphql/product/tests/queries/test_product_query.py::test_product_variant_price[0-0]",
+          "saleor/graphql/product/tests/queries/test_product_query.py::test_product_variant_price[200-200]",
+          "saleor/graphql/product/tests/queries/test_product_query.py::test_product_variant_without_price_as_staff_with_permission",
+          "saleor/graphql/product/tests/queries/test_product_query.py::test_product_variant_without_price_as_staff_without_permission",
+          "saleor/graphql/product/tests/queries/test_product_query.py::test_product_variant_without_price_as_user",
+          "saleor/graphql/product/tests/queries/test_product_query.py::test_product_variants_without_sku_query_by_staff"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 12,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 98,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-9c032845e29b"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 32,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/giftcard/tests/queries/test_gift_card_filtering.py::test_query_filter_gift_cards_by_created_by_email"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 32,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-a576e993bab7"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 53,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 37,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 5
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/account/tests/mutations/staff/test_customer_delete.py::test_customer_delete_trigger_webhook",
+          "saleor/graphql/discount/tests/mutations/test_sale_bulk_delete.py::test_delete_sales_with_variants_triggers_webhook",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_checkout_created",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_checkout_fully_paid",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_checkout_metadata_updated",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_checkout_updated",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_collection_created",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_collection_deleted",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_collection_metadata_updated",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_collection_updated",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_customer_created",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_customer_metadata_updated",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_customer_updated",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_draft_order_created",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_draft_order_deleted",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_draft_order_updated",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_fulfillment_metadata_updated",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_gift_card_metadata_updated",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_invoice_delete",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_invoice_request",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_invoice_sent",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_order_cancelled",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_order_confirmed",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_order_created",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_order_expired",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_order_fully_paid",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_order_fully_refunded",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_order_metadata_updated",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_order_paid",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_order_refunded",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_order_updated",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_page_created",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_page_deleted",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_page_updated",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_product_created",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_product_deleted",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_product_metadata_updated",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_product_updated",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_product_variant_back_in_stock",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_product_variant_created",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_product_variant_deleted",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_product_variant_metadata_updated",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_product_variant_out_of_stock",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_product_variant_updated",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_sale_created",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_sale_deleted",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_sale_toggle",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_sale_updated",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_shipping_zone_metadata_updated",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_shop_metadata_updated",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_transaction_item_metadata_updated",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_voucher_metadata_updated",
+          "saleor/plugins/webhook/tests/test_webhook.py::test_warehouse_metadata_updated"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 53,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 37,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 5
+      },
+      "task_id": "saleor-rc-a650f8f05c02"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 176,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 1
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/product/tests/test_variant.py::test_update_product_variant_with_matching_slugs_different_values"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 176,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 1
+      },
+      "task_id": "saleor-rc-a7a2bf4146ba"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 4,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 276,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/account/tests/test_account.py::test_query_customers_with_filter_by_empty_list",
+          "saleor/graphql/account/tests/test_account.py::test_query_customers_with_filter_by_multiple_ids",
+          "saleor/graphql/account/tests/test_account.py::test_query_customers_with_filter_by_not_existing_id",
+          "saleor/graphql/account/tests/test_account.py::test_query_customers_with_filter_by_one_id"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 4,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 276,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-a9121e630814"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 4,
+        "FLAKY": 29,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 255,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/checkout/tests/mutations/test_checkout_delivery_method_update.py::test_checkout_delivery_method_update_cc_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_delivery_method_update.py::test_checkout_delivery_method_update_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_shipping_method_update.py::test_checkout_shipping_method_update_external_shipping_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_shipping_method_update.py::test_checkout_shipping_method_update_triggers_webhooks"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 4,
+        "FLAKY": 29,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 255,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-aa814bd5f355"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 455,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 2,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [],
+        "SYMBOL_ABSENCE_F2P": [
+          "saleor/graphql/account/tests/test_account.py::test_account_request_deletion_send_account_delete_requested_event",
+          "saleor/plugins/webhook/tests/subscription_webhooks/test_create_deliveries_for_subscription.py::test_account_delete_requested"
+        ]
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 455,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 2,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-b0245506e69b"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 2,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 74,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/checkout/tests/test_checkout.py::test_checkout_discount_amount_should_be_decimal",
+          "saleor/checkout/tests/test_checkout.py::test_remove_voucher_from_checkout"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 2,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 74,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-b2e3652af826"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 130,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 27,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 7
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/app/tests/mutations/test_app_fetch_manifest.py::test_app_fetch_manifest_extension_with_relative_url"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 130,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 27,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 7
+      },
+      "task_id": "saleor-rc-b356a525ba2a"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 7,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 3,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/account/tests/mutations/account/test_account_register.py::test_account_register_returns_empty_id",
+          "saleor/graphql/account/tests/mutations/account/test_account_register.py::test_customer_register",
+          "saleor/graphql/account/tests/mutations/account/test_account_register.py::test_customer_register_generates_valid_token",
+          "saleor/graphql/account/tests/mutations/account/test_account_register.py::test_customer_register_no_channel_email_confirmation_unset",
+          "saleor/graphql/account/tests/mutations/account/test_account_register.py::test_customer_register_race_codition",
+          "saleor/graphql/account/tests/mutations/account/test_account_register.py::test_customer_register_twice",
+          "saleor/graphql/account/tests/mutations/account/test_account_register.py::test_customer_register_upper_case_email"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 7,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 3,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-b35783838e51"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 2,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 87,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 1
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/payment/gateways/adyen/tests/webhooks/test_handle_additional_actions.py::test_handle_additional_actions_sets_psp_reference",
+          "saleor/payment/gateways/adyen/tests/webhooks/test_handle_notifications.py::test_handle_authorization_sets_psp_reference"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 2,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 87,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 1
+      },
+      "task_id": "saleor-rc-b8786c1bf4d3"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 9,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 119,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/translations/tests/test_translations.py::test_nested_page_attribute_translation",
+          "saleor/graphql/translations/tests/test_translations.py::test_nested_product_attribute_translation",
+          "saleor/graphql/translations/tests/test_translations.py::test_nested_product_variant_attribute_translation",
+          "saleor/graphql/translations/tests/test_translations.py::test_page_attribute_value_plain_text_translation",
+          "saleor/graphql/translations/tests/test_translations.py::test_page_attribute_value_rich_text_translation",
+          "saleor/graphql/translations/tests/test_translations.py::test_product_attribute_value_plain_text_translation",
+          "saleor/graphql/translations/tests/test_translations.py::test_product_attribute_value_rich_text_translation",
+          "saleor/graphql/translations/tests/test_translations.py::test_product_variant_attribute_value_plain_text_translation",
+          "saleor/graphql/translations/tests/test_translations.py::test_product_variant_attribute_value_rich_text_translation"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 9,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 119,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-bcd9f60d2aef"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 2,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 24,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 1
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/payment/tests/mutations/test_transaction_event_report.py::test_transaction_event_report_by_app_assign_app_owner",
+          "saleor/graphql/payment/tests/mutations/test_transaction_event_report.py::test_transaction_event_report_calls_amount_recalculations"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 2,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 24,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 1
+      },
+      "task_id": "saleor-rc-bd64d6fdbe4b"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 28,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 0,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 3
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/plugins/webhook/tests/subscription_webhooks/test_create_deliveries_for_transaction_initialize_session.py::test_transaction_initialize_session_checkout_with_data",
+          "saleor/plugins/webhook/tests/subscription_webhooks/test_create_deliveries_for_transaction_initialize_session.py::test_transaction_initialize_session_checkout_without_data",
+          "saleor/plugins/webhook/tests/subscription_webhooks/test_create_deliveries_for_transaction_initialize_session.py::test_transaction_initialize_session_empty_customer_ip_addess",
+          "saleor/plugins/webhook/tests/subscription_webhooks/test_create_deliveries_for_transaction_initialize_session.py::test_transaction_initialize_session_order_with_data",
+          "saleor/plugins/webhook/tests/subscription_webhooks/test_create_deliveries_for_transaction_initialize_session.py::test_transaction_initialize_session_order_without_data",
+          "saleor/plugins/webhook/tests/subscription_webhooks/test_create_deliveries_for_transaction_process_session.py::test_transaction_process_session_checkout_with_data",
+          "saleor/plugins/webhook/tests/subscription_webhooks/test_create_deliveries_for_transaction_process_session.py::test_transaction_process_session_checkout_without_data",
+          "saleor/plugins/webhook/tests/subscription_webhooks/test_create_deliveries_for_transaction_process_session.py::test_transaction_process_session_empty_customer_ip_address",
+          "saleor/plugins/webhook/tests/subscription_webhooks/test_create_deliveries_for_transaction_process_session.py::test_transaction_process_session_order_with_data",
+          "saleor/plugins/webhook/tests/subscription_webhooks/test_create_deliveries_for_transaction_process_session.py::test_transaction_process_session_order_without_data",
+          "saleor/plugins/webhook/tests/test_transaction_initialize_session_webhook.py::test_transaction_initialize_checkout_with_request_data",
+          "saleor/plugins/webhook/tests/test_transaction_initialize_session_webhook.py::test_transaction_initialize_checkout_with_request_data_and_static_payload",
+          "saleor/plugins/webhook/tests/test_transaction_initialize_session_webhook.py::test_transaction_initialize_checkout_without_request_data",
+          "saleor/plugins/webhook/tests/test_transaction_initialize_session_webhook.py::test_transaction_initialize_checkout_without_request_data_and_static_payload",
+          "saleor/plugins/webhook/tests/test_transaction_initialize_session_webhook.py::test_transaction_initialize_order_with_request_data",
+          "saleor/plugins/webhook/tests/test_transaction_initialize_session_webhook.py::test_transaction_initialize_order_with_request_data_and_static_payload",
+          "saleor/plugins/webhook/tests/test_transaction_initialize_session_webhook.py::test_transaction_initialize_order_without_request_data",
+          "saleor/plugins/webhook/tests/test_transaction_initialize_session_webhook.py::test_transaction_initialize_order_without_request_data_and_static_payload",
+          "saleor/plugins/webhook/tests/test_transaction_initialize_session_webhook.py::test_transaction_initialize_session_skips_app_without_identifier",
+          "saleor/plugins/webhook/tests/test_transaction_process_session_webhook.py::test_transaction_process_checkout_with_request_data",
+          "saleor/plugins/webhook/tests/test_transaction_process_session_webhook.py::test_transaction_process_checkout_with_request_data_and_static_payload",
+          "saleor/plugins/webhook/tests/test_transaction_process_session_webhook.py::test_transaction_process_checkout_without_request_data",
+          "saleor/plugins/webhook/tests/test_transaction_process_session_webhook.py::test_transaction_process_checkout_without_request_data_and_static_payload",
+          "saleor/plugins/webhook/tests/test_transaction_process_session_webhook.py::test_transaction_process_order_with_request_data",
+          "saleor/plugins/webhook/tests/test_transaction_process_session_webhook.py::test_transaction_process_order_with_request_data_and_static_payload",
+          "saleor/plugins/webhook/tests/test_transaction_process_session_webhook.py::test_transaction_process_order_without_request_data",
+          "saleor/plugins/webhook/tests/test_transaction_process_session_webhook.py::test_transaction_process_order_without_request_data_and_static_payload",
+          "saleor/plugins/webhook/tests/test_transaction_process_session_webhook.py::test_transaction_process_session_skips_app_without_identifier"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 28,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 0,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 3
+      },
+      "task_id": "saleor-rc-c0d4785abd74"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 3,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 50,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/order/tests/test_fulfillment.py::test_fulfillment_approve_delete_products_before_approval_allow_stock_exceeded_false",
+          "saleor/graphql/order/tests/test_fulfillment.py::test_fulfillment_approve_when_stock_is_exceeded_and_flag_disabled",
+          "saleor/graphql/order/tests/test_fulfillment.py::test_order_fulfill_with_stock_exceeded_with_flag_disabled"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 3,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 50,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-c6220233ccb1"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 118,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 1,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [],
+        "SYMBOL_ABSENCE_F2P": [
+          "saleor/plugins/webhook/tests/subscription_webhooks/test_create_deliveries_for_subscription.py::test_fulfillment_approved"
+        ]
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 118,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 1,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-c7207e71e0d3"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 22,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 482,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 2,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/core/tests/test_sqs.py::test_sqs_channel_put_delay_seconds[eta_offset0-359]",
+          "saleor/core/tests/test_sqs.py::test_sqs_channel_put_delay_seconds[eta_offset1-900]",
+          "saleor/core/tests/test_sqs.py::test_sqs_channel_put_delay_seconds[eta_offset2-0]",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_add_promo_code.py::test_checkout_add_voucher_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_billing_address_update.py::test_checkout_billing_address_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_create.py::test_checkout_create_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_customer_attach.py::test_checkout_customer_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_customer_detach.py::test_checkout_customer_detach_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_customer_note_update.py::test_checkout_customer_note_update_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_delivery_method_update.py::test_checkout_delivery_method_update_cc_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_delivery_method_update.py::test_checkout_delivery_method_update_external_shipping_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_delivery_method_update.py::test_checkout_delivery_method_update_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_email_update.py::test_checkout_email_update_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_language_code_update.py::test_checkout_update_language_code_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_line_delete.py::test_checkout_line_delete_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_lines_add.py::test_checkout_lines_add_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_lines_delete.py::test_checkout_lines_delete_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_lines_update.py::test_checkout_lines_update_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_remove_promo_code.py::test_checkout_remove_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_shipping_address_update.py::test_checkout_shipping_address_update_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_shipping_method_update.py::test_checkout_shipping_method_update_to_none_triggers_webhooks",
+          "saleor/graphql/checkout/tests/mutations/test_checkout_shipping_method_update.py::test_checkout_shipping_method_update_triggers_webhooks"
+        ],
+        "SYMBOL_ABSENCE_F2P": [
+          "saleor/webhook/transport/asynchronous/tests/test_deferred_payload.py::test_generate_deferred_payload_triggers_for_existing_deliveries",
+          "saleor/webhook/transport/asynchronous/tests/test_deferred_payload.py::test_generate_deferred_payload_waits_for_replica_to_sync"
+        ]
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 22,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 482,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 2,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-ce3b63edecef"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 91,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/core/tests/test_file_validation.py::test_is_valid_image_content_type[image/jpg-True]"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 91,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-d361479ab7da"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 2,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 163,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/product/tests/queries/test_product_query.py::test_channel_field_with_default_channel_anonymous",
+          "saleor/graphql/product/tests/queries/test_variant_query.py::test_channel_field_with_default_channel_anonymous"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 2,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 163,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-d6656e0f2a1d"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 92,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 18,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 8,
+        "TARGET_ORACLE_INVALID": 1
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [],
+        "SYMBOL_ABSENCE_F2P": [
+          "saleor/graphql/product/tests/mutations/test_product_variant_stocks_update.py::test_update_or_create_variant_stocks_when_stock_out_of_quantity",
+          "saleor/graphql/product/tests/mutations/test_product_variant_stocks_update.py::test_update_or_create_variant_stocks_with_out_of_stock_webhook_only",
+          "saleor/graphql/product/tests/mutations/test_product_variant_stocks_update.py::test_update_or_create_variant_with_back_in_stock_webhooks_only_failed",
+          "saleor/graphql/product/tests/mutations/test_product_variant_stocks_update.py::test_update_or_create_variant_with_back_in_stock_webhooks_only_success",
+          "saleor/graphql/product/tests/mutations/test_product_variant_stocks_update.py::test_update_or_create_variant_with_back_in_stock_webhooks_with_allocations",
+          "saleor/graphql/product/tests/mutations/test_product_variant_stocks_update.py::test_update_or_create_variant_with_out_of_stock_webhooks_with_allocations",
+          "saleor/graphql/warehouse/tests/bulk_mutations/test_stock_bulk_update.py::test_stocks_bulk_update_send_stock_updated_event",
+          "saleor/graphql/warehouse/tests/bulk_mutations/test_stock_bulk_update.py::test_stocks_bulk_update_send_stock_updated_event_only_for_changed_stocks"
+        ]
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 92,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 18,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 8,
+        "TARGET_ORACLE_INVALID": 1
+      },
+      "task_id": "saleor-rc-dacded922b1f"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 36,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/attribute/tests/queries/test_selected_attribute.py::test_assigned_swatch_attribute_translation"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 36,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-db5440f7994f"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 7,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 45,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/app/tests/test_installation_utils.py::test_install_app_with_webhook",
+          "saleor/graphql/webhook/tests/mutations/test_webhook_create.py::test_webhook_create_by_app",
+          "saleor/graphql/webhook/tests/mutations/test_webhook_update.py::test_webhook_update_by_staff",
+          "saleor/webhook/tests/test_webhook_validators.py::test_webhook_header_name_case_insensitive[AuthoriZAtionKey]",
+          "saleor/webhook/tests/test_webhook_validators.py::test_webhook_header_name_case_insensitive[X-Key]",
+          "saleor/webhook/tests/test_webhook_validators.py::test_webhook_header_name_case_insensitive[authorization]",
+          "saleor/webhook/tests/test_webhook_validators.py::test_webhook_header_name_case_insensitive[x-keY]"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 7,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 45,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-dd8ead382526"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 2,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 5,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/plugins/webhook/tests/test_webhook_protocols.py::test_trigger_webhooks_with_aws_sqs[queue_name-additional_call_args0]",
+          "saleor/plugins/webhook/tests/test_webhook_protocols.py::test_trigger_webhooks_with_aws_sqs[queue_name.fifo-additional_call_args1]"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 2,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 5,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-df7c7d4e8466"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 3,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/product/tests/mutations/test_collection_add_products.py::test_add_products_to_collection_with_product_without_variants"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 3,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-e0890780bf56"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 6,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 48,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 2
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/core/tests/test_json_string_scalar.py::test_parse_value_invalid_returns_none[123]",
+          "saleor/graphql/core/tests/test_json_string_scalar.py::test_parse_value_invalid_returns_none[None]",
+          "saleor/graphql/core/tests/test_json_string_scalar.py::test_parse_value_invalid_returns_none[invalid_value0]",
+          "saleor/graphql/core/tests/test_json_string_scalar.py::test_parse_value_invalid_returns_none[invalid_value1]",
+          "saleor/graphql/core/tests/test_json_string_scalar.py::test_parse_value_invalid_returns_none[{not json}]",
+          "saleor/graphql/product/tests/mutations/test_product_bulk_create.py::test_product_bulk_create_with_description_as_json_object_does_not_crash"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 6,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 48,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 2
+      },
+      "task_id": "saleor-rc-e0f2933d58b9"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 15,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 12,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 1
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/csv/tests/mutations/test_export_products.py::test_export_products_mutation_filter_scope_with_channel",
+          "saleor/graphql/csv/tests/mutations/test_export_products.py::test_export_products_with_channel_dependent_filter_invalid_channel_returns_error",
+          "saleor/graphql/csv/tests/mutations/test_export_products.py::test_export_products_with_channel_dependent_filter_multiple_channels_returns_error",
+          "saleor/graphql/csv/tests/mutations/test_export_products.py::test_export_products_with_channel_dependent_filter_no_channel_returns_error[filter_input0]",
+          "saleor/graphql/csv/tests/mutations/test_export_products.py::test_export_products_with_channel_dependent_filter_no_channel_returns_error[filter_input1]",
+          "saleor/graphql/csv/tests/mutations/test_export_products.py::test_export_products_with_channel_dependent_filter_no_channel_returns_error[filter_input2]",
+          "saleor/graphql/csv/tests/mutations/test_export_products.py::test_export_products_with_channel_dependent_filter_no_channel_returns_error[filter_input3]",
+          "saleor/graphql/csv/tests/mutations/test_export_products.py::test_export_products_with_channel_dependent_filter_no_channel_returns_error[filter_input4]",
+          "saleor/graphql/csv/tests/mutations/test_export_products.py::test_export_products_with_channel_dependent_filter_no_channel_returns_error[filter_input5]",
+          "saleor/graphql/csv/tests/mutations/test_export_products.py::test_export_products_with_channel_dependent_filter_requires_channel[filter_input0]",
+          "saleor/graphql/csv/tests/mutations/test_export_products.py::test_export_products_with_channel_dependent_filter_requires_channel[filter_input1]",
+          "saleor/graphql/csv/tests/mutations/test_export_products.py::test_export_products_with_channel_dependent_filter_requires_channel[filter_input2]",
+          "saleor/graphql/csv/tests/mutations/test_export_products.py::test_export_products_with_channel_dependent_filter_requires_channel[filter_input3]",
+          "saleor/graphql/csv/tests/mutations/test_export_products.py::test_export_products_with_channel_dependent_filter_requires_channel[filter_input4]",
+          "saleor/graphql/csv/tests/mutations/test_export_products.py::test_export_products_with_channel_dependent_filter_requires_channel[filter_input5]"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 15,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 12,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 1
+      },
+      "task_id": "saleor-rc-e7175003a542"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 91,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 90
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/plugins/avatax/tests/test_avatax.py::test_calculate_checkout_shipping_when_failed_to_deliver_request"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 91,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 90
+      },
+      "task_id": "saleor-rc-e8733aee630a"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 110,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 2,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [],
+        "SYMBOL_ABSENCE_F2P": [
+          "saleor/graphql/product/tests/queries/test_product_query.py::test_query_product_media_by_id_avif_format",
+          "saleor/graphql/product/tests/queries/test_product_query.py::test_query_product_media_by_id_original_format"
+        ]
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 110,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 2,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-ea98ffa79753"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 24,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 1,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [],
+        "SYMBOL_ABSENCE_F2P": [
+          "saleor/warehouse/tests/test_warehouse.py::test_for_channel_with_active_shipping_zone_or_cc"
+        ]
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 0,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 24,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 1,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-eb61406cecc5"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 2,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 48,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/order/tests/mutations/test_order_discount.py::test_query_order_after_line_discount_removed_returns_discount_event_data",
+          "saleor/graphql/order/tests/mutations/test_order_discount.py::test_query_order_event_with_null_discount_value_type"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 2,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 48,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-fd463c8aae38"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 8,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/core/tests/test_schedules.py::test_promotion_webhook_schedule_import_path"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 8,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-fe6e46266e81"
+    },
+    {
+      "changed_nodes": [],
+      "historical_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 40,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "strict_f2p_node_ids": {
+        "BEHAVIORAL_F2P": [
+          "saleor/graphql/payment/tests/mutations/test_transaction_request_action.py::test_transaction_request_charge_without_reason_when_refund_reasons_enabled"
+        ],
+        "SYMBOL_ABSENCE_F2P": []
+      },
+      "strict_three_run_counts": {
+        "BEHAVIORAL_F2P": 1,
+        "FLAKY": 0,
+        "OTHER_REVIEW_REQUIRED": 0,
+        "P2P_ONLY": 40,
+        "PARENT_COLLECTION_ERROR": 0,
+        "SYMBOL_ABSENCE_F2P": 0,
+        "TARGET_ORACLE_INVALID": 0
+      },
+      "task_id": "saleor-rc-ffe3a3ece0fb"
+    }
+  ],
+  "tasks_with_changes": 3
+}
