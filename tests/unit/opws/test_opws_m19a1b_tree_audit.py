@@ -955,3 +955,16 @@ def test_cli_tree_gate_fail_returns_nonzero(tmp_path: Path) -> None:
     assert receipt["exit_gate"]["pass"] is False
     assert receipt["summary"]["n_reconstructed_exact"] == 1
     assert receipt["summary"]["n_classification_reconciled"] == 0
+
+def test_workspace_ntfs_config_is_scoped(tmp_path: Path) -> None:
+    store = _init_repo(tmp_path)
+    workspace = ta.ReconstructionWorkspace(
+        tmp_path, ta.GitStore.open(store), min_free_gib=0.01
+    )
+    try:
+        output = workspace._git(
+            workspace.index_base, "config", "--get", "core.protectNTFS"
+        )
+        assert output.strip() == b"false"
+    finally:
+        workspace.cleanup()

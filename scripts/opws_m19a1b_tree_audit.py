@@ -426,6 +426,7 @@ class ReconstructionWorkspace:
 
     def _git(self, index: Path, *args: str, inputs: bytes | None = None) -> bytes:
         cmd: list[str] = ["git"]
+        cmd.extend(["-c", "core.protectNTFS=false"])
         cmd.extend(m.DIFF_SETTINGS)
         cmd.extend(args)
         out = _run_git(cmd, env=self._env(index), inputs=inputs, context="ReconstructionWorkspace")
