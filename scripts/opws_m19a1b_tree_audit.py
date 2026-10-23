@@ -1314,6 +1314,7 @@ def build_plan_receipt(
         "full_reference_target_tree_parity": full_ref_parity,
         "denominator_tasks": len(task_ids),
         "arm_status": arm_status,
+        "per_task_records": [rec for arm in arms for rec in arm.per_task],
         "n_arms_auditable": n_auditable,
         "n_arms_complete_219_219": n_complete_arms,
         "n_arms_total": len(arms),
@@ -1344,6 +1345,12 @@ def plan_gate_pass(plan: dict[str, Any]) -> tuple[bool, str]:
     suppressed. ``RANDOM_SIZE_MATCHED_RM_CSS`` is DEFERRED by design (derived at Phase 4)
     and is excluded from the auditable count with an explicit note.
     """
+    nonstandard = [
+        a["arm_id"] for a in plan["arm_status"]
+        if a["status"] not in ("AVAILABLE", "DEFERRED", "MISSING")
+    ]
+    if nonstandard:
+        return False, f"NONAUDITABLE arm status: {nonstandard}"
     missing = [a["arm_id"] for a in plan["arm_status"] if a["status"] == "MISSING"]
     if missing:
         return False, (

@@ -968,3 +968,13 @@ def test_workspace_ntfs_config_is_scoped(tmp_path: Path) -> None:
         assert output.strip() == b"false"
     finally:
         workspace.cleanup()
+
+def test_plan_gate_rejects_partial_arm() -> None:
+    plan = {
+        "arm_status": [
+            {"arm_id": "BM25_K3", "status": "PARTIAL"}
+        ]
+    }
+    ok, reason = ta.plan_gate_pass(plan)
+    assert ok is False
+    assert "NONAUDITABLE" in reason
