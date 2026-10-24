@@ -1,0 +1,284 @@
+{
+ "adapter_sources": {
+  "src/benchmark/wp2/p2p_u_pilot_v1.py": {
+   "lf_blob_sha256": "MISSING",
+   "raw_working_copy_sha256": "459eecb3aa3d48d049f118d064bde9aa8a768be196f739a5dc84cd0644720a1d"
+  }
+ },
+ "artifact": "OPWS_P2P_U_CANDIDATES",
+ "artifact_version": "p2p-u-pilot-v1-2026-10-24",
+ "association_rule": {
+  "rule": "unchanged test file in the SAME top-level Saleor app as a touched production file; not modified by the frozen target diff; conftest.py / __init__.py / cassettes / fixtures and non-.py test-support excluded as candidates",
+  "version": "p2p-unchanged-inventory-v1-2026-09-23"
+ },
+ "candidate_test_files": [
+  "saleor/app/tests/tasks/test_saleor3_23.py",
+  "saleor/app/tests/test_app_tasks.py",
+  "saleor/app/tests/test_models.py",
+  "saleor/app/tests/test_utils.py"
+ ],
+ "changed_test_files_excluded": [
+  "saleor/app/tests/test_app_commands.py",
+  "saleor/app/tests/test_installation_utils.py",
+  "saleor/app/tests/test_validators.py",
+  "saleor/graphql/app/tests/mutations/test_app_fetch_manifest.py"
+ ],
+ "collection": {
+  "canonical_node_set_sha256": "03ccacfef0f70faa6e38a633f64a2b63be550c03e1a4ce01dd7138093c0125f5",
+  "exclusions": [
+   "conftest.py",
+   "__init__.py",
+   "cassettes/ (yaml test-support)",
+   "fixtures/ (test-support modules)",
+   "non-.py files",
+   "[]-parametrized cassette paths",
+   "the frozen 4 changed test files"
+  ],
+  "install": "frozen V3 fragment uv export --frozen --group dev | uv pip install; offline wheelhouse (1072 files)",
+  "mode": "pytest --collect-only -q (NO execution)",
+  "network": "--network none; egress probe ALL BLOCKED (gaierror/OSError)",
+  "parent_n_nodes": 23,
+  "parent_target_set_equal": true,
+  "python_env": "pinned offline py3.12 era image sha256:7862b9ecf8aa34e536a5b9eee545baa79318d9ef38704fa38525aba9426c52a3",
+  "target_n_nodes": 23
+ },
+ "commit_status": "PENDING_OWNER_COMMIT",
+ "evaluator_only": true,
+ "file_identities": {
+  "saleor/app/tests/tasks/test_saleor3_23.py": {
+   "parent_blob": "fc8b71644b5f7da700541fc0141e4e00eb05c96d",
+   "target_blob": "fc8b71644b5f7da700541fc0141e4e00eb05c96d",
+   "unchanged": true
+  },
+  "saleor/app/tests/test_app_tasks.py": {
+   "parent_blob": "5323735507eed139cd476f706e106a9c12ab56f7",
+   "target_blob": "5323735507eed139cd476f706e106a9c12ab56f7",
+   "unchanged": true
+  },
+  "saleor/app/tests/test_models.py": {
+   "parent_blob": "e8fa521098c2223a2d9dfd19c641d6734e38aa51",
+   "target_blob": "e8fa521098c2223a2d9dfd19c641d6734e38aa51",
+   "unchanged": true
+  },
+  "saleor/app/tests/test_utils.py": {
+   "parent_blob": "c6a36d935e701e3e91e192c10409096f9b370114",
+   "target_blob": "c6a36d935e701e3e91e192c10409096f9b370114",
+   "unchanged": true
+  }
+ },
+ "frozen_sources": {
+  "src/benchmark/wp2/p2p_inventory_dev_v1.py": {
+   "lf_blob_sha256": "1bfd35e126da8a17db6fbb559ee1ff62bd292c9bf7a9895aea9f9c461cea8f6d",
+   "raw_working_copy_sha256": "9b82a0ead0bc799e639cdc246379201cfe0b4c4666c39309d501d125057a5ce8"
+  },
+  "src/benchmark/wp2/p2p_inventory_v1.py": {
+   "lf_blob_sha256": "430cf7fbde72defa1cfbf16b6db471c16a4a39c81e6614edbce52ec4470ba1e9",
+   "raw_working_copy_sha256": "2fcb678887243968f98495f02310e86f12852acb4ac2bf126e68a0884800cf64"
+  },
+  "src/benchmark/wp2/p2p_u_v2.py": {
+   "lf_blob_sha256": "ca3fd51db6b4e223556dd8512070639d346b714dc562858894cde0d1106a9491",
+   "raw_working_copy_sha256": "037c9ed68e6a1aefd58a0ac1fc8164fa1c8679258526f0a4595ff4f568b854cf"
+  }
+ },
+ "invisible_to_generation": true,
+ "membership": {
+  "artifact": "OPWS_P2P_U_CANDIDATES_PILOT",
+  "artifact_version": "p2p-u-pilot-v1-2026-10-24",
+  "collected": {
+   "adapter_version": "p2p-u-pilot-v1-2026-10-24",
+   "all_checks_pass": true,
+   "primary_cap": 200,
+   "reused_v2_version": "p2p-u-v2-2026-09-25",
+   "salt": "wp2-p2p-u-v2-2026-09-25",
+   "selection": {
+    "all_touched_paths_unknown": false,
+    "cap200_node_ids": [
+     "saleor/app/tests/test_models.py::test_qs_for_event_type_inactive_app",
+     "saleor/app/tests/tasks/test_saleor3_23.py::test_skip_settings_if_filled",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_job_id_does_not_exist",
+     "saleor/app/tests/test_utils.py::test_get_active_tax_app_only_one_webhook",
+     "saleor/app/tests/test_models.py::test_qs_for_event_type_inactive_webhook",
+     "saleor/app/tests/tasks/test_saleor3_23.py::test_fill_settings_json_skips_non_widget_non_new_tab_targets",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_wrong_response_code",
+     "saleor/app/tests/test_utils.py::test_get_active_tax_apps",
+     "saleor/app/tests/test_models.py::test_app_installation_set_message_truncates",
+     "saleor/app/tests/tasks/test_saleor3_23.py::test_fill_settings_json_for_new_tab_target",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_wrong_format_of_target_token_url",
+     "saleor/app/tests/test_utils.py::test_get_active_tax_app_no_permission",
+     "saleor/app/tests/test_models.py::test_qs_for_event_type_no_payment_permissions",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task",
+     "saleor/app/tests/test_models.py::test_qs_for_event_type_no_webhook_event",
+     "saleor/app/tests/test_app_tasks.py::test_remove_app_task_not_remove_not_own_payloads",
+     "saleor/app/tests/test_models.py::test_qs_for_event_type",
+     "saleor/app/tests/test_app_tasks.py::test_remove_app_task_no_app_to_remove",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_request_timeout",
+     "saleor/app/tests/test_app_tasks.py::test_remove_app_task_delete_period_in_progress",
+     "saleor/app/tests/test_app_tasks.py::test_remove_app_task",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_undefined_error",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_installation_error"
+    ],
+    "cap400_node_ids": [
+     "saleor/app/tests/test_models.py::test_qs_for_event_type_inactive_app",
+     "saleor/app/tests/tasks/test_saleor3_23.py::test_skip_settings_if_filled",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_job_id_does_not_exist",
+     "saleor/app/tests/test_utils.py::test_get_active_tax_app_only_one_webhook",
+     "saleor/app/tests/test_models.py::test_qs_for_event_type_inactive_webhook",
+     "saleor/app/tests/tasks/test_saleor3_23.py::test_fill_settings_json_skips_non_widget_non_new_tab_targets",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_wrong_response_code",
+     "saleor/app/tests/test_utils.py::test_get_active_tax_apps",
+     "saleor/app/tests/test_models.py::test_app_installation_set_message_truncates",
+     "saleor/app/tests/tasks/test_saleor3_23.py::test_fill_settings_json_for_new_tab_target",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_wrong_format_of_target_token_url",
+     "saleor/app/tests/test_utils.py::test_get_active_tax_app_no_permission",
+     "saleor/app/tests/test_models.py::test_qs_for_event_type_no_payment_permissions",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task",
+     "saleor/app/tests/test_models.py::test_qs_for_event_type_no_webhook_event",
+     "saleor/app/tests/test_app_tasks.py::test_remove_app_task_not_remove_not_own_payloads",
+     "saleor/app/tests/test_models.py::test_qs_for_event_type",
+     "saleor/app/tests/test_app_tasks.py::test_remove_app_task_no_app_to_remove",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_request_timeout",
+     "saleor/app/tests/test_app_tasks.py::test_remove_app_task_delete_period_in_progress",
+     "saleor/app/tests/test_app_tasks.py::test_remove_app_task",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_undefined_error",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_installation_error"
+    ],
+    "composition_cap200": {
+     "n_distal": 23,
+     "n_proximal": 0,
+     "n_total": 23
+    },
+    "composition_cap400": {
+     "n_distal": 23,
+     "n_proximal": 0,
+     "n_total": 23
+    },
+    "distal_nodes": [
+     "saleor/app/tests/tasks/test_saleor3_23.py::test_fill_settings_json_for_new_tab_target",
+     "saleor/app/tests/tasks/test_saleor3_23.py::test_fill_settings_json_skips_non_widget_non_new_tab_targets",
+     "saleor/app/tests/tasks/test_saleor3_23.py::test_skip_settings_if_filled",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_installation_error",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_job_id_does_not_exist",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_request_timeout",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_undefined_error",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_wrong_format_of_target_token_url",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_wrong_response_code",
+     "saleor/app/tests/test_app_tasks.py::test_remove_app_task",
+     "saleor/app/tests/test_app_tasks.py::test_remove_app_task_delete_period_in_progress",
+     "saleor/app/tests/test_app_tasks.py::test_remove_app_task_no_app_to_remove",
+     "saleor/app/tests/test_app_tasks.py::test_remove_app_task_not_remove_not_own_payloads",
+     "saleor/app/tests/test_models.py::test_app_installation_set_message_truncates",
+     "saleor/app/tests/test_models.py::test_qs_for_event_type",
+     "saleor/app/tests/test_models.py::test_qs_for_event_type_inactive_app",
+     "saleor/app/tests/test_models.py::test_qs_for_event_type_inactive_webhook",
+     "saleor/app/tests/test_models.py::test_qs_for_event_type_no_payment_permissions",
+     "saleor/app/tests/test_models.py::test_qs_for_event_type_no_webhook_event",
+     "saleor/app/tests/test_utils.py::test_get_active_tax_app_no_permission",
+     "saleor/app/tests/test_utils.py::test_get_active_tax_app_only_one_webhook",
+     "saleor/app/tests/test_utils.py::test_get_active_tax_apps"
+    ],
+    "evaluator_only": true,
+    "invisible_to_generation": true,
+    "n_distal_pool": 23,
+    "n_known_touched_paths": 3,
+    "n_proximal_pool": 0,
+    "n_raw_candidates": 23,
+    "ordered_node_ids": [
+     "saleor/app/tests/test_models.py::test_qs_for_event_type_inactive_app",
+     "saleor/app/tests/tasks/test_saleor3_23.py::test_skip_settings_if_filled",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_job_id_does_not_exist",
+     "saleor/app/tests/test_utils.py::test_get_active_tax_app_only_one_webhook",
+     "saleor/app/tests/test_models.py::test_qs_for_event_type_inactive_webhook",
+     "saleor/app/tests/tasks/test_saleor3_23.py::test_fill_settings_json_skips_non_widget_non_new_tab_targets",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_wrong_response_code",
+     "saleor/app/tests/test_utils.py::test_get_active_tax_apps",
+     "saleor/app/tests/test_models.py::test_app_installation_set_message_truncates",
+     "saleor/app/tests/tasks/test_saleor3_23.py::test_fill_settings_json_for_new_tab_target",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_wrong_format_of_target_token_url",
+     "saleor/app/tests/test_utils.py::test_get_active_tax_app_no_permission",
+     "saleor/app/tests/test_models.py::test_qs_for_event_type_no_payment_permissions",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task",
+     "saleor/app/tests/test_models.py::test_qs_for_event_type_no_webhook_event",
+     "saleor/app/tests/test_app_tasks.py::test_remove_app_task_not_remove_not_own_payloads",
+     "saleor/app/tests/test_models.py::test_qs_for_event_type",
+     "saleor/app/tests/test_app_tasks.py::test_remove_app_task_no_app_to_remove",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_request_timeout",
+     "saleor/app/tests/test_app_tasks.py::test_remove_app_task_delete_period_in_progress",
+     "saleor/app/tests/test_app_tasks.py::test_remove_app_task",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_undefined_error",
+     "saleor/app/tests/test_app_tasks.py::test_install_app_task_installation_error"
+    ],
+    "primary_cap": 200,
+    "proximal_nodes": [],
+    "proximity_by_file": {
+     "saleor/app/tests/tasks/test_saleor3_23.py": 1,
+     "saleor/app/tests/test_app_tasks.py": 1,
+     "saleor/app/tests/test_models.py": 1,
+     "saleor/app/tests/test_utils.py": 1
+    },
+    "sensitivity_cap": 400,
+    "target_composition_cap200": {
+     "distal": 50,
+     "proximal": 150
+    },
+    "target_composition_cap400": {
+     "distal": 100,
+     "proximal": 300
+    },
+    "task_id": "saleor-rc-7e42fc67ce72",
+    "unknown_touched_paths": [
+     "CHANGELOG.md"
+    ]
+   },
+   "sensitivity_cap": 400,
+   "task_id": "saleor-rc-7e42fc67ce72",
+   "verify_checks": {
+    "all_pass": true,
+    "checks": {
+     "all_candidates_used_once": true,
+     "cap200_achieved_composition": true,
+     "cap200_len": true,
+     "cap200_prefix_of_ordered": true,
+     "cap200_subset_cap400": true,
+     "cap400_achieved_composition": true,
+     "cap400_len": true,
+     "cap400_prefix_of_ordered": true,
+     "nested_membership_identity": true,
+     "no_duplicates": true,
+     "proximal_distal_cover_raw": true,
+     "proximal_distal_disjoint": true
+    }
+   }
+  },
+  "evaluator_only": true,
+  "invisible_to_generation": true,
+  "membership_sha256": "03ccacfef0f70faa6e38a633f64a2b63be550c03e1a4ce01dd7138093c0125f5",
+  "parent_commit": "798632158394c9f2911e6d36e8e424fd55007dc4",
+  "payload_sha256": "5058dd77ef13fd5ba9b807410b2242bacbe0b69d74b33e2bfbad5ec87e9bd3b8",
+  "primary_cap": 200,
+  "rule": "unchanged-test P2P-U preservation oracle candidates for the MAIN pilot task; frozen V2 ordering/salt/caps applied prospectively by the additive pilot adapter; PASS requires 3/3 stable on parent AND on FULL_REFERENCE target (unchanged rule, frozen before any outcome)",
+  "salt": "wp2-p2p-u-v2-2026-09-25",
+  "sensitivity_cap": 400,
+  "target_commit": "7e42fc67ce72770720440781fc83685a48bd91b8",
+  "task_id": "saleor-rc-7e42fc67ce72"
+ },
+ "parent_commit": "798632158394c9f2911e6d36e8e424fd55007dc4",
+ "scope": "PROSPECTIVE MAIN pilot P2P-U candidate membership for the golden task; NOT the frozen DEV47 pool; candidates only, observed STABLE_P2P outcomes DO NOT exist for this list",
+ "selection_rule": "P2P-U PRESERVATION for the MAIN pilot: a candidate passes iff it is STABLE_P2P 3/3 on parent AND 3/3 on FULL_REFERENCE target (frozen rule, immutable after this artifact; no outcome was observed when creating this list)",
+ "target_commit": "7e42fc67ce72770720440781fc83685a48bd91b8",
+ "task_id": "saleor-rc-7e42fc67ce72",
+ "touched_production_files": [
+  "CHANGELOG.md",
+  "saleor/app/installation_utils.py",
+  "saleor/app/management/commands/install_app.py",
+  "saleor/app/manifest_validations.py"
+ ],
+ "uncommitted": true,
+ "v2_frozen": {
+  "algorithm_version": "p2p-u-v2-2026-09-25",
+  "ordering": "PROXIMAL (proximity>=2, descending stratum, sha256(salt|file), sha256(salt|node), one-node-per-file round-robin) then DISTAL (<=1, sha256(salt|file), sha256(salt|node), round-robin); P,P,P,D interleave; cap200 subset cap400 prefix",
+  "primary_cap": 200,
+  "salt": "wp2-p2p-u-v2-2026-09-25",
+  "sensitivity_cap": 400
+ }
+}
