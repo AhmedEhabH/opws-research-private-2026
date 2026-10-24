@@ -1,0 +1,255 @@
+{
+ "artifact": "OPWS_M19A3_MOCK_VALIDATION_REPORT",
+ "mission": "M19A3-FIX2 (minimal targeted follow-up to FIX1; closes four semantic defects in the four untracked M19A3 files only)",
+ "status": "MOCK_ONLY_ADDITIVE_DIFF_NOT_COMMITTED",
+ "branch": "parallel/opws-instrument-build-2026-10-20",
+ "head_sha256": "c1532f7c2b7af0ff8218d3b28cb38f1e5227f294",
+ "head_verified_read_only": true,
+ "date": "2026-10-24",
+ "commit_state": "NOT COMMITTED - additive files only, awaiting human review; no stage/commit/push/reset/clean performed; no tags altered",
+ "integration": "STANDALONE SYNTHETIC SEAM - NOT integrated with real evaluation. No Saleor pytest, no Docker, no API, no real NEG/FULL_REFERENCE/selector arms, no dataset mining, no environment change. A mock PASS is an instrument check only and can never be promoted to real OPWS behavioral evidence. Digest check proves internal request consistency only; never frozen git show HEAD: contract usage. The mock cannot attest real launch provenance, trusted frozen-contract origin, or actually executed argv; it validates internal consistency only.",
+ "no_behavioral_claims": "TRUE - no real OPWS behavioral outcome produced; every mock result is eligible=False and non-promotable",
+ "tree_state": "clean before additive files (branch/HEAD verified); the four M19A3 files remain the ONLY untracked files",
+ "defects_fixed": {
+  "1_repetition1_missing_node": {
+   "status": "FIXED",
+   "evidence": "test_missing_node_in_rep1_is_contract_violation / test_missing_node_in_rep2_is_contract_violation (RED->GREEN; ContractError exact-set mismatch on ANY run)"
+  },
+  "2_repetition1_timeout_ignored": {
+   "status": "FIXED",
+   "evidence": "test_timeout_in_rep1_never_passes / test_collection_error_in_rep2_never_passes (BLOCKED_* success None)"
+  },
+  "3_repetition1_extra_node_ignored": {
+   "status": "FIXED",
+   "evidence": "test_extra_node_in_rep1_is_contract_violation (ContractError on ANY run)"
+  },
+  "4_allow_real_task_bypass": {
+   "status": "FIXED",
+   "evidence": "allow_real_task absent; ensure_synthetic always rejects non-mock task ids; test_real_task_id_never_admitted_no_bypass_flag_exists"
+  },
+  "5_argv_sorted_in_key": {
+   "status": "FIXED",
+   "evidence": "key() hashes ORDERED argv; test_argv_reorder_changes_execution_identity / test_same_argv_same_order_same_key"
+  },
+  "6_p2p_missing_skipped_as_fail": {
+   "status": "FIXED",
+   "evidence": "P2P missing/skipped -> BLOCKED_TEST_ORACLE; observed failed/error -> FAIL_PRESERVATION; TestFix6P2pOracleGapsBlockedNotFailed"
+  },
+  "7_overlap_and_run_binding": {
+   "status": "FIXED",
+   "evidence": "overlap rejected; request-vs-observation rep binding enforced; requested run must be among 0,1,2; ids are REQUIRED run labels"
+  },
+  "8_scope_all_passed_semantics": {
+   "status": "FIXED",
+   "evidence": "MOCK_SCOPE_PASS (success True, eligible False, mock_only True, promotable False); TestFix8MockScopePassNeverPromoted"
+  },
+  "9_digest_role_documentation": {
+   "status": "FIXED_DOCUMENTED",
+   "evidence": "_MOCK_PROVENANCE on every success result; digest is internal consistency only, never frozen-contract proof"
+  },
+  "10_exit_code_semantics": {
+   "status": "FIXED",
+   "evidence": "0 clean; 1 needs >=1 failed/error; >=2 or <0 BLOCKED_COLLECTION; inconsistent receipts raise; TestFix10ExitCodeSemantics (7 tests)"
+  }
+ },
+ "fix2_defects": {
+  "1_execution_key_collision": {
+   "status": "FIXED",
+   "evidence": "before: two requests differing ONLY in declared node identities (with properly corresponding different test_contract_sha256) produced the SAME key(); after: key() binds test_contract_sha256 (RED test_different_expected_ids_with_matching_digests_give_different_keys + test_key_binds_to_the_declared_digest_itself)"
+  },
+  "2_observation_argv_not_bound": {
+   "status": "FIXED",
+   "evidence": "before: observation argv != req.argv accepted as PASS and empty argv silently defaulted; after: _validate_rep compares tuple(obs.argv) to tuple(req.argv) for EACH repetition and raises ContractError on empty or different argv (RED tests: single-repetition mismatch, empty argv, interior rep1 mismatch)"
+  },
+  "3_full_reference_eligible_true": {
+   "status": "FIXED",
+   "evidence": "before: mock FULL_REFERENCE synthetic PASS returned eligible True; after: every mock-only result is eligible False while status PASS / success True are preserved (mock_only True, promotable_to_real_opws False retained); corrected existing test_full_reference_passes_designated_f2p_and_preserves_p2p assertion"
+  },
+  "4_neg_success_lacks_provenance": {
+   "status": "FIXED",
+   "evidence": "before: NEG_DISCRIMINATIVE returned success True with no top-level mock_only / promotable_to_real_opws and no detail.provenance; after: every success==True branch (PASS, MOCK_SCOPE_PASS, NEG_DISCRIMINATIVE) carries explicit mock provenance; test_neg_discriminative_success_carries_mock_provenance"
+  }
+ },
+ "code_paths_changed": [
+  "ContractRequest: removed allow_real_task field; key() argv order preserved",
+  "ensure_synthetic: hard MOCK-ONLY guard, no bypass branch",
+  "_validate_rep(req, obs, check_rep_id): per-run fail-closed validation shared by verify_mock and verify_repetitions",
+  "verify_mock: delegates fail-closed checks to _validate_rep; P2P gaps BLOCKED; PASS carries mock_only + _MOCK_PROVENANCE",
+  "verify_repetitions: per-run independent validation BEFORE stability; interior timeout/collection blocked; missing/extra node in ANY run raises; scores the REQUESTED repetition",
+  "New status MOCK_SCOPE_PASS replacing SCOPE_NOTHING_FAILED (FAIL on all-passed scope)",
+  "_MOCK_PROVENANCE dict attached to every success result (PASS, MOCK_SCOPE_PASS)",
+  "MockObservation: exit_code semantics documented; synthetic_observation derives receipt-consistent default exit_code",
+  "FIX2: key() payload now includes test_contract_sha256 (declared contract digest) so node-identity differences change the execution identity",
+  "FIX2: _validate_rep raises ContractError when obs.argv is empty or != tuple(req.argv), for every repetition",
+  "FIX2: FULL_REFERENCE synthetic PASS eligible True -> False (every mock result is eligible False)",
+  "FIX2: NEG_DISCRIMINATIVE success now carries top-level mock_only / promotable_to_real_opws and detail.provenance"
+ ],
+ "input_blob_pins": {
+  "frozen_f2p_contract_83": "df1e087b199277cc56c42fdfd182f85fcd3faf0c74f4701d5add80b52866f124",
+  "three_run_sensitivity_83": "62f528b060cbbc814f137cbba509443cc4d6fdcb2730010ecc25ce99f942fe41",
+  "frozen_classifier_git_blob_sha256": "aa85f4953bea36974b77340c38fe8219e5a8d577d5e786ff74c06de2fc07423d",
+  "rescued_junit_evidence_manifest_sha256": "39ea5470625188a4357575f971842676d32a3ee811874d256f7978e1989b3647",
+  "strict_aggregate_identity": "c9acf4b89ced585b2a060796758aec4910af371bcc0b9e6410277e45d1c3bf86",
+  "strict_option_b_preview": "7d56f57717a10b3b1f0c4d840f924e2afdba117f963a030bf34ee53232830a95"
+ },
+ "contract_bytes_preserved": "git show HEAD:research/opws/binding/OPWS_F2P_NODE_CONTRACT_83.json and HEAD:research/opws/binding/OPWS_F2P_THREE_RUN_SENSITIVITY_83.json re-hashed read-only; byte values equal the report pins; no file rewritten",
+ "strict_f2p_historical": {
+  "strict_83_of_795": "83/795 preserved (historical)",
+  "strict_82_of_770": "82/770 preserved (historical)",
+  "behavioral_primary": "70 preserved (historical)",
+  "note": "NO category or cohort change in this mission; frozen E1/P2P-S/P2P-U behavior untouched",
+  "strict_70_candidate_tasks": "UNCHANGED - strict 70-task candidate set not signed here; real OPWS gate remains STOP"
+ },
+ "p2p_readiness": {
+  "p2p_s": "RECOVERABLE - P2P_ONLY changed-test PASS_TO_PASS exact node IDs reconstructable (47 DEV cohort) but full 83-task exact extraction + owner protocol choice still pending (NOT signed by this mission)",
+  "p2p_u": "BLOCKED - unchanged-test stable candidates require an AUTHORIZED prospective sweep and policy freeze before any real behavioral evaluation",
+  "opws83_p2p_exact_id_lists": "NOT FROZEN anywhere for the 83 OPWS tasks; preservation_validation_complete=False",
+  "status": "BLOCKED_FOR_PILOT_CONTRACT (unchanged; no P2P identity freeze in this mission)"
+ },
+ "stop_gates": [
+  "No real NEG / FULL_REFERENCE / predicted-scope arms executed (mock-only mission)",
+  "No Docker / WSL / Saleor pytest / API benchmark / Full-D7 / new cohorts / dataset mining",
+  "Frozen contracts + MSc proposal untouched",
+  "MOCK-ONLY module cannot admit real task ids (bypass flag absent)",
+  "Every mock result eligible=False and non-promotable; no F2P-only evaluation mislabeled as F2P+P2P success",
+  "HARD STOP: no signed P2P or strict protocol freeze; exact P2P identity freeze + explicit owner authorization required before future stages"
+ ],
+ "mock_seam_tests": {
+  "ran": 64,
+  "passed": 64,
+  "failed": 0,
+  "new_tests_added": 9,
+  "runner": "py -3.11 -B -m pytest tests/test_opws_m19a3_mock_contract.py -p no:cacheprovider -q",
+  "python": "3.11.9 (py -3.11 -B)",
+  "red_phase": "8 failed / 56 passed pre-FIX2 (7 new RED regression tests + 1 corrected durable assertion test_full_reference_passes_designated_f2p_and_preserves_p2p: eligible True -> False)",
+  "fix2_regression_guard": "test_error_and_blocked_paths_never_claim_eligible passes both pre- and post-fix (documents that no blocked/error path claims eligible=True)",
+  "categories": {
+   "full_reference_pass_and_preserve": [
+    "tests/test_opws_m19a3_mock_contract.py::test_full_reference_passes_designated_f2p_and_preserves_p2p",
+    "tests/test_opws_m19a3_mock_contract.py::test_three_physical_runs_stable_pass"
+   ],
+   "negative_control": [
+    "tests/test_opws_m19a3_mock_contract.py::test_negative_discriminates_when_f2p_fails",
+    "tests/test_opws_m19a3_mock_contract.py::test_negative_that_passes_does_not_qualify",
+    "tests/test_opws_m19a3_mock_contract.py::test_arm_label_does_not_alter_expected_identity"
+   ],
+   "scope_arm": [
+    "tests/test_opws_m19a3_mock_contract.py::test_scope_partial_fix_fails",
+    "tests/test_opws_m19a3_mock_contract.py::test_scope_no_fix_fails",
+    "tests/test_opws_m19a3_mock_contract.py::test_preservation_failure_fails"
+   ],
+   "exact_set_equality": [
+    "tests/test_opws_m19a3_mock_contract.py::test_missing_node_fails_closed",
+    "tests/test_opws_m19a3_mock_contract.py::test_extra_node_fails_closed",
+    "tests/test_opws_m19a3_mock_contract.py::test_duplicate_observed_node_fails_closed",
+    "tests/test_opws_m19a3_mock_contract.py::test_parameterized_ids_compared_exactly"
+   ],
+   "digest_and_leak_guards": [
+    "tests/test_opws_m19a3_mock_contract.py::test_p2p_omission_fails_closed",
+    "tests/test_opws_m19a3_mock_contract.py::test_f2p_omission_fails_closed",
+    "tests/test_opws_m19a3_mock_contract.py::test_wrong_digest_fails_closed",
+    "tests/test_opws_m19a3_mock_contract.py::test_digest_bound_to_expected_not_observed"
+   ],
+   "blocked_categories": [
+    "tests/test_opws_m19a3_mock_contract.py::test_collection_error_blocked",
+    "tests/test_opws_m19a3_mock_contract.py::test_junit_missing_infra_blocked",
+    "tests/test_opws_m19a3_mock_contract.py::test_timeout_blocked_not_failed",
+    "tests/test_opws_m19a3_mock_contract.py::test_per_node_missing_blocked_test_oracle",
+    "tests/test_opws_m19a3_mock_contract.py::test_unknown_outcome_token_fails_closed"
+   ],
+   "three_physical_reps": [
+    "tests/test_opws_m19a3_mock_contract.py::test_status_flips_across_three_runs_blocked_flaky",
+    "tests/test_opws_m19a3_mock_contract.py::test_three_explicit_physical_runs_required"
+   ],
+   "runtime_guards": [
+    "tests/test_opws_m19a3_mock_contract.py::test_real_saleor_task_id_rejected_by_mock_runner",
+    "tests/test_opws_m19a3_mock_contract.py::test_real_task_id_never_admitted_no_bypass_flag_exists",
+    "tests/test_opws_m19a3_mock_contract.py::test_environment_mismatch_changes_execution_identity",
+    "tests/test_opws_m19a3_mock_contract.py::test_patch_mismatch_changes_execution_identity",
+    "tests/test_opws_m19a3_mock_contract.py::test_scope_parent_run_repetition_argv_identity",
+    "tests/test_opws_m19a3_mock_contract.py::test_expected_duplicate_ids_rejected"
+   ],
+   "fix1_interior_missing_node": [
+    "tests/test_opws_m19a3_mock_contract.py::test_missing_node_in_rep1_is_contract_violation",
+    "tests/test_opws_m19a3_mock_contract.py::test_missing_node_in_rep2_is_contract_violation"
+   ],
+   "fix1_interior_timeout_collection": [
+    "tests/test_opws_m19a3_mock_contract.py::test_timeout_in_rep1_never_passes",
+    "tests/test_opws_m19a3_mock_contract.py::test_collection_error_in_rep2_never_passes"
+   ],
+   "fix1_interior_extra_node": [
+    "tests/test_opws_m19a3_mock_contract.py::test_extra_node_in_rep1_is_contract_violation"
+   ],
+   "fix1_argv_order_identity": [
+    "tests/test_opws_m19a3_mock_contract.py::test_argv_reorder_changes_execution_identity",
+    "tests/test_opws_m19a3_mock_contract.py::test_same_argv_same_order_same_key"
+   ],
+   "fix1_p2p_oracle_gaps_blocked": [
+    "tests/test_opws_m19a3_mock_contract.py::test_p2p_missing_blocked_test_oracle",
+    "tests/test_opws_m19a3_mock_contract.py::test_p2p_skipped_blocked_test_oracle",
+    "tests/test_opws_m19a3_mock_contract.py::test_p2p_failed_still_observed_regression",
+    "tests/test_opws_m19a3_mock_contract.py::test_p2p_error_is_observed_regression"
+   ],
+   "fix1_overlap_and_run_binding": [
+    "tests/test_opws_m19a3_mock_contract.py::test_overlapping_f2p_p2p_identities_rejected",
+    "tests/test_opws_m19a3_mock_contract.py::test_observation_rep_id_must_match_request",
+    "tests/test_opws_m19a3_mock_contract.py::test_requested_run_must_be_among_observed_runs"
+   ],
+   "fix1_mock_scope_pass_never_promoted": [
+    "tests/test_opws_m19a3_mock_contract.py::test_scope_all_passed_is_mock_scope_pass_not_real_success",
+    "tests/test_opws_m19a3_mock_contract.py::test_mock_scope_pass_across_three_stable_runs",
+    "tests/test_opws_m19a3_mock_contract.py::test_scope_partial_fix_still_fails_closed"
+   ],
+   "fix1_provenance_digest_role": [
+    "tests/test_opws_m19a3_mock_contract.py::test_full_reference_pass_provenance_is_mock_only",
+    "tests/test_opws_m19a3_mock_contract.py::test_digest_match_does_not_prove_frozen_contract_use"
+   ],
+   "fix1_exit_code_semantics": [
+    "tests/test_opws_m19a3_mock_contract.py::test_exit_code_2_collection_error_blocks_even_with_pass_outcomes",
+    "tests/test_opws_m19a3_mock_contract.py::test_negative_exit_code_fails_closed",
+    "tests/test_opws_m19a3_mock_contract.py::test_exit_code_1_without_failed_outcomes_is_inconsistent_receipt",
+    "tests/test_opws_m19a3_mock_contract.py::test_exit_code_0_with_failed_outcomes_is_inconsistent_receipt",
+    "tests/test_opws_m19a3_mock_contract.py::test_exit_code_1_with_failure_proceeds_to_verdict",
+    "tests/test_opws_m19a3_mock_contract.py::test_exit_code_2_in_rep1_blocks_three_run_verdict",
+    "tests/test_opws_m19a3_mock_contract.py::test_synthetic_observation_auto_exit_code_is_consistent"
+   ],
+   "fix2_key_binds_contract_digest": [
+    "tests/test_opws_m19a3_mock_contract.py::test_different_expected_ids_with_matching_digests_give_different_keys",
+    "tests/test_opws_m19a3_mock_contract.py::test_key_binds_to_the_declared_digest_itself",
+    "tests/test_opws_m19a3_mock_contract.py::test_identical_payloads_keep_identical_keys"
+   ],
+   "fix2_observation_argv_binding": [
+    "tests/test_opws_m19a3_mock_contract.py::test_mismatched_observation_argv_fails_closed_single_repetition",
+    "tests/test_opws_m19a3_mock_contract.py::test_empty_observation_argv_fails_closed",
+    "tests/test_opws_m19a3_mock_contract.py::test_mismatched_observation_argv_in_interior_repetition_fails_closed"
+   ],
+   "fix2_eligibility_and_provenance": [
+    "tests/test_opws_m19a3_mock_contract.py::test_full_reference_pass_is_eligible_false_and_non_promotable",
+    "tests/test_opws_m19a3_mock_contract.py::test_neg_discriminative_success_carries_mock_provenance",
+    "tests/test_opws_m19a3_mock_contract.py::test_error_and_blocked_paths_never_claim_eligible"
+   ]
+  }
+ },
+ "offline_handoff_tests": {
+  "historical_2026_10_24_session": {
+   "ran": 16,
+   "passed": 16,
+   "failed": 0
+  },
+  "rerun_this_session": "NOT RERUN - external staged handoff-test path is unavailable in this session",
+  "runner_historical": "py -3.11 -B -m unittest discover -s tests -v (handoff folder, external staging)"
+ },
+ "validation": {
+  "git_diff_check": "PASS - git diff --check clean; branch/HEAD unchanged; exactly four untracked additive files (untracked files are not covered by plain git diff)",
+  "py_compile": "PASS (scripts/opws_m19a3_mock_contract.py, tests/test_opws_m19a3_mock_contract.py)",
+  "ruff": "PASS (ruff check on both changed files; 0 errors)",
+  "mypy": "NOT RUN (scripts/tests not under strict mypy production scope - unchanged policy)",
+  "full_suite": "NOT RUN (additive files only; targeted tests per validation order)",
+  "targeted_pytest": "PASS (64/64; RED phase was 8 failed / 56 passed)",
+  "independent_repro": "all four FIX2 findings reproduced pre-fix on the live workspace (scripts/opws_m19a3_mock_contract.py + tests) and verified fixed post-fix via read-only repro harness outside the git tree"
+ },
+ "blob_pins_of_new_files": {
+  "scripts/opws_m19a3_mock_contract.py": "aee66d0f6f1bbdd5b42f91623db7a85c1e402a20e6c49873cc504c7a7bcab927",
+  "tests/test_opws_m19a3_mock_contract.py": "a37ada94780b7c0a1eb9bc0b344844fd8ef33db773afd88200aab9dcf0a2d3a3"
+ }
+}
