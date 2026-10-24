@@ -1,0 +1,105 @@
+{
+ "artifact": "M19A4_HISTORICAL_VS_STRICT_SENSITIVITY",
+ "changed_nodes_by_task": {
+  "saleor-rc-032b98afff20": [
+   "saleor/graphql/order/tests/mutations/test_draft_order_complete.py::test_draft_order_complete_product_without_inventory_tracking"
+  ],
+  "saleor-rc-05bdc7feb9ac": [
+   "saleor/graphql/order/tests/test_fulfillment_return_products.py::test_fulfillment_refund_products_order_lines_quantity_bigger_than_unfulfilled",
+   "saleor/graphql/order/tests/test_fulfillment_return_products.py::test_fulfillment_return_products_amount_and_shipping_costs",
+   "saleor/graphql/order/tests/test_fulfillment_return_products.py::test_fulfillment_return_products_amount_bigger_than_captured_amount",
+   "saleor/graphql/order/tests/test_fulfillment_return_products.py::test_fulfillment_return_products_fulfillment_lines",
+   "saleor/graphql/order/tests/test_fulfillment_return_products.py::test_fulfillment_return_products_fulfillment_lines_and_order_lines",
+   "saleor/graphql/order/tests/test_fulfillment_return_products.py::test_fulfillment_return_products_fulfillment_lines_include_shipping_costs",
+   "saleor/graphql/order/tests/test_fulfillment_return_products.py::test_fulfillment_return_products_fulfillment_lines_quantity_bigger_than_total",
+   "saleor/graphql/order/tests/test_fulfillment_return_products.py::test_fulfillment_return_products_lines_with_incorrect_status",
+   "saleor/graphql/order/tests/test_fulfillment_return_products.py::test_fulfillment_return_products_order_lines",
+   "saleor/graphql/order/tests/test_fulfillment_return_products.py::test_fulfillment_return_products_order_lines_custom_amount",
+   "saleor/graphql/order/tests/test_fulfillment_return_products.py::test_fulfillment_return_products_order_lines_quantity_bigger_than_total",
+   "saleor/order/tests/test_order_actions.py::test_cancel_fulfillment",
+   "saleor/order/tests/test_order_actions.py::test_cancel_fulfillment_variant_witout_inventory_tracking",
+   "saleor/order/tests/test_order_actions.py::test_cancel_order",
+   "saleor/order/tests/test_order_actions.py::test_clean_mark_order_as_paid",
+   "saleor/order/tests/test_order_actions.py::test_fulfill_digital_lines",
+   "saleor/order/tests/test_order_actions.py::test_fulfill_order_line",
+   "saleor/order/tests/test_order_actions.py::test_fulfill_order_line_with_variant_deleted",
+   "saleor/order/tests/test_order_actions.py::test_fulfill_order_line_without_inventory_tracking",
+   "saleor/order/tests/test_order_actions.py::test_handle_fully_paid_order",
+   "saleor/order/tests/test_order_actions.py::test_handle_fully_paid_order_no_email",
+   "saleor/order/tests/test_order_actions.py::test_mark_as_paid",
+   "saleor/order/tests/test_order_actions.py::test_mark_as_paid_no_billing_address",
+   "saleor/order/tests/test_order_actions.py::test_mark_as_paid_with_external_reference",
+   "saleor/order/tests/test_order_actions.py::test_order_refunded"
+  ],
+  "saleor-rc-30b4edece5aa": [
+   "saleor/graphql/giftcard/tests/queries/test_gift_card.py::test_query_used_gift_card_by_owner"
+  ]
+ },
+ "changed_nodes_category_matrix": {
+  "BEHAVIORAL_F2P->FLAKY": 24,
+  "P2P_ONLY->FLAKY": 2,
+  "SYMBOL_ABSENCE_F2P->FLAKY": 1
+ },
+ "frozen_reference": {
+  "contract": {
+   "behavioral_f2p_hist": 731,
+   "f2p_hist_total": 795,
+   "n_tasks_with_3run_instability": 1,
+   "primary_behavioral_hist": 71,
+   "primary_behavioral_strict": 70,
+   "symbol_absence_f2p_hist": 64,
+   "tasks_extended_f2p_historical": 83
+  },
+  "sensitivity_file": {
+   "behavioral_f2p_strict": 707,
+   "changed_nodes_total": 27,
+   "f2p_strict_total": 770,
+   "symbol_absence_f2p_strict": 63,
+   "tasks_with_changes": 3
+  }
+ },
+ "notes": [
+  "Historical P2P_ONLY uses the last-write-wins merge + [last]*3 replay; strict uses all 3 recorded outcomes.",
+  "The 2 P2P_ONLY(hist)->FLAKY(strict) nodes on 032b98afff20/30b4edece5aa match the frozen sensitivity file exactly.",
+  "P2P_ONLY requires both sides to be collected and passed historically; target-only or parent-only nodes do not classify P2P_ONLY.",
+  "No P2P-U membership is inferred or claimed; P2P-U V2 uses the separate frozen unchanged-test pool.",
+  "These identity lists are CANDIDATE recovery outputs, not an approved OPWS P2P-S protocol."
+ ],
+ "p2p_only_delta_hist_vs_strict": {
+  "hist_excluded_by_task": {
+   "saleor-rc-032b98afff20": [
+    "saleor/graphql/order/tests/mutations/test_draft_order_complete.py::test_draft_order_complete_product_without_inventory_tracking"
+   ],
+   "saleor-rc-30b4edece5aa": [
+    "saleor/graphql/giftcard/tests/queries/test_gift_card.py::test_query_used_gift_card_by_owner"
+   ]
+  },
+  "hist_p2p_excluded_under_strict": 2,
+  "strict_added_by_task": {},
+  "strict_p2p_added_over_hist": 0
+ },
+ "recovered_totals": {
+  "behavioral_f2p_historical": 731,
+  "behavioral_f2p_strict": 707,
+  "changed_nodes_hist_vs_strict": 27,
+  "extended_f2p_tasks_historical": 83,
+  "extended_f2p_tasks_strict": 82,
+  "f2p_historical": 795,
+  "f2p_strict": 770,
+  "flaky_historical": 987,
+  "flaky_strict": 1014,
+  "hist_not_strict_p2p_nodes": 2,
+  "n_nodes": 11284,
+  "p2p_only_historical": 9275,
+  "p2p_only_strict": 9273,
+  "strict_not_hist_p2p_nodes": 0,
+  "symbol_absence_f2p_historical": 64,
+  "symbol_absence_f2p_strict": 63,
+  "tasks": 83,
+  "tasks_with_changes": 3,
+  "tasks_with_f2p_historical": 71,
+  "tasks_with_f2p_strict": 70
+ },
+ "schema": "opws-m19a4-p2ps/sensitivity/1.0",
+ "status": "CANDIDATE; frozen figures 83/82/70 and 795/770 unchanged"
+}

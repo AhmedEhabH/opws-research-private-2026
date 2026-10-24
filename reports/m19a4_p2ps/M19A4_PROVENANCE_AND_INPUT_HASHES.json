@@ -1,0 +1,31 @@
+{
+ "artifact": "M19A4_PROVENANCE_AND_INPUT_HASHES",
+ "classifier_pins": {
+  "oracle_confirmation.py": "4609a2256d0803c1029fae572db62c28f6885b8a12628094a9e10bcb65b752d1",
+  "oracle_semantics_v2.py": "aa85f4953bea36974b77340c38fe8219e5a8d577d5e786ff74c06de2fc07423d"
+ },
+ "evidence_dir": "D:\\WP2\\evidence\\C2_MAIN83_JUNIT_RESCUE_2026-10-23",
+ "evidence_manifest_sha256": "39ea5470625188a4357575f971842676d32a3ee811874d256f7978e1989b3647",
+ "evidence_n_xml_files": 1801,
+ "evidence_total_bytes": 46218654,
+ "generated_at_utc": "2026-10-24T01:38:26.406385+00:00",
+ "generated_by": "scripts/opws_m19a4_p2p_s_recover.py",
+ "git_head": "7b93e7555f4851634af489444e0e9670a0acd610",
+ "input_hashes": {
+  "f2p_node_contract_83": "df1e087b199277cc56c42fdfd182f85fcd3faf0c74f4701d5add80b52866f124",
+  "per_task_v2_jsonl": "7fdeeb936ea84e7ef47a461e940671ee628114d9a1d960f29a0be008eddce021",
+  "three_run_sensitivity_83": "62f528b060cbbc814f137cbba509443cc4d6fdcb2730010ecc25ce99f942fe41"
+ },
+ "no_protocol_freeze": true,
+ "offline_only": true,
+ "outputs": {
+  "M19A4_P2P_ONLY_NODES_BY_TASK_83.json": "18963d7e806484e4bbedae91ae099f25ea6de8334bbdbd82f31d4763127d850b"
+ },
+ "recipes": {
+  "aggregate_identity": "sha256(canonical json list of [task_id, node_identity_sha256] in sorted task_id order)",
+  "historical": "merge rep-major,file-minor,last-write-wins; classify_node_v2([last]*3); P2P_ONLY iff target-last=='passed' and parent-last=='passed'",
+  "node_identity": "node_identity_sha256 = sha256(canonical json {task_id, historical_p2p_only(sorted), strict_p2p_only(sorted)})",
+  "strict": "node stable-pass on a side iff its 3 recorded outcomes are exactly ['passed']*3; same classifier precedence"
+ },
+ "schema": "opws-m19a4-p2ps/provenance/1.0"
+}
