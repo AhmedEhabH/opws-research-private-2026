@@ -1,233 +1,114 @@
-> **CURRENT PHASE (2026-09-22):** WP-1b selection-only agent comparison
-> (MAIN_297 + variance 15x3 + scoring), then WP-2 / E2E-G6. The single
-> current-state source is the LIVE STATUS block in `README.md`, generated from
-> `docs/LIVE_STATUS.json`. The historical release-facts trail (v0.9.x pilot /
-> preflight closures) moved verbatim to
-> `docs/history/AGENTS_RELEASE_FACTS_ARCHIVE_2026-09-22.md`; it is NOT current
-> guidance.
+# AGENTS.md — OPWS / Selective Regeneration Research Instrument
 
-# AGENTS.md — Dependency-Aware Selective Regeneration Benchmark
+> **CURRENT PHASE (updated 2026-10-24):** M19 — OPWS fixed-patch scope-sufficiency
+> instrument on branch `parallel/opws-instrument-build-2026-10-20`. Next: seven-task
+> readiness, then real NEG / FULL_REFERENCE controls. E2E generation is a later,
+> separate protocol. The previous WP-1b / Kaggle guidance is archived in
+> `docs/history/AGENTS_WP1B_KAGGLE_ARCHIVE_2026-10-24.md` and is NOT current guidance.
 
-## Project facts
+## 1. Project facts
 
-- **Language:** Python 3.11
-- **Source:** `src/benchmark/`
-- **Entry:** `seven_arm_benchmark.py`
-- **Tests:** Pytest (test suite under `tests/`)
-- **Lint:** Ruff (pyproject.toml config)
-- **Types:** Mypy strict (`pyproject.toml`)
-- **Kaggle:** generated code under `kaggle_upload/code/`
-- **Bundle:** `scripts/build_upload_bundle.py`
-- **Docs:** `docs/`
-- **Updates:** ledgers under `selective_updates/`
+- Python 3.11 on Windows via `py -3.11`; real Saleor execution only in WSL Ubuntu-24.04 / Linux Docker.
+- OPWS code: `scripts/opws_*.py`, `src/benchmark/wp2/`. OPWS tests: `tests/unit/opws/`.
+- Binding artifacts: `research/opws/binding/`. Audit outputs: `D:\WP2\audit_results\<MISSION>\` (outside the repo).
+- Saleor bare Git store: `D:\wp2_env_store\git_cache\saleor.git` (read-only use; never check out Saleor trees on Windows).
+- Lint: Ruff. Types: Mypy strict on changed production files.
 
-## Working rule
+## 2. Frozen scientific artifacts — never modify, rewrite, regenerate or replace
 
-inspect minimally → edit narrowly → changed-file diagnostics → affected tests → full validation only at final gate
+- Protocols: R1 (`9038df3e…`), R1.1 (`7af88920…`), R2 baseline predictions (`6c2f698154ddcba22ff7d9a85656753a6eaee5ff`).
+- MAIN297 predictions, labels and census.
+- `research/opws/binding/OPWS_BEHAVIOR_CONTRACT_MANIFEST_219.json`
+- `research/opws/binding/OPWS_F2P_NODE_CONTRACT_83.json` (historical, 795 F2P nodes)
+- `research/opws/binding/OPWS_F2P_THREE_RUN_SENSITIVITY_83.json` (strict, 770 F2P nodes)
+- `research/opws/binding/C2_MAIN83_JUNIT_EVIDENCE_MANIFEST.json`
+- Evidence directory `D:\WP2\evidence\C2_MAIN83_JUNIT_RESCUE_2026-10-23\` (read-only; 1,801 files).
+- Classifier semantics `src/benchmark/wp2/oracle_semantics_v2.py` (pin `aa85f495…`, LF bytes).
 
-## Context rules
+Corrections are ADDITIVE only: new versioned file + addendum document. Never edit a frozen file.
 
-Start with:
-```
-git status --short
-git diff --stat
-git diff --name-only
-```
+## 3. Scientific rules
 
-Use exact searches before reading whole files. Read only:
-- changed files
-- related symbols
-- directly affected tests
-- necessary configuration (pyproject.toml)
+- No real behavioral run (Saleor tests, Docker, NEG, FULL_REFERENCE, scoped arms) unless the current mission explicitly authorizes it.
+- Pre-outcome discipline: populations, test-node lists, pilot tasks and statistics are frozen and committed BEFORE any behavioral outcome is seen. Never choose or drop a task because of a selector's outcome.
+- Test identity: exact node-ID SET EQUALITY against the frozen contract. Never re-collect tests (`pytest --collect-only`) to replace frozen IDs. Lower-bound counts are not sufficient.
+- Fail closed: missing, partial, unparsable or ambiguous evidence is BLOCKED, never PASS.
+- Distinguish: unit/mock PASS ≠ structural audit PASS ≠ environment qualification ≠ behavioral sufficiency ≠ LLM-generated patch correctness.
+- Never invent numbers, hashes, paths, file names or provenance. Unknown = `UNKNOWN`.
 
-Do not read entire repository, generated code (unless verifying derivatives), datasets, large logs, or unrelated documentation.
+## 4. Hashing and file-writing rules
 
-## Large-file reading rule
+- Windows working copies may be CRLF. Hash committed content with the Git blob (`git show HEAD:<path>`), or report raw/LF/CRLF variants explicitly.
+- Write generated artifacts as bytes (`write_bytes`), UTF-8 without BOM, LF line endings, deterministic JSON (`sort_keys`, fixed separators). No timestamps inside content-hashed payloads.
+- Every new artifact: report its SHA-256 and the SHA-256 of every input it used.
 
-`DECISIONS.md` (~210 KB), `TODO.md` (~190 KB), `00_CURRENT_RESEARCH_STATE.md`
-(~120 KB) and `docs/RESEARCH_JOURNEY.md` are append-only records. Never read
-them whole: `grep`/`Select-String` for the section you need, then read only that
-range. Append new decisions at the end of `DECISIONS.md`.
+## 5. Context and cost rules
 
-## Visible TODO progress (standing)
+- Never read whole any file larger than 200 KB. Use short bounded Python summaries (`py -3.11 -I -c ...`) that print counts and samples only.
+- Large append-only records (`DECISIONS.md`, `TODO.md`, `00_CURRENT_RESEARCH_STATE.md`, `docs/RESEARCH_JOURNEY.md`): search, then read only the needed range.
+- Read only the files the mission needs. Do not explore unrelated directories.
+- **Usage reporting:** state the real provider and model. Do NOT estimate tokens or USD. Write `USAGE: read from harness status bar by owner` unless exact metered values are available to you.
 
-- Update the visible TODO checklist immediately after each completed phase or
-  subphase, and whenever the active item changes.
-- Keep exactly one item `in_progress`; mark finished items completed at once;
-  keep the remaining major items visible.
-- Long paid runs are CHUNKED (`--max-items N --resume`, one chunk per tool call,
-  <= 45 min per call). After every chunk, update the TODO with the progress line
-  from `progress.json`, e.g. `MAIN_297 — 120/297 complete · $2.31`.
-- Never block a single tool call on a multi-hour process.
+## 6. Execution and resource rules
 
-NATIVE TODO — MANDATORY FOR EVERY MULTI-STEP TASK
+- Real execution only on Linux (WSL ext4 / Docker). Keep ≥ 30 GiB free on D: and 2× the observed per-task peak.
+- Never `docker system prune`, delete images, volumes, wheelhouses or the env store.
+- No two heavy processes at once (Docker runs, full test suites). One mission per Git worktree.
+- Long commands: redirect to a log file; poll; never relaunch before confirming the previous process ended.
+- No network downloads unless the mission authorizes them.
 
-For every task with 2+ execution steps:
+## 7. Working rule and validation order
 
-1. The FIRST tool call of the execution phase MUST be native `todowrite`.
-2. No shell/read/edit work beyond minimal task identification may begin before
-   the Todo exists.
-3. Keep exactly one item in_progress.
-4. Update native Todo before and after every atomic step.
-5. For long work, expose live counts: x/y, chunk a/b, task name.
-6. Persist detailed progress separately, but native Todo is mandatory UI state.
-7. If native Todo is unavailable, report TODO_UI_UNAVAILABLE explicitly.
+inspect minimally → edit narrowly → test first for new behavior → validate.
 
-This requirement applies to every future Mission automatically.
+1. `git diff --check` AND an explicit whitespace/CRLF check of untracked new files.
+2. Ruff on changed Python files.
+3. Mypy strict on changed production Python files.
+4. Targeted pytest; then `py -3.11 -m pytest -q -p no:cacheprovider tests/unit/opws`.
+5. The repository-wide suite is environment-blocked on Windows; do not run it unless asked.
 
-## Long-running commands (standing)
+## 8. Git rules
 
-- Full pytest suite: ~50+ min on Ahmed's workstation. Tool timeout
-  5,400,000 ms (90 min). Run it once, at the final validation gate, or while a
-  network-bound paid chunk loop is NOT running in the same call.
-- Never pipe a long run through `Select-Object -Last N` (it buffers to the end
-  and shows no output for the whole run). Redirect to a log file
-  (`*> logs\pytest_full.log`) and read the tail afterwards.
-- Never relaunch a long process before confirming the previous one ended
-  (`Get-Process python*`).
+- Do not commit, push, tag, reset, stash, force or delete unless the current mission says so.
+- When committing: stage explicit paths only; verify the staged list; push to `opws-private`; confirm local HEAD == remote SHA.
 
-## Paid WP-1b runs: harness vs scaffold (standing)
+## 9. Native TODO (mandatory for multi-step missions)
 
-- The agent scaffold (`src/benchmark/strategies/iterative_agent.py`,
-  `repository_tools.py`) is FROZEN (protocol v3; one-amendment rule closed).
-- Harness code (`src/benchmark/wp1b/*`, `scripts/wp1b_*`) may be fixed ONLY for
-  a harness defect, with a failing test first, a DECISIONS.md entry, and no
-  change to any scientific knob. If a crash originates in frozen agent code:
-  STOP and report.
-- MAIN runs use the MAIN-mode Review Card (`scripts/wp1b_main_review_card.py`):
-  only instrument-level anomalies block. Per-task agent behaviour (EMPTY,
-  rejected repeats, 0 reads, forced final, one cost ratio > 1) is DATA.
-  See `docs/WP1B_MAIN297_EXECUTION_ADDENDUM_2026-09-22.md`.
+- First execution tool call: native todo list. Exactly one item in progress. Update after every atomic step with live counts (x/y).
 
-## Validation order
+## 10. STOP report (every stop)
 
-1. `git diff --check`
-2. Ruff on changed Python files
-3. Mypy on changed production Python files only
-4. Python compile check on changed Python files
-5. Targeted Pytest
-6. Full Pytest only before commit/merge or when shared interfaces changed
-7. Bundle only when production code changed
+1. Identity — provider, model, branch, HEAD, tree state.
+2. Status — COMPLETE / BLOCKED / NEEDS INPUT, with the exact reason.
+3. Changes — file | what changed | why.
+4. Verification — each check with PASS/FAIL/NOT RUN and exact counts.
+5. Artifacts — paths and SHA-256 of all new outputs and their inputs.
+6. Scientific boundary — what was proven and what was NOT (behavioral outcomes count).
+7. Remaining work — ordered.
+8. Next action — one exact command or mission.
+9. Usage — per section 5.
 
-## WP-1b review card
+## 11. Mission evidence bundle (replaces the old full-project export)
 
-Every paid CALIBRATION run ends with a Review Card (`scripts/run_review_card.py
-<records_dir>` writes `REVIEW_CARD.md`), and the STOP report quotes its
-BLOCKING and INFORMATIONAL anomaly flags. BLOCKING anomalies fail the run;
-INFORMATIONAL anomalies are reported but do not fail it. Every paid MAIN or
-variance run ends with the MAIN-mode card (`scripts/wp1b_main_review_card.py
-<run_dir>`), whose BLOCKING set is instrument-level only (M1-M5).
+At a STOP, only if the mission produced new or changed files, create a small ZIP in
+`D:\WP2\audit_results\<MISSION>\` named `<MISSION>_EVIDENCE_YYYY-MM-DD-HHmm.zip` containing:
 
-## Resource rules
+- every new or modified file of this mission (tracked diffs and untracked additions),
+- `git_status.txt` (`git status --porcelain --untracked-files=all`), `git_head.txt`, `git_diff.patch`,
+- the mission report and logs (trimmed to ≤ 2 MB each).
 
-- No pytest-xdist by default
-- No watch mode, GPU, dataset/model downloads, clean rebuild
-- No full test suite after every small patch
-- No parallel heavy commands
-- Trim logs to first root cause and relevant tail (~120 lines max)
-- **Full-suite runtime policy:** the full suite takes ~50+ min on Ahmed's
-  machine. Use a tool timeout of 5,400,000 ms (90 min), redirect output to a log
-  file (never `Select-Object -Last` as the live pipe). Run it exactly once at the
-  final validation gate; never restart it unless the previous pytest process is
-  confirmed terminated (check `Get-Process python*` / poll the log).
-
-## Git rules
-
-Do not commit, push, merge, tag, reset, stash, force, or delete files unless explicitly requested in the current task.
-
-## Scientific rules
-
-- Ground Truth is evaluation-only.
-- Do not claim Scientific Smoke or Pilot success without real execution.
-- Keep PROJECT_HANDOFF and MASTER_IMPLEMENTATION_PLAN truthful.
-- Update README only when user-facing behavior changes.
-- Stable tag only after a successful Scientific Smoke audit.
-
-## Kaggle / GitHub boundary (standing contract, enforced by tests)
-
-GitHub is owner-controlled source/release storage only. Kaggle launch/resume
-cells never contact GitHub, and no GitHub credential is needed in Kaggle.
-Annotated stable tags are created on the accepted source commit and locally
-verified against that commit after real preflight passes. Historical candidate
-trail (e.g. `v0.9.22-d12-candidate`, superseded) is archived in
-`docs/history/AGENTS_RELEASE_FACTS_ARCHIVE_2026-09-22.md`.
-
-## Release provenance invariant
-
-- Artifact source commit MUST equal immutable release tag peel.
-- Create the tag explicitly on the accepted artifact source commit (not HEAD).
-- Post-tag docs evidence commits are never tag targets.
-
-## Stop / Blocker Reporting Contract
-
-Before stopping for ANY reason (needs auth, missing input, blocker, task
-complete, uncertain decision, permission rule, resource boundary), print a
-structured report containing:
-
-1. **Execution Identity** — provider, model, branch, HEAD, origin/main, tree state
-2. **Why I Am Stopping** — exact reason; COMPLETE / BLOCKED / NEEDS AUTHORIZATION / NEEDS INPUT
-3. **What I Completed** — per-file table: File | Symbol | Old | New | Why | Dependencies
-4. **Verification Performed** — compile, lint, mypy, tests (PASS/FAIL/NOT RUN/BLOCKED with exact counts)
-5. **Pre-Benchmark Validation** — dataset, prompt, pipeline, dry-run, integration, metrics
-6. **Independent Self-Audit** — objective unchanged, plan adherence, over-engineering, debt, durability, freshness, tag state
-7. **Exact Current State** — where project stops in the pipeline
-8. **What Remains** — ordered remaining tasks
-9. **What I Need From User** — minimum input or `Nothing — I can continue automatically.`
-10. **Recommended Next Action** — exact next command; if existing instructions authorize it, continue without stopping
-
-Never end with only "Proceed?" or a bare question.
-
-## Project Export Rule (every mandatory stop)
-
-At every STOP / Mandatory Stop Report, create a filtered audit ZIP in the
-parent directory of `project/` named exactly `project-YYYY-MM-DD-HHmm.zip`
-(local creation timestamp). This is workflow/documentation only — do NOT
-create a release, move, or tag for this rule.
-
-**Include:** ALL files tracked by `git ls-files` (source, tests, notebooks,
-docs, configs, scripts, `benchmark_data/`, `reports/`, `.opencode/` workflow
-files, etc.), `.git/`,
-`dist/pilot-kaggle-upload.zip`, `dist/pilot-kaggle-upload.zip.sha256`.
-`runs_dryrun/` is a **frozen HISTORICAL tracked fixture** (7 records,
-`profile=smoke`, source `0c831e3`, added at commit `b203b21`) and is included
-only for historical reproducibility — it is NOT current candidate proof and
-MUST NOT be used for Pilot launch authorization; current D9 evidence is a fresh
-exact-artifact 48/48 run generated into a fresh temporary/output directory.
-
-**Exclude:** `.mypy_cache/`, `.ruff_cache/`, `.pytest_cache/`,
-`__pycache__/`, `*.pyc`, `.opencode/node_modules/`, `dist/_provcheck*`,
-extracted `dist/pilot-kaggle-upload/`, `dist/pilot-repo-cache/`.
-
-**Do not delete** anything from the real project. Only the share ZIP is
-filtered.
-
-After creation verify required members inside the ZIP (`.git/HEAD`,
-`dist/pilot-kaggle-upload.zip`, `.sha256`), compute size + SHA-256, and
-print:
+Never include the whole repository, `.git`, caches, the evidence directory or Docker data.
+Cap: 50 MB; if exceeded, STOP and list the largest members. Print:
 
 ```
-PROJECT_EXPORT_READY
-PROJECT_EXPORT_NAME=project-YYYY-MM-DD-HHmm.zip
-PROJECT_EXPORT_PATH=<absolute path>
-PROJECT_EXPORT_SIZE_BYTES=<bytes>
-PROJECT_EXPORT_SHA256=<sha256>
-UPLOAD_THIS_FILE=project-YYYY-MM-DD-HHmm.zip
+EVIDENCE_BUNDLE_READY
+EVIDENCE_BUNDLE_PATH=<absolute path>
+EVIDENCE_BUNDLE_SIZE_BYTES=<bytes>
+EVIDENCE_BUNDLE_SHA256=<sha256>
 ```
 
-The Stop Report must include this filename so the user knows which file to
-upload.
+A full project export is created ONLY when the owner explicitly asks for it.
 
-## End-of-mission state update (mandatory)
+## 12. Live status
 
-Standing rule for every future mission (WP1B_TOOLFIX_LIVESTATUS_2026-09-21, B5):
-
-1. Update `docs/LIVE_STATUS.json` with the mission's outcome (keep every
-   schema key; an external study-deck builder consumes it).
-2. Run `python scripts/render_live_status.py --write` to regenerate the block
-   in the four current-facing files (README.md,
-   START_HERE_CURRENT_2026-09-21b.md, PROGRESS.md,
-   00_CURRENT_RESEARCH_STATE.md).
-3. `tests/unit/test_live_status_blocks.py` must pass (byte-for-byte sync).
-4. Distinguish "gate passed" from "instrument valid" in every STOP report:
-   tally raw per-call outcomes from the sidecar
-   (`scripts/wp1b_sidecar_tool_audit.py`), not only the gate result.
+Update `docs/LIVE_STATUS.json` and run `py -3.11 scripts/render_live_status.py --write` only when a mission changes the project state (a commit, a frozen decision, a real run). Audit-only missions skip this.
